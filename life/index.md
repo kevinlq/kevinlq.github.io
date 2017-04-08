@@ -55,7 +55,6 @@ title: 心情杂货铺
       <td style="text-align: center"><code class="highlighter-rouge">New Track</code></td>
     </tr>	
 
-
   </tbody>
 </table>
 </div>
@@ -91,6 +90,10 @@ title: 心情杂货铺
 	<tr>
 	  <td style="text-align: center"><a href="/life/2017/4/2017-04-06.html">2017-04-06</a></td>
 	  <td style="text-align: center"><code class="highlighter-rouge">工作琐事</code></td>
+	</tr>
+	<tr>
+	  <td style="text-align: center"><a href="/life/2017/4/2017-04-08.html">2017-04-08</a></td>
+	  <td style="text-align: center"><code class="highlighter-rouge">小项目</code></td>
 	</tr>
   </tbody>
 </table>
