@@ -21,7 +21,7 @@ author:
     weibo: http://weibo.com/u/5336437516 # 微博地址
     github: https://github.com/kevinlq # GitHub地址
     logo: /res/img/psb.jpg # logo地址
-    tongji:f9a2a52ccc103ed91088462c5836c854 # 百度统计ID
+    tongji: f9a2a52ccc103ed91088462c5836c854 # 百度统计ID
 douban:
     name: https://www.douban.com/people/159723400/    # 豆瓣地址名称
     key: 07e5af1c9cee1a1a17b10d55d6ca4e4e            # 豆瓣API Key
