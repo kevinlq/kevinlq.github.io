@@ -1,4 +1,4 @@
 User-Agent: *
 
-Sitemap: http://daodaoliang.com/sitemap.txt
+Sitemap: http://kevinlq.com/sitemap.txt
 
