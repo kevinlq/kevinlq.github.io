@@ -11,21 +11,19 @@ safe: true
 gems: [jekyll-paginate]
 
 blog:
-    name: kevinlq Blog # 博客名称
+    name: Daodaoliang Blog # 博客名称
     description: 日日当精进 但求无愧 # 博客描述
-    title: 鹅卵石的博客 # 网页标题
-    url: kevinlq.github.com # 博客地址
-    wangyiyun: 鹅卵石 # wangyiyun ID
+    title: 刀刀亮的博客 # 网页标题
+    url: daodaoliang.github.io # 博客地址
+    duoshuo: daodaoliang # 多说ID
+    tongji: daodaoliang # 百度统计ID
+    qiniu: # 七牛云地址
 author:
-    email: kevinlq@yeah.net # 邮箱地址
+    name: 徐景亮 # 作者名称
+    email: daodaoliang@yeah.net # 邮箱地址
     weibo: http://weibo.com/u/5336437516 # 微博地址
-    github: https://github.com/kevinlq # GitHub地址
+    github: https://github.com/daodaoliang # GitHub地址
     logo: /res/img/psb.jpg # logo地址
-analytics:
-    baidu:
-        siteid:f9a2a52ccc103ed91088462c5836c854 # 百度统计ID
-douban:
-    name: https://www.douban.com/people/159723400/    # 豆瓣地址名称
-    key: 07e5af1c9cee1a1a17b10d55d6ca4e4e            # 豆瓣API Key
-wangyigentie:
-    key:aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vZXh0ZW5kL2hvdF9uZXdzX3NjcmlwdC5odG1s #网易跟帖
+    douban:
+        name: http://www.douban.com/people/103498505/    # 豆瓣地址名称
+        key: 07e5af1c9cee1a1a17b10d55d6ca4e4e            # 豆瓣API Key

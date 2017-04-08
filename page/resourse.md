@@ -191,11 +191,3 @@ date: 2016-10-13
 
 ### Android
 * [Awesome Android](https://github.com/jobbole/awesome-android-cn)
-
-
-### ARM
-* [ARM中文论坛](https://community.arm.com/cn/b/blog)
-* [Skia Graphics Library 嵌入式图形库](https://skia.org/)
-
-## 服务器相关
-* [高性能通用服务器框架](http://blog.csdn.net/lenyusun/article/details/44059949)

@@ -12,6 +12,7 @@ post: true
     <i class="fa fa-tags"></i>
     <a class="post-category" href="/page/category.html#{{ page.categories }}">{{ page.categories }}</a>	
   </p>
+  {% include tongji.html %}
 </header>
 <div class="post-main">
 {{ content }}
@@ -29,4 +30,4 @@ post: true
 <span class="pagination-item older">下一篇&nbsp;<i class="fa fa-chain-broken"></i></span>
 {% endif %}
 </div>
-{% if page.wangyiyun != false %}{% include wangyiyun.html %}{% endif %}
+{% if page.duoshuo != false %}{% include duoshuo.html %}{% endif %}
