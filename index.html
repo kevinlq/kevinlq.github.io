@@ -15,7 +15,7 @@ index: true
         <i class="fa fa-tags"></i>
         <a class="post-category" href="/page/category.html#{{ post.categories }}">{{ post.categories }}</a>
       </p>
-
+      {% include tongji.html %}
     </header>
     <div class="post-main">
       {{ post.content | split:'<!-- more -->'| first }}
