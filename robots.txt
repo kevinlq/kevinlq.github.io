@@ -1,0 +1,4 @@
+User-Agent: *
+
+Sitemap: http://kevinlq.com/sitemap.txt
+
