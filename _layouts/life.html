@@ -13,16 +13,15 @@
   <link rel="stylesheet" href="/res/css/public.css">
   <link rel="stylesheet" href="/res/css/life.css">
   <link rel="stylesheet" href="/res/css/rouge.css">
-  {% include tongji.html %}
 </head>
 <body>
   <div class="main">
     <div class="title">{{ page.title }}</div>
-    {% if page.meta != false %}<div class="post-info"><i class="fa fa-clock-o"></i>&nbsp;{{ page.date | date: "%Y" }}-{{ page.date | date: "%m" }}-{{ page.date | date: "%d" }} 转载请注明出处：<a href = "http://daodaoliang.com/">http://daodaoliang.com/</a> </div>{% endif %}
+    {% if page.meta != false %}<div class="post-info"><i class="fa fa-clock-o"></i>&nbsp;{{ page.date | date: "%Y" }}-{{ page.date | date: "%m" }}-{{ page.date | date: "%d" }} 转载请注明出处：<a href = "http://kevinlq.com/">http://kevinlq.com/</a> </div>{% endif %}
     <div class="content">
     {{ content }}
     </div>
-    {% if page.duoshuo == true %}{% include duoshuo.html %}{% endif %}
+    {% if page.wangyiyun == true %}{% include wangyiyun.html %}{% endif %}
   </div>
   <div id="top"><a id="rocket" href="javascript:;" title="返回顶部"><i></i></a></div>
   <script src="/res/js/light.js"></script>
