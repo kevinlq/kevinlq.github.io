@@ -199,3 +199,6 @@ date: 2016-10-13
 
 ## 服务器相关
 * [高性能通用服务器框架](http://blog.csdn.net/lenyusun/article/details/44059949)
+
+## Qt相关学习资料
+* [Qt资料大全--一去二三里分享](http://blog.csdn.net/liang19890820/article/details/51752029)
