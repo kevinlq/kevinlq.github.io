@@ -95,6 +95,10 @@ title: 心情杂货铺
 	  <td style="text-align: center"><a href="/life/2017/4/2017-04-08.html">2017-04-08</a></td>
 	  <td style="text-align: center"><code class="highlighter-rouge">小项目</code></td>
 	</tr>
+	<tr>
+	  <td style="text-align: center"><a href="/life/2017/4/2017-04-11.html">2017-04-08</a></td>
+	  <td style="text-align: center"><code class="highlighter-rouge">致自己</code></td>
+	</tr>
   </tbody>
 </table>
 </div>
