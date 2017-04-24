@@ -13,6 +13,10 @@
 - href: /page/resourse.html
   icon:  fa fa-book
   title: 资源清单
+  
+- href: /page/garden.html
+  icon: fa fa-codepen
+  title: 我的花园
 
 - href: /page/about.html
   icon: fa fa-paper-plane-o
