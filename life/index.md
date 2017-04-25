@@ -103,6 +103,10 @@ title: 心情杂货铺
 	  <td style="text-align: center"><a href="/life/2017/4/2017-04-21.html">2017-04-21</a></td>
 	  <td style="text-align: center"><code class="highlighter-rouge">阶段总结</code></td>
 	</tr>
+	<tr>
+	  <td style="text-align: center"><a href="/life/2017/4/2017-04-25.html">2017-04-25</a></td>
+	  <td style="text-align: center"><code class="highlighter-rouge">小插曲</code></td>
+	</tr>
   </tbody>
 </table>
 </div>
