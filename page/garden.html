@@ -1,12 +1,12 @@
----
+ï»¿---
 layout: blog
-title: Ğ¡»¨Ô°
+title: å°èŠ±å›­
 ---
 
 <link rel="stylesheet" href="/res/css/page.css">
 {% capture categories %}{% for garden in site.categories %}{{ garden | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign garden = categories | split:',' | sort %}
-<h2 class="garden">Àà±ğ</h2>
+<h2 class="garden">ç±»åˆ«</h2>
 <div class="garden-box">
   <ul>
     {% for item in (0..site.categories.size) %}{% unless forloop.last %}
