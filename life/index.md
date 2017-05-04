@@ -128,12 +128,10 @@ title: 心情杂货铺
   </thead>
   <tbody>
 	 <tr>
-	  <td style="text-align: center"><a href="/life/2017/3/2017-05-04.html">2017-05-04</a></td>
-	  <td style="text-align: center"><code class="highlighter-rouge">我们都是青年</code></td>
+	  <td style="text-align: center"><a href="/life/2017/5/2017-05-04.html">2017-05-04</a></td>
+	  <td style="text-align: center"><code class="highlighter-rouge">我们都是好青年</code></td>
 	</tr>	
 
   </tbody>
 </table>
 </div>
-
-******
