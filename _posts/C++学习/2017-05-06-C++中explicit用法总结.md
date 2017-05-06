@@ -1,6 +1,6 @@
 ---
 layout : life
-title: explicit用法总结
+title: C++中explicit用法总结
 category : C++学习
 wangyiyun: true
 date : 2017-05-06
@@ -15,7 +15,7 @@ date : 2017-05-06
 
 <!-- more -->
 
-## explicit用法总结
+## C++中explicit用法总结
 
 在编写Qt相关程序时经常能看见构造函数前面添加explicit，今天想起来就总结下，做做笔记
 
