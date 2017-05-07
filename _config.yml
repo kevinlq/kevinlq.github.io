@@ -12,7 +12,7 @@ gems: [jekyll-paginate]
 
 blog:
     name: kevinlq Blog # 博客名称
-    description: 日日当精进 但求无愧 # 博客描述
+    #description: 日日当精进 但求无愧 # 博客描述
     title: 鹅卵石的博客 # 网页标题
     url: kevinlq.github.com # 博客地址
     wangyiyun: 鹅卵石 # wangyiyun ID
