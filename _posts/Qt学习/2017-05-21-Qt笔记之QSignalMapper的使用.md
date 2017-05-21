@@ -1,0 +1,126 @@
+---
+layout : life
+title: Qt与百度地图交互(javascript)
+category : Qt学习
+wangyiyun: true
+date : 2017-05-16
+---
+
+******
+
+    作者:鹅卵石
+    时间:2017年5月16日22:32:45
+    版本:V 0.0.0
+    邮箱:kevinlq@yeah.net
+
+<!-- more -->
+
+##  Qt与百度地图交互(javascript)
+
+### 前言
+
+Qt和百度地图或者其他地图进行交互，无外乎采用webkit和javascript进行交互，最近做个地图展示工具，有要求离线使用，所以只能下载好离线地图数据，考虑到时间紧就直接使用Qt加载html进行交互显示
+
+### Qt调用javascript中的函数方法
+
+Qt中通过evaluateJavaScript()方法和js之间进行交互
+
+#### 实现目的
+通过界面给定经纬度坐标值，直接在地图上生成对应的marker标记
+
+#### 实现方法
+```
+void Widget::addMarker(const QString &lot, const QString &lat,
+                        const QString &micon)
+{
+    QWebFrame *frame = ui->webView->page()->mainFrame();
+    QString marker = QString("addMarker(\"%1\",\"%2\",\"%3\")")
+	.arg(lot).arg(lat).arg(micon);
+    frame->evaluateJavaScript(marker);
+}
+```
+
+map.html
+```
+//添加mark标记
+function addMarker(lot,lat,micon){		
+	var mkIcon = new BMap.Icon(micon, new BMap.Size(25,25));
+	var point = new BMap.Point(lot, lat);
+	var mk = new BMap.Marker(point,{icon:mkIcon});   // 创建标注
+	map.addOverlay(mk);                              // 加载标注
+
+	//为标记创建信息窗口
+	createInfoWindow("aaa","bbb");
+
+	mk.addEventListener("mouseover", function(){          
+		this.openInfoWindow(infoWindow); //开启信息窗口
+	});
+	mk.addEventListener("onmouseout", function(){          
+		this.closeInfoWindow(infoWindow); //关闭信息窗口
+	});
+	mk.addEventListener("click", function(e){          
+		ReinforcePC.getCoordinate(e.point.lng,e.point.lat);
+	});
+};
+```
+
+createInfoWindow()方法实现
+```
+var infoWindow;
+function createInfoWindow(shipName,mmsi){
+	
+	//创建信息窗口内容
+	var content = "<table>";
+		content = content + "<tr><td> 船名:"+ shipName + "</td></tr>";
+		content = content + "<tr><td> MMSI:"+ mmsi + "</td></tr>";
+		content = content + "<tr><td> 经度:"+ shipName + "</td></tr>";
+		content = content + "<tr><td> 纬度:"+ mmsi + "</td></tr>";
+		content +="</table>";
+		
+	// 创建信息窗口对象 
+	infoWindow = new BMap.InfoWindow(content);
+
+};
+```
+
+### javascript调用Qt中的方法
+
+#### 实现目的
+
+通过点击地图中的marker返回该marker对应的位置信息，简单的返回经纬度信息
+
+#### 实现方法
+先关联webview的一个信号到对应的槽函数中，注意该槽函数必须为共有的
+```
+    connect(ui->webView->page()->mainFrame(), 
+	SIGNAL(javaScriptWindowObjectCleared()),
+            this, SLOT(slotPopulateJavaScriptWindowObject()));
+```
+
+```
+void Widget::slotPopulateJavaScriptWindowObject()
+{
+    ui->webView->page()->mainFrame()->addToJavaScriptWindowObject(
+	"ReinforcePC", this);
+}
+```
+
+将获取到的经纬信息输出
+```
+void Widget::getCoordinate(const QString &lot, const QString &lat)
+{
+    qDebug()<<"lot:"<<lot<<" lat:"<<lat;
+}
+```
+
+map.html
+```
+mk.addEventListener("click", function(e){          
+	ReinforcePC.getCoordinate(e.point.lng,e.point.lat);
+});
+```
+为marker添加了鼠标点击事件，在点击事件中添加对应方法返回经纬度坐标
+
+
+
+
