@@ -44,4 +44,4 @@ QSignalMapper作为一个信号翻译器或者说是信号转换器，可以方�
 
 ### 运行效果
 
-![](/res/img/blog/Qt学习/521.jpg)
+![](/res/img/blog/Qt学习/521.png)
