@@ -143,9 +143,13 @@ title: 心情杂货铺
 	  <td style="text-align: center"><a href="/life/2017/5/2017-05-17.html">2017-05-17</a></td>
 	  <td style="text-align: center"><code class="highlighter-rouge">生活</code></td>
 	</tr>
-		<tr>
+	<tr>
 	  <td style="text-align: center"><a href="/life/2017/5/2017-05-19.html">2017-05-19</a></td>
 	  <td style="text-align: center"><code class="highlighter-rouge">铭记</code></td>
+	</tr>
+	<tr>
+	  <td style="text-align: center"><a href="/life/2017/5/2017-05-26.html">2017-05-26</a></td>
+	  <td style="text-align: center"><code class="highlighter-rouge">生日</code></td>
 	</tr>
   </tbody>
 </table>
