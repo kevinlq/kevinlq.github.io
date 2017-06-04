@@ -154,3 +154,23 @@ title: 心情杂货铺
   </tbody>
 </table>
 </div>
+
+******
+
+<div class='lifelog'>
+<h2 id="section-20">2017年 6月</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">生命戳</th>
+      <th style="text-align: center">一图志</th>
+    </tr>
+  </thead>
+  <tbody>
+	 <tr>
+	  <td style="text-align: center"><a href="/life/2017/6/2017-06-04.html">2017-06-04</a></td>
+	  <td style="text-align: center"><code class="highlighter-rouge">工作汇报ppt</code></td>
+	</tr>	
+  </tbody>
+</table>
+</div>
