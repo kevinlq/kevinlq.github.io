@@ -151,3 +151,5 @@ INCLUDEPATH +=D:/OpenCV/opencv-2.4.11/necessary_file/include
 LIBS    +=-L D:/OpenCV/opencv-2.4.11/necessary_file/lib/libopencv_*.a
 ```
 上述配置库的路径只写了一条，可以包含所有的相关动态库，刚开始是将所有的库都添加了路径，结果找不到。
+
+![](/res/img/devstone.png)
