@@ -43,4 +43,6 @@ tongji: f9a2a52ccc103ed91088462c5836c854 # 百度统计ID
 
 ps:因为之前好多文章中使用wangyiyun这个昵称，修改工作量大，所以直接在wangyiyun.html中添加了有言插件代码
 
+![评论系统](/res/img/youyan.png)
+
 
