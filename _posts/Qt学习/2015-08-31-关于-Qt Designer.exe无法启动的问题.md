@@ -31,3 +31,11 @@ date : 2015-08-31
 ![这里写图片描述](/res/img/blog/Qt学习/3.png)
 
 ***
+
+---
+
+如果您对本文有任何问题，可以在下方留言，或者Email我 
+
+微信公众号：devstone，扫描二维码直接关注
+
+![](/res/img/blog/qrcode_for_devstone.jpg)

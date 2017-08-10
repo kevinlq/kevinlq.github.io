@@ -32,3 +32,11 @@ QWSServer::setCursorVisible(false);
 ```
 
 QWSServer Class 为 Qt for Embeded Linux 封装了一个服务进程， 当你运行一个基于嵌入式平台的Qt程序时，它只能作为一个server或者连接到一个已经存在的server来运行
+
+---
+
+如果您对本文有任何问题，可以在下方留言，或者Email我 
+
+微信公众号：devstone，扫描二维码直接关注
+
+![](/res/img/blog/qrcode_for_devstone.jpg)

@@ -52,3 +52,11 @@ inline void qUnused(T &x) { (void)x; }
 可以看出Qt处理的很奇妙，代码很简洁，很值得去学习学习
 
 ![效果](/res/img/blog/C学习/003.png)
+
+---
+
+如果您对本文有任何问题，可以在下方留言，或者Email我 
+
+微信公众号：devstone，扫描二维码直接关注
+
+![](/res/img/blog/qrcode_for_devstone.jpg)

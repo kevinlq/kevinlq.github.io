@@ -45,3 +45,11 @@ QSignalMapper作为一个信号翻译器或者说是信号转换器，可以方�
 ### 运行效果
 
 ![](/res/img/blog/Qt学习/521.png)
+
+---
+
+如果您对本文有任何问题，可以在下方留言，或者Email我 
+
+微信公众号：devstone，扫描二维码直接关注
+
+![](/res/img/blog/qrcode_for_devstone.jpg)
