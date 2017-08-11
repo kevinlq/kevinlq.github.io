@@ -202,3 +202,6 @@ date: 2016-10-13
 
 ## Qt相关学习资料
 * [Qt资料大全--一去二三里分享](http://blog.csdn.net/liang19890820/article/details/51752029)
+
+### 网络设备
+* [排除交换机故障](http://bbs.cloudsee.com/thread/13750)
