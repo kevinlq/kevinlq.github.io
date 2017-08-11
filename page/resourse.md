@@ -197,10 +197,10 @@ date: 2016-10-13
 * [ARM中文论坛](https://community.arm.com/cn/b/blog)
 * [Skia Graphics Library 嵌入式图形库](https://skia.org/)
 
-## 服务器相关
+### 服务器相关
 * [高性能通用服务器框架](http://blog.csdn.net/lenyusun/article/details/44059949)
 
-## Qt相关学习资料
+### Qt相关学习资料
 * [Qt资料大全--一去二三里分享](http://blog.csdn.net/liang19890820/article/details/51752029)
 
 ### 网络设备
