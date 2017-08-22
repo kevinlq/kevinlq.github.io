@@ -46,7 +46,7 @@ date: 2017-05-15
 * **MySql:** 两年的使用时间，可较为熟练使用；
 * **Sqlite:** 两年半的使用时间，可以熟练使用；
 * **Linux平台开发工具:** 熟练使用VI、GCC、GDB、Makefile；
-* **Git/SVN：** 两年的使用时间，常年混迹于GitHub和OSChina；
+* **Git/SVN：** 两年的使用时间，常年混迹于GitHub和OSChina;
 * **单片机：** 熟悉STM32、zigbee等MCU软件编程和对应的开发环境，熟悉UART、SPI、I2C、RS485、RS232等接口协议，同时对PCB的绘制也有一定的了解；
 * **HTML、JavaScript、Java、C#** 等等，都有浅显的学习；
 
