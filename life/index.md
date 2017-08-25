@@ -214,6 +214,10 @@ title: 心情杂货铺
 	 <tr>
 	  <td style="text-align: center"><a href="/life/2017/8/2017-08-18.html">2017-08-18</a></td>
 	  <td style="text-align: center"><code class="highlighter-rouge">浅谈学习编程</code></td>
+	</tr>
+	 <tr>
+	  <td style="text-align: center"><a href="/life/2017/8/2017-08-25.html">2017-08-25</a></td>
+	  <td style="text-align: center"><code class="highlighter-rouge">转眼就是好几年</code></td>
 	</tr>	
   </tbody>
 </table>
