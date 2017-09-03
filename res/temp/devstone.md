@@ -30,7 +30,7 @@ date: 2017-05-15
 
 ### <i class="fa fa-binoculars"></i> 求职目标
 
-* **计算机类：C/C++软件工程师**
+* **C/C++软件工程师，西安**
 
 ### <i class="fa fa-binoculars"></i> 职业目标
 
@@ -49,12 +49,14 @@ date: 2017-05-15
 * **Git/SVN：** 两年的使用时间，常年混迹于GitHub和OSChina;
 * **单片机：** 熟悉STM32、zigbee等MCU软件编程和对应的开发环境，熟悉UART、SPI、I2C、RS485、RS232等接口协议，同时对PCB的绘制也有一定的了解；
 * **HTML、JavaScript、Java、C#** 等等，都有浅显的学习；
+* 可熟练在Linux、嵌入式Linux、windows等平台进行产品开发；
+* 熟悉常见的设计模式；
 
 ### <i class="fa fa-certificate"></i> 项目经历(部分)
 
 #### <i class="fa fa-dot-circle-o"></i> AIS一体机
-* **软件环境:** `ARM Linux`
-* **硬件环境:** `ARM平台+AIS接收机+Lora设备`
+* **软件环境:** Embedded Linux，Qt Embedded 4.8.6，Qt4.8.6，C/C++
+* **硬件环境:** `ARM平台+AIS接收机+Lora设备，PC`
 * **开发环境:** `Qt,C++,sqlite`
 * **项目简述:** 一款基于ARM的AIS信息处理显示终端设备，主要用于接收舰船发射的AIS标准化报文，对接收到的报文进行分类存储、解析，然后对舰船的点迹进行实时显示，同时建立船舶信用档案，当某个船只出现异常行为时进行记录。
 * **责任描述:** 前期产品方案设计，后期软件编码实现，测试。
