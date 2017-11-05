@@ -62,6 +62,6 @@ ps:因为之前好多文章中使用wangyiyun这个昵称，修改工作量大�
 ![评论系统](/res/img/youyan.png)
 
 **[在线预览 &rarr;](http://kevinlq.com/)**
-![screenshot home](http://kevinlq.com/assets/images/screenshots/home2.png)
+![screenshot home](http://kevinlq.com/assets/images/screenshots/home1.png)
 
 ### 4.重新使用新的博客风格
