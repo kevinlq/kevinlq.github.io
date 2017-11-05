@@ -35,6 +35,10 @@ navs:
     label: 分类
 
   -
+    href: /lifeTrack/
+    label: 生活
+
+  -
     href: /wiki/
     label: 维基
 
