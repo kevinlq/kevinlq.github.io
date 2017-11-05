@@ -5,22 +5,22 @@ baseurl:
 url: http://kevinlq.com
 date_format: "ordinal"
 title: 鹅卵石
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
-timezone: Asia/Shanghai
+subtitle: "流浪的鹅卵石"
+description: "李棋的个人博客"
+keywords: 鹅卵石, kevinlq
+timezone: China/XiAn
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
+author: kevin li
 organization: zkh360.com
 organization_url: http://www.zkh360.com
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+github_username: kevinlq
+location: XiAn, China
+email: kevinlq0912@gmail.com
 
 # ---------------- #
 #    Navigation    #
