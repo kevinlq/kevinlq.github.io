@@ -1,82 +1,62 @@
-# 码志
+# kevinlq.github.com
 
-我的个人博客：<http://mazhuang.org>，欢迎 Star 和 Fork。
+## 声明
 
-## 概览
+本博客框架是使用开源的jekyll.先后从以下几个博主clone过来主题进行写作.
 
-<!-- vim-markdown-toc GFM -->
+- 2017.03 [daodaoliang](http://daodaoliang.com/)
+- 2017.11 [mazhuang](http://mazhuang.org/)
 
-* [效果预览](#效果预览)
-* [Fork 指南](#fork-指南)
-* [贴心提示](#贴心提示)
-* [经验与思考](#经验与思考)
-* [致谢](#致谢)
+在此非常感谢以上作者做出的贡献.
 
-<!-- vim-markdown-toc -->
+我也会在此基础上不断的进行修改.
+
 
 ## 效果预览
 
-**[在线预览 &rarr;](http://mazhuang.org)**
+**[在线预览 &rarr;](http://kevinlq.com/)**
 
 ![screenshot home](http://mazhuang.org/assets/images/screenshots/home.png)
 
-## Fork 指南
+## 修改记录
 
-Fork 本项目之后，还需要做一些事情才能让你的页面「正确」跑起来。
 
-1. 正确设置项目名称与分支。
+![工程项目](/doc/project.png)
 
-   按照 GitHub Pages 的规定，名称为 `username.github.io` 的项目的 master 分支，或者其它名称的项目的 gh-pages 分支可以自动生成 GitHub Pages 页面。
+### 1. 添加网易云跟帖功能
 
-2. 修改域名。
+修为多说评论系统为网易云跟帖(因为发现多说系统官网显示到2017年6月1号到期，然后停止维护，所以不得已选择其他的评论系统各。经过搜索发现网易云跟帖还不错就直接替换了，替换过程也很简单，虽然本人不是搞前端的，但是还是三下五除二给替换了)
 
-   如果你需要绑定自己的域名，那么修改 CNAME 文件的内容；如果不需要绑定自己的域名，那么删掉 CNAME 文件。
+替换后的效果如下所示：
 
-3. 修改配置。
+![评论系统](/res/img/blog/project.png)
 
-   网站的配置基本都集中在 \_config.yml 文件中，将其中与个人信息相关的部分替换成你自己的，比如网站的 url、title、subtitle 和第三方评论模块的配置等。
 
-   **评论模块：** 目前支持 disqus、gitment 和 gitalk，选用其中一种就可以了，推荐使用 gitalk。它们各自的配置指南链接在 \_config.yml 文件的 Comments 一节里都贴出来了。
+### 2. 添加百度统计功能
+添加百度统计可以实时查到博客的访问量，百度了下操作起来也不难
 
-   **注意：** 如果使用 disqus，因为 disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus.username 修改成你自己的，否则请将该字段留空。我对该缺陷的记录见 [Issues#2][3]。
+* 申请账号
+* 添加域名
+* 获取代码
+* 代码安装
+* 安装检测
 
-4. 删除我的文章与图片。
+在实际操作过程中还是遇到了问题，找了半天还是没有找到，最后通过安装windows下jekyll编译工具才找到了问题，原来是标点符号的问题
 
-   如下文件夹中除了 template.md 文件外，都可以全部删除，然后添加你自己的内容。
+```
+tongji: f9a2a52ccc103ed91088462c5836c854 # 百度统计ID
+```
 
-   * \_posts 文件夹中是我已发布的博客文章。
-   * \_drafts 文件夹中是我尚未发布的博客文章。
-   * \_wiki 文件夹中是我已发布的 wiki 页面。
-   * images 文件夹中是我的文章和页面里使用的图片。
+**上述tongji冒号后面有个空格，若没有空格解析会出现问题的**
 
-5. 修改「关于」页面。
+因为没有空格原因，导致github给我发个10多条错误提醒邮件，惭愧啊
 
-   pages/about.md 文件内容对应网站的「关于」页面，里面的内容多为个人相关，将它们替换成你自己的信息，包括 \_data 目录下的 skills.yml 和 social.yml 文件里的数据。
+## 3. 使用有言评论框架
 
-## 贴心提示
+之前使用的网易云跟帖，8月初通知说停止运营了，使能含泪放弃了，不知道是出于什么原因。
 
-1. 排版建议遵照一定的规范，推荐 [中文文案排版指北（简体中文版）][1]。
+搜索了下发现有言还行，直接导入使用
 
-2. 在本地预览博客效果可以参考 [Setting up your Pages site locally with Jekyll][2]。
+ps:因为之前好多文章中使用wangyiyun这个昵称，修改工作量大，所以直接在wangyiyun.html中添加了有言插件代码
 
-## 经验与思考
-
-* 简约，尽量每个页面都不展示多余的内容。
-
-* 有时一图抵千言，有时可能只会拖慢网页加载速度。
-
-* 言之有物，不做无痛之呻吟。
-
-* 如果写技术文章，那先将技术原理完全理清了再开始写，一边摸索技术一边组织文章效率较低。
-
-* 杜绝难断句、难理解的长句子，如果不能将其拆分成几个简洁的短句，说明脑中的理解并不清晰。
-
-* 可以学习一下那些高质量的博主，他们的行文，内容组织方式，有什么值得借鉴的地方。
-
-## 致谢
-
-本博客外观基于 [DONGChuan](http://dongchuan.github.io) 修改，感谢！
-
-[1]: https://github.com/mzlogin/chinese-copywriting-guidelines
-[2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
-[3]: https://github.com/mzlogin/mzlogin.github.io/issues/2
+![评论系统](/res/img/youyan.png)
