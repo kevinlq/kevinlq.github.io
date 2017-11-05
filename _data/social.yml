@@ -1,0 +1,27 @@
+- sitename: GitHub
+  name: mzlogin
+  url: https://github.com/kevinlq
+
+- sitename: 掘金
+  name: devstone
+  url: https://juejin.im/user/59feb82b51882541157035f0
+
+- sitename: 博客
+  name: 鹅卵石
+  url: http://kevinlq.com
+
+- sitename: 微博
+  name: devsrone
+  url: http://weibo.com/kevinlq0912
+
+- sitename: 知乎
+  name: devstone
+  url: http://www.zhihu.com/people/kevinlq
+
+- sitename: 豆瓣
+  name: devstone
+  url: http://www.douban.com/people/devstone
+
+- sitename: CSDN
+  name: devstone
+  url: http://blog.csdn.net/u013704336
