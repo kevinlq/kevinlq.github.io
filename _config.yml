@@ -16,8 +16,8 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: kevin li
-organization: zkh360.com
-organization_url: http://www.zkh360.com
+organization: zhihu.com
+organization_url: https://www.zhihu.com/people/kevinlq/activities
 github_username: kevinlq
 location: XiAn, China
 email: kevinlq0912@gmail.com
@@ -63,7 +63,7 @@ lsi: false
 quiet: false
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
-plugins:
+gems:
     - jekyll-github-metadata
     - rouge
 #     - jekyll-html-pipeline
