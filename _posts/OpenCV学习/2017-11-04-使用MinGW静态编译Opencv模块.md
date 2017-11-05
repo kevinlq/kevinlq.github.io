@@ -40,6 +40,7 @@ date : 2017-11-04
 
 移植过程中国遇到了很多的问题，很多的解决方案都放在了github上。这里就不介绍了。
 
+[连接地址](https://github.com/kevinlq/Opencv-module-build)
 
 ---
 
