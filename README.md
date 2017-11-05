@@ -16,7 +16,7 @@
 
 **[在线预览 &rarr;](http://kevinlq.com/)**
 
-![screenshot home](http://mazhuang.org/assets/images/screenshots/home.png)
+![screenshot home](http://kevinlq.com/assets/images/screenshots/home.png)
 
 ## 修改记录
 
