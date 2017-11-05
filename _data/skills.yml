@@ -4,6 +4,8 @@
       - C++
       - Qt
       - Qt QQuick QML
+      - SQLLite
+      - MySQL
 
 - name: Embedded Developer Keywords
   keywords:
