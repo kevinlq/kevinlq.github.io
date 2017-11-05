@@ -16,7 +16,7 @@
 
 **[在线预览 &rarr;](http://kevinlq.com/)**
 
-![screenshot home](http://kevinlq.com/assets/images/screenshots/home.png)
+![screenshot home](http://kevinlq.com/assets/images/screenshots/home2.png)
 
 ## 修改记录
 
@@ -51,7 +51,7 @@ tongji: f9a2a52ccc103ed91088462c5836c854 # 百度统计ID
 
 因为没有空格原因，导致github给我发个10多条错误提醒邮件，惭愧啊
 
-## 3. 使用有言评论框架
+### 3. 使用有言评论框架
 
 之前使用的网易云跟帖，8月初通知说停止运营了，使能含泪放弃了，不知道是出于什么原因。
 
@@ -60,3 +60,8 @@ tongji: f9a2a52ccc103ed91088462c5836c854 # 百度统计ID
 ps:因为之前好多文章中使用wangyiyun这个昵称，修改工作量大，所以直接在wangyiyun.html中添加了有言插件代码
 
 ![评论系统](/res/img/youyan.png)
+
+**[在线预览 &rarr;](http://kevinlq.com/)**
+![screenshot home](http://kevinlq.com/assets/images/screenshots/home2.png)
+
+### 4.重新使用新的博客风格
