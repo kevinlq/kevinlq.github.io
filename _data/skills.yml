@@ -1,0 +1,13 @@
+- name: Software Engineer Keywords
+  keywords:
+      - C
+      - C++
+      - Qt
+      - Qt QQuick QML
+
+- name: Embedded Developer Keywords
+  keywords:
+      - ARM
+      - STM32
+      - ZigBee
+      - Altium Designer
