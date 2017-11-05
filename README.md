@@ -65,3 +65,5 @@ ps:因为之前好多文章中使用wangyiyun这个昵称，修改工作量大�
 ![screenshot home](http://kevinlq.com/assets/images/screenshots/home1.png)
 
 ### 4.重新使用新的博客风格
+
+![screenshot home](http://kevinlq.com/assets/images/screenshots/home2.png)
