@@ -1,19 +1,10 @@
 ---
-layout : life
+layout: post
 title: 使用MinGW静态编译Opencv模块
-category : OpenCV学习
-wangyiyun: true
-date : 2017-11-04
+categories: [OpenCV学习, 环境搭建]
+description: some word here
+keywords: OpenCV学习, opencv编译
 ---
-
-******
-
-    作者:鹅卵石
-    时间:2017年11月4日23:00:29
-    版本:V 0.0.0
-    邮箱:kevinlq@yeah.net
-
-<!-- more -->
 
 
 静态编译Opencv模块
