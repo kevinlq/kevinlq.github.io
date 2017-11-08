@@ -1,0 +1,13 @@
+QQuickItem绘图
+
+QSGNode
+
+
+QQuickItem
+
+
+重写该虚方法,构建自己的node即可
+QSGNode *MyItem::updatePaintNode(QSGNode *node, UpdatePaintNodeData *)
+
+
+渲染线程
