@@ -1,36 +1,31 @@
----
-layout: default
----
-<section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
-<div class="container">
-  <div class="columns">
-    <div class="column three-fourths">
-      <div class="collection-title">
-        <h1 class="collection-header">{{ page.title }}</h1>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<!-- / .banner -->
-<section class="container content">
-<div class="columns">
-  <div class="column three-fourths" >
-    <article class="article-content markdown-body">
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="{{ site.blog.title }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="keywords" content="{{ page.title }}, {{ site.blog.name }}, {{ page.title }} - {{ site.blog.name }}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.blog.title }}{% endif %} - {{ site.blog.name }}</title>
+  <link rel="icon" href="/res/img/shortimg.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/res/img/shortimg.ico" type="image/x-icon">
+  <link rel="canonical" href="{{ site.blog.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/res/css/public.css">
+  <link rel="stylesheet" href="/res/css/life.css">
+  <link rel="stylesheet" href="/res/css/rouge.css">
+  {% include tongji.html %}
+</head>
+<body>
+  <div class="main">
+    <div class="title">{{ page.title }}</div>
+    {% if page.meta != false %}<div class="post-info"><i class="fa fa-clock-o"></i>&nbsp;{{ page.date | date: "%Y" }}-{{ page.date | date: "%m" }}-{{ page.date | date: "%d" }} 转载请注明出处：<a href = "http://daodaoliang.com/">http://daodaoliang.com/</a> </div>{% endif %}
+    <div class="content">
     {{ content }}
-    </article>
-    <div class="share">
-      {% include sns-share.html %}
     </div>
-    <div class="comment">
-      {% include comments.html %}
-    </div>
+    {% if page.duoshuo == true %}{% include duoshuo.html %}{% endif %}
   </div>
-  <div class="column one-fourth">
-    {% include sidebar-search.html %}
-    {% include sidebar-qrcode.html %}
-    {% include sidebar-post-nav.html %}
-  </div>
-</div>
-</section>
-<!-- /section.content -->
+  <div id="top"><a id="rocket" href="javascript:;" title="返回顶部"><i></i></a></div>
+  <script src="/res/js/light.js"></script>
+  {% if page.math == true %}<script src="http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>MathJax.Hub.Config({tex2jax:{inlineMath: [['\\','\\']],displayMath: [['$$','$$']]}});</script>{% endif %}
+</body>
+</html>
