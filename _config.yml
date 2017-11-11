@@ -35,6 +35,9 @@ navs:
     label: 分类
     
   -
+    href: /my-life/
+    label: 生活
+  -
     href: /wiki/
     label: 维基
 
