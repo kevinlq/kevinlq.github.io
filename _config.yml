@@ -47,6 +47,10 @@ navs:
     label: 链接
 
   -
+    href: /resourse/
+    label: 资源
+
+  -
     href: /about/
     label: 关于
 
