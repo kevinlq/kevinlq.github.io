@@ -35,7 +35,8 @@ navs:
     label: 分类
     
   -
-    href: /life/index.html
+    href: ./life/index.html
+    icon: fa fa-eyedropper
     label: 生活
   -
     href: /wiki/
