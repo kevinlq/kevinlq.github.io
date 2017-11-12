@@ -35,7 +35,7 @@ navs:
     label: 分类
     
   -
-    href: /my-life
+    href: /my-life/
     icon: fa fa-eyedropper
     label: 生活
   -
