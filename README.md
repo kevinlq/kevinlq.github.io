@@ -4,8 +4,8 @@
 
 本博客框架是使用开源的jekyll.先后从以下几个博主clone过来主题进行写作.
 
-- 2017.03 [daodaoliang](http://daodaoliang.com/)
-- 2017.11 [mazhuang](http://mazhuang.org/)
+- **2017.03** [daodaoliang](http://daodaoliang.com/)
+- **2017.11** [mazhuang](http://mazhuang.org/)
 
 在此非常感谢以上作者做出的贡献.
 
@@ -71,3 +71,7 @@ ps:因为之前好多文章中使用wangyiyun这个昵称，修改工作量大�
 新的博客评论框架`gitalk`:
 
 ![gitalk评论系统](/res/img/gitalk.png)
+
+## 再次感谢
+
+很感谢原作者做出的贡献，真是有了他们的开源精神，我们才能享受到写博客的便捷之处。
