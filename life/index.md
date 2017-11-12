@@ -1,6 +1,5 @@
 ---
-layout: life
-date: 0
+layout: post
 title: 心情杂货铺
 ---
 

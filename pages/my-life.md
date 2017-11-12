@@ -5,7 +5,6 @@ description: 人越学越觉得自己无知
 keywords: Life, track，record
 comments: false
 menu: Life
-permalink: /life/
 ---
 
 > 生活中的碎碎念……
