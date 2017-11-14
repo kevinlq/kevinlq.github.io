@@ -34,7 +34,7 @@ QImage::Format_RGB32
 QImage::Format_RGB888
 ```
 
-- 存入图像，此时需要设定一张颜色表`QVector<QRgb>`
+- 存入图像，此时需要设定一张颜色表`QVector<QRgb>`,如下
 
 ```C++
 QImage::Format_Indexed8
