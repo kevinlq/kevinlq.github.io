@@ -23,7 +23,7 @@ int QImage::byteCount() const
 ```C++
 int QImage::bytesPerLine() const
 
-//还可以这样计算(width:图像宽度，img.depth是图图像深度):
+还可以这样计算(width:图像宽度，img.depth是图图像深度):
 int bytePerLine = (width * img.depth()  +  31) / 32 * 4;
 ```
 
