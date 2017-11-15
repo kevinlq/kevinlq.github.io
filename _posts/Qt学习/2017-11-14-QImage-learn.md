@@ -22,6 +22,9 @@ int QImage::byteCount() const
 - 获取图像每行字节数
 ```C++
 int QImage::bytesPerLine() const
+
+//还可以这样计算(width:图像宽度，img.depth是图图像深度):
+int bytePerLine = (width * img.depth()  +  31) / 32 * 4;
 ```
 
 - 存入图像，格式为R,G,B,A(0,1,2,3)
@@ -35,13 +38,14 @@ QImage::Format_RGB888
 ```
 
 - 存入图像，此时需要设定一张颜色表`QVector<QRgb>`,如下
-
 ```C++
 QImage::Format_Indexed8
+```
 
-//灰度颜色表：
+灰度颜色表：
+```C++
 QVector<QRgb> vtrColor;
-for(int k = 0;k < 256;++k) 
+for(int k = 0;k < 256;++k)
 {
     vtrColor.push_back( qRgb(k,k,k) );
 }
