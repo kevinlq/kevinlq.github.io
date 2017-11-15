@@ -39,18 +39,15 @@ QImage::Format_RGB888
 
 - 存入图像，此时需要设定一张颜色表`QVector<QRgb>`,如下
 ```C++
-QImage::Format_Indexed8
-```
-
+QImage::Format_Indexed8  
 灰度颜色表：
-```C++
 QVector<QRgb> vtrColor;
 for(int k = 0;k < 256;++k)
 {
     vtrColor.push_back( qRgb(k,k,k) );
 }
-
 ```
+
 
 ## 相关概念
 
