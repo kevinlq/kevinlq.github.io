@@ -19,10 +19,10 @@ const uchar *QImage::bits() const
 ```C++
 int QImage::byteCount() const
 ```
+
 - 获取图像每行字节数
 ```C++
-int QImage::bytesPerLine() const
-
+int QImage::bytesPerLine() const  
 还可以这样计算(width:图像宽度，img.depth是图图像深度):
 int bytePerLine = (width * img.depth()  +  31) / 32 * 4;
 ```
@@ -58,3 +58,4 @@ for(int k = 0;k < 256;++k)
 
 
 ### 位深
+位深是指存储每个像素所用的位数.
