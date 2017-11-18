@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: Altium Designer阵列黏贴
 category : 硬件学习
 wangyiyun: true

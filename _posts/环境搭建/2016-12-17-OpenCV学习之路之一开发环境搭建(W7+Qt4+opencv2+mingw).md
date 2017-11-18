@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: OpenCV学习之路之开发环境搭建(w7+ Qt4+opencv2+mingw)
 category : 环境搭建
 wangyiyun: true

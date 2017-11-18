@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: QtEmbended去掉鼠标指针显示
 category : Qt学习
 wangyiyun: true
