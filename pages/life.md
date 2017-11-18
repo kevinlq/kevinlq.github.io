@@ -10,7 +10,6 @@ permalink: /life/
 
 > 生命在不停的流逝
 
-<section class="container lifes-content">
 {% assign sorted_life = site.life | sort %}
 {% for life in sorted_life %}
 <h3>{{ life | first }}</h3>
@@ -23,4 +22,4 @@ permalink: /life/
 {% endfor %}
 </ol>
 {% endfor %}
-</section>
+
