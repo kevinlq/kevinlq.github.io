@@ -12,7 +12,7 @@ permalink: /life/
 
 <ul class="listing">
 {% for life in site.life %}
-{% if life.title != "life Template" %}
+{% if life.title != "Life Template" %}
 <li class="listing-item"><a href="{{ life.url }}">{{ life.title }}</a>
 </li>
 {% endif %}
