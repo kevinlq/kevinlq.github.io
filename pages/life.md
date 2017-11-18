@@ -11,9 +11,11 @@ permalink: /life/
 > 生命在不停的流逝
 
 <ul class="listing">
-
 {% for life in site.life %}
-* [{{ life.name }}]({{ life.url }})
+
+<li class="listing-item"><a href="{{ life.url }}">{{ life.title }}</a>
+</li>
+
 {% endfor %}
 
 </ul>
