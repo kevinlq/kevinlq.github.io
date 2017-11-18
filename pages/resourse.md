@@ -4,7 +4,7 @@ title: 资源备忘手册
 description: 鹅卵石
 keywords: 鹅卵石
 comments: true
-menu: 资源
+menu: 关于
 permalink: /resourse/
 ---
 
