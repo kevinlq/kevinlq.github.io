@@ -8,7 +8,7 @@ menu: 生活
 permalink: /life/
 ---
 
-> 生命在不停的流逝
+> 生命在不停的流逝,珍惜
 
 <ul class="listing">
 {% assign sorted_lifes = site.life | sort %}
