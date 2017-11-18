@@ -13,7 +13,7 @@ permalink: /life/
 <ul class="listing">
 {% for life in site.life %}
 {% if life.title != "life Template" %}
-<li class="listing-item"><a href="{{ wiki.url }}">{{ life.title }}</a></li>
+<li class="listing-item"><a href="{{ life.url }}">{{ life.title }}</a></li>
 {% endif %}
 {% endfor %}
 </ul>
