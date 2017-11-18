@@ -10,15 +10,15 @@ permalink: /life/
 
 > 生命在不停的流逝
 
-<section class="container posts-content">
+<section class="container lifes-content">
 {% assign sorted_life = site.life | sort %}
 {% for life in sorted_life %}
 <h3>{{ life | first }}</h3>
-<ol class="life-list" id="{{ life[0] }}">
+<ol class="lifes-list" id="{{ life[0] }}">
 {% for post in life.last %}
-<li class="life-list-item">
-<span class="life-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
-<a class="life-list-name" href="{{ post.url }}">{{ post.title }}</a>
+<li class="lifes-list-item">
+<span class="lifes-list-meta">{{ life.date | date:"%Y-%m-%d" }}</span>
+<a class="lifes-list-name" href="{{ life.url }}">{{ life.title }}</a>
 </li>
 {% endfor %}
 </ol>
