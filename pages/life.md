@@ -10,6 +10,13 @@ permalink: /life/
 
 > 生命在不停的流逝
 
+# 生命在不停的流逝
+
+******
+> 生命流逝的证明(日日当精进 但求无愧)
+
+> **来者轻点生命戳**
+
 <ul class="listing">
 {% for life in site.life %}
 
