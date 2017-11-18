@@ -4,8 +4,9 @@ title: 资源备忘手册
 description: 鹅卵石
 keywords: 鹅卵石
 comments: true
+menu: 资源
+permalink: /resourse/
 ---
-
 
 ### 书籍和文章类
 * [Awesome programming books](https://github.com/jobbole/awesome-programming-books)
