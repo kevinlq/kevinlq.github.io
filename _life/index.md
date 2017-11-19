@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: 心情杂货铺
 ---
 
