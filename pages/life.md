@@ -14,7 +14,6 @@ permalink: /life/
 {% for life in site.life %}
 {% if life.title != "Life Template" %}
 <li class="listing-item">
-<span class ="lifes-data">{{life.data | date:"%Y-%m-%d" }} </span>
 <a href="{{ life.url }}">{{ life.title }}</a>
 </li>
 {% endif %}
