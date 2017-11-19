@@ -16,5 +16,6 @@ permalink: /life/
 <li class="listing-item">
 <a href="{{ life.url }}">{{ life.title }}</a>
 </li>
+{%endif %}
 {% endfor %}
 </ul>
