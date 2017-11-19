@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Wiki
+title: Life
 description: 人越学越觉得自己无知
-keywords: 维基, Wiki
+keywords: 生活, Life
 comments: false
-menu: 维基
+menu: Life
 permalink: /life/
 ---
 
