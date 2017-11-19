@@ -3,7 +3,7 @@ layout: page
 title: Life
 description: 生活点滴
 keywords: 生活，Life
-comments: true
+comments: false
 menu: 生活
 permalink: /life/
 ---
