@@ -5,7 +5,7 @@ description: 人越学越觉得自己无知
 keywords: 生活, Life
 comments: true
 menu: 生活
-permalink: /life/
+permalink: /life/:year/:moonth/:day/title.html
 ---
 
 > 生活中的点点滴滴
