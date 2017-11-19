@@ -11,10 +11,11 @@ permalink: /life/
 > 生命在不停的流逝,珍惜
 
 <ul class="listing">
-{% assign sorted_lifes = site.life | sort %}
-{% for life in sorted_lifes %}
+{% for life in site.life %}
+{% if life.title != "Life Template" %}
 <li class="listing-item"><a href="{{ life.url }}">{{ life.title }}</a>
 </li>
+{% endif %}
 {% endfor %}
 </ul>
 
