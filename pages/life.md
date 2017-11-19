@@ -13,7 +13,7 @@ permalink: /life/
 <ul class="listing">
 {% for life in site.life %}
 
-<li class="listing-item"><a href="{{ life.url }}">{{ life.title }}{{ life.date | date:"%Y-%m-%d" }}</a>
+<li class="listing-item"><a href="{{ life.url }}">{{ life.date | date:"%Y-%m-%d" }}-{{ life.title }}</a>
 </li>
 {% endfor %}
 </ul>
