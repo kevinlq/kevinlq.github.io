@@ -85,7 +85,7 @@ collections:
         permalink: /wiki/:path/
     life:
         output: true
-        permalink: /life:/path/
+        permalink: /life:/index/
 
 repository: kevinlq/kevinlq.github.com
 
