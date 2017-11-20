@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: 关于Qt Designer.exe无法启动的问题
 category : Qt学习
 wangyiyun: true

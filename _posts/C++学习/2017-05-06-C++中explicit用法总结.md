@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: C++中explicit用法总结
 category : C++学习
 wangyiyun: true

@@ -35,8 +35,7 @@ navs:
     label: 分类
     
   -
-    href: /life/index
-    icon: fa fa-eyedropper
+    href: /life/
     label: 生活
   -
     href: /wiki/
@@ -84,6 +83,9 @@ collections:
     wiki:
         output: true
         permalink: /wiki/:path/
+    life:
+        output: true
+        permalink: /life:/:path/
 
 repository: kevinlq/kevinlq.github.com
 

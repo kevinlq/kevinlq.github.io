@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: Qt Quick、QML基础知识
 category : QML学习
 wangyiyun: true

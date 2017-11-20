@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: unused parameter warnings in C code
 category : C学习
 wangyiyun: true

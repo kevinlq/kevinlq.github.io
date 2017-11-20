@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: Qt笔记之QSignalMapper的使用
 category : Qt学习
 wangyiyun: true

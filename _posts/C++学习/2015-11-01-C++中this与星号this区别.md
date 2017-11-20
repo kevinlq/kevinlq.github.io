@@ -1,5 +1,5 @@
 ---
-layout : life
+layout : post
 title: C++中this与*this的区别
 category : C++学习
 wangyiyun: true
