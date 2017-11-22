@@ -25,7 +25,9 @@ permalink: /about/
 
 **目前从事医疗影像相关软件开发**
 
-![myself](/res/img/aboutme/myself.jpg)
+<center>
+<img src="/res/img/aboutme/myself.jpg" width="50%" height="50%" />
+</center>
 
 ---
 
