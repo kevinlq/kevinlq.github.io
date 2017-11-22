@@ -11,7 +11,7 @@ permalink: /about/
 
 ## 说明
 
-在这之前，以及混迹于CSDN(http://blog.csdn.net/u013704336).
+在这之前，以及混迹于CSDN[u013704336](http://blog.csdn.net/u013704336).
 
 2017年3月30搬家到了GitHub上，落户于此的目的是为了更好的享受编写博客的乐趣.
 
