@@ -34,3 +34,9 @@ permalink: /about/
 {% endfor %}
 </div>
 {% endfor %}
+
+## 友情链接
+
+{% for link in site.data.links %}
+* [{{ link.name }}]({{ link.url }})
+{% endfor %}
