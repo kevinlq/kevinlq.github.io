@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: 资源备忘手册
 description: 鹅卵石
 keywords: 鹅卵石
