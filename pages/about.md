@@ -18,6 +18,9 @@ permalink: /about/
 --文档即博客(编写一个文档一次commit即可看到效果),另一个比较重要的是可以更加专心，避免了各种突如其来的广告打扰
 
 
+**目前从事医疗影像相关软件开发**
+
+
 ## 联系
 
 {% for website in site.data.social %}
