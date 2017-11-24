@@ -1,18 +1,18 @@
 ---
 layout: reading
-title: 买房总结
+title: 开始踏入买房之路
 categories: 读书
 description: 从此开始研究买房
 keywords: house，book,
 ---
 
-## 基本概念和术语
+## 1. 基本概念和术语
 
-### 认筹金
+### 1.1 认筹金
 
 > 新楼盘开盘时，购房者按照要求缴纳一定数额的资金以获得购房和优先选房的资格。到时候可以退的！
 
-### 房屋面积相关
+### 1.2 房屋面积相关
 
 #### 容积率
 指一个小区的总建筑面积与用地面积的比率
@@ -37,10 +37,10 @@ keywords: house，book,
 
 ![一图顶千言](/res/img/reading/house/house_area.jpg)
 
----
 ![一图顶千言](/res/img/reading/house/house_area2.jpg)
+---
 
-## 西安注明开发商
+## 2. 西安注明开发商
 
 ### 本土
 1. 紫薇
@@ -55,7 +55,7 @@ keywords: house，book,
 4. 天地源
 [http://www.tande.cn/](http://www.tande.cn/)
 
-## 知名开发商
+## 3. 知名开发商
 
 1. 万科
 2. 绿地
