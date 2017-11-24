@@ -31,7 +31,6 @@ sudo apt-get update
 ```
 sudo apt-get install rabbitvcs-cli  rabbitvcs-core rabbitvcs-gedit
 rabbitvcs-nautilus rabbitvcs-thunar thunarx-python
-
 上面是一条命令
 ```
 
