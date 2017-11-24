@@ -43,16 +43,16 @@ keywords: house，book,
 ## 2. 西安注明开发商
 
 ### 本土
-1. 紫薇
+1. 紫薇  
 [http://www.ziwei.com.cn/](http://www.ziwei.com.cn/)
 
-2. 高新地产
+2. 高新地产   
 [http://www.xagxdc.com/gxdc/home.asp](http://www.xagxdc.com/gxdc/home.asp)
 
-3. 高科地产
+3. 高科地产  
 [http://www.gkestate.com](http://www.gkestate.com)
 
-4. 天地源
+4. 天地源   
 [http://www.tande.cn/](http://www.tande.cn/)
 
 ## 3. 知名开发商
