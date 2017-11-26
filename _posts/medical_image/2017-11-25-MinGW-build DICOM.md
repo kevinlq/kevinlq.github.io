@@ -47,6 +47,11 @@ keywords: MinGW, DCMTK
 ![](/res/img/blog/medical_image/module_dependencies_2011.png)
 
 ## 编译
+### 版本说明
+- DCMTK:  3.6.2
+- MinGW: 5.30.32
+- Qt: 5.7.0
+
 DCMTK工程使用CMAKE进行管理，本次为了方便集成到项目中，直接使用MinGW进行编译，这个时候需要自己梳理清楚各个模块之间的依赖关系，重新编写pro文件进行编译配置。
 
 直接使用CMAKE进行配置编译也是很顺利的.  
