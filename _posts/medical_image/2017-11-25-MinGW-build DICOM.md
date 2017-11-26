@@ -13,8 +13,8 @@ keywords: MinGW, DCMTK
 ## 使用
 
 ### 下载
-直接到公司主页进行下载即可 [http://dicom.offis.de/](http://dicom.offis.de/)
 
+- 公司主页 [http://dicom.offis.de/](http://dicom.offis.de/)
 - 下载地址:[http://dicom.offis.de/dcmtk.php.en](http://dicom.offis.de/dcmtk.php.en)
 - 常见问题论坛:[http://forum.dcmtk.org/](http://forum.dcmtk.org/)
 
@@ -24,7 +24,27 @@ keywords: MinGW, DCMTK
 
 ### 功能模块学习
 
-- **dcmdata** 包含了最基本的`DcmItem`、`DcmElement`、`DcmTag`等标志.
+- **config:** 关于DCMTK的编译设置
+- **ofstd:** 一些通用库
+- ***oflog:* 日志系统库
+- **dcmdata:** 包含了最基本的`DcmItem`、`DcmElement`、`DcmTag`等标志.
+- **dcmimgle:** 图像(灰度)处理模块
+- **dcmimage:** 彩色图像处理部分
+- **dcmnet:** DICOM网络协议相关
+- **dcmqrdb:** 测试PACS
+- **dcmsr:** 结构化报告
+- **dcmwlm:** 工作列表
+- **dcmjpeg:** JPEG编解码器相关
+- **dcmjpls:** JPEG-LS编解码器相关
+- **dcmpstat:** 表示状态
+- **dcmsign:** 签名
+- **dcmtls:** 网络安全相关
+- **docs: ** 通用文档
+- **doxygen:** 文档的doxygen接口
+
+### 模块间的依赖关系
+
+![](/res/img/blog/medical_image/module_dependencies_2011.png)
 
 ## 编译
 
