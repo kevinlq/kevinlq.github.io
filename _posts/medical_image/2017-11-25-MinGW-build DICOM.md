@@ -49,6 +49,11 @@ keywords: MinGW, DCMTK
 ## 编译
 DCMTK工程使用CMAKE进行管理，本次为了方便集成到项目中，直接使用MinGW进行编译，这个时候需要自己梳理清楚各个模块之间的依赖关系，重新编写pro文件进行编译配置。
 
+直接使用CMAKE进行配置编译也是很顺利的.  
+<center>
+<img src="/res/img/blog/medical_image/dcmtk_build_cmake.png" width="50%" height="50%" />
+</center>
+
 **每个模块均需要单独编译，所以每个模块对应一个pro文件**
 
 **需要配置好库的生成路径，以及针对不同平台进行编译时生成的库的信息，要不然不同平台下会出错哦**
@@ -87,4 +92,9 @@ CONFIG += staticlib
 > 看到每个模块里面都包含了 `docs` 和 `data`、`test`等文件夹，这里为了节省空间，直接去掉了，编译的时候用不到。
 
 从上面的依赖关系可以看出，处于最底层的是 `config` 模块，因此首先配置好这个模块,这个模块暂时不需要编译，只是在编译其他模块的时候需要配置到其 `include` 路径下，暂时先不管了，等编译其他模块的时候在详细看。
+
+![](/res/img/blog/medical_image/dcmtk_build_ofstd.png)
+
+提示找不到 `arith.h`头文件，经google该文件是用普通camke编译生成的文件，幸好之前用cmake编译过，直接拿过来就是了.
+
 
