@@ -164,6 +164,12 @@ dcmjpeg 模块依赖一些库文件:
 ### 编译 dcmpstat 模块
 
 
+> 注：在DICOM传输语法中，用到了 DCMJP2K ，这个库需要单独下载:
+
+![](/res/img/blog/medical_image/dcmtk_build_jp2k.png)
+
+### 最终模块截图
+
 ![](/res/img/blog/medical_image/dcmtk_build_all.png)
 ---
 
