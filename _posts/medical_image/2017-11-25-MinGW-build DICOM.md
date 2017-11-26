@@ -163,6 +163,8 @@ dcmjpeg 模块依赖一些库文件:
 
 ### 编译 dcmpstat 模块
 
+
+![](/res/img/blog/medical_image/dcmtk_build_all.png)
 ---
 
 ## 测试
