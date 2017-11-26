@@ -64,16 +64,7 @@ DCMTK工程使用CMAKE进行管理，本次为了方便集成到项目中，直�
 **需要配置好库的生成路径，以及针对不同平台进行编译时生成的库的信息，要不然不同平台下会出错哦**
 
 ```
-# 编译平台								DIR_PLATFORM
-# 编译器名称							DIR_COMPILER
-# 目标文件后缀							FILE_POSTFIX
-# 静态库目标文件前缀					FILE_LIB_PREFIX
-# 静态库目标文件扩展名					FILE_LIB_EXT
-# 动态库目标文件前缀					FILE_DLL_PREFIX
-# 动态库目标文件扩展名					FILE_DLL_EXT
-# 变态库目标文件前缀					FILE_ABN_PREFIX
-# 变态库目标文件扩展名					FILE_ABN_EXT
-后面针对不同平台给这些变量进行复制即可
+后面针对不同平台给这些变量进行赋值即可
 比如 `win32` 
 win32:{
 	CONFIG(MinGW, MinGW|MinGW32|MinGW64|MSVC|MSVC32|MSVC64):{
@@ -113,6 +104,12 @@ CONFIG += staticlib
 找不到这个结构: `OFunique_ptr`
 
 ![](/res/img/blog/medical_image/dcmtk_build_oflog.png)
+
+没有找到声明或者定义该结构的地方，不得不放弃了，对比了下 3.6.0 版本的文件，确实少了好多，看来还是不能追求新版本啊。
+
+直接使用3.6.0版本进行编译，没有问题.
+
+
 
 
 
