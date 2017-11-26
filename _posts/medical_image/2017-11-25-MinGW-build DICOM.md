@@ -147,12 +147,25 @@ dcmjpeg 模块依赖一些库文件:
 
 - libcharls
 
+### 编译 dcmnet 模块
 
+### 编译 dcmsr 模块
 
+### 编译 dcmsign 模块
 
+### 编译 dcmqrdb 模块
 
+### 编译 dcmsign 模块
 
+### 编译 dcmqrdb 模块
 
+### 编译 dcmtls 模块
+
+### 编译 dcmpstat 模块
+
+---
+
+## 测试
 
 
 
