@@ -51,6 +51,40 @@ DCMTK工程使用CMAKE进行管理，本次为了方便集成到项目中，直�
 
 **每个模块均需要单独编译，所以每个模块对应一个pro文件**
 
+**需要配置好库的生成路径，以及针对不同平台进行编译时生成的库的信息，要不然不同平台下会出错哦**
+
+```
+# 编译平台								DIR_PLATFORM
+# 编译器名称							DIR_COMPILER
+# 目标文件后缀							FILE_POSTFIX
+# 静态库目标文件前缀					FILE_LIB_PREFIX
+# 静态库目标文件扩展名					FILE_LIB_EXT
+# 动态库目标文件前缀					FILE_DLL_PREFIX
+# 动态库目标文件扩展名					FILE_DLL_EXT
+# 变态库目标文件前缀					FILE_ABN_PREFIX
+# 变态库目标文件扩展名					FILE_ABN_EXT
+后面针对不同平台给这些变量进行复制即可
+比如 `win32` 
+win32:{
+	CONFIG(MinGW, MinGW|MinGW32|MinGW64|MSVC|MSVC32|MSVC64):{
+		DIR_PLATFORM = Win32
+		DIR_COMPILER = MinGW
+		FILE_LIB_PREFIX = lib
+		FILE_LIB_EXT = .a
+	}
+	else:CONFIG(MinGW32, MinGW|MinGW32|MinGW64|MSVC|MSVC32|MSVC64):{
+		DIR_PLATFORM = Win32
+		DIR_COMPILER = MinGW
+		FILE_LIB_PREFIX = lib
+		FILE_LIB_EXT = .a
+	}
+	......
+
+# 始终编译成静态库
+CONFIG += staticlib
+```
+
 > 看到每个模块里面都包含了 `docs` 和 `data`、`test`等文件夹，这里为了节省空间，直接去掉了，编译的时候用不到。
 
 从上面的依赖关系可以看出，处于最底层的是 `config` 模块，因此首先配置好这个模块,这个模块暂时不需要编译，只是在编译其他模块的时候需要配置到其 `include` 路径下，暂时先不管了，等编译其他模块的时候在详细看。
+
