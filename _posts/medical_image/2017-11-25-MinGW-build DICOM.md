@@ -178,6 +178,17 @@ dcmjpeg 模块依赖一些库文件:
 
 ![](/res/img/blog/medical_image/dcmtk_build_platporm.png)
 
+在编译 `dcmdata` 模块时出现了错误：
+
+![](/res/img/blog/medical_image/dcmtk_build_android.png)
+
+只好修改这个地方:
+```
+/* Define to 1 if you have the `getlogin' function. */
+//#define HAVE_GETLOGIN 1
+#undef HAVE_GETLOGIN
+``
+
 ---
 
 ## 测试
