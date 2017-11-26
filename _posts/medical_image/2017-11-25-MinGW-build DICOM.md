@@ -107,7 +107,42 @@ CONFIG += staticlib
 
 没有找到声明或者定义该结构的地方，不得不放弃了，对比了下 3.6.0 版本的文件，确实少了好多，看来还是不能追求新版本啊。
 
-直接使用3.6.0版本进行编译，没有问题.
+直接使用3.6.0版本进行编译，没有问题.(以后对DCMTK熟悉了再试试)
+
+### 编译dcmdata模块
+
+添加到工程中，配置 `dcmdata.pro` 文件
+
+发现 dcmdata模块下面还有一个 `libi2d` ,应该也需要编译的，看来也是依赖 `dcmdata`。
+
+`libi2d`.（libi2d是用于导入BMP文件的）
+
+![](/res/img/blog/medical_image/dcmtk_build_dcmdata.png)
+
+编译OK！
+
+### 编译 dcmimgle 模块
+
+dcmimgle 模块依赖之前编译的其他模块>dcmdata>oflog>ofstd>config
+
+依次添加并引入其他模块即可.
+
+![](/res/img/blog/medical_image/dcmtk_build_dcmimgle.png)
+
+### 编译 dcmimage 模块
+
+### 编译 dcmjpeg 模块(编解码)
+
+dcmjpeg 模块依赖一些库文件:
+
+- libijg8
+- libijg12
+- libijg16
+
+先编译上述库在引入
+
+
+
 
 
 
