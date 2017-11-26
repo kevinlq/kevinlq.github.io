@@ -26,7 +26,7 @@ keywords: MinGW, DCMTK
 
 - **config:** 关于DCMTK的编译设置
 - **ofstd:** 一些通用库
-- ***oflog:* 日志系统库
+- **oflog:** 日志系统库
 - **dcmdata:** 包含了最基本的`DcmItem`、`DcmElement`、`DcmTag`等标志.
 - **dcmimgle:** 图像(灰度)处理模块
 - **dcmimage:** 彩色图像处理部分
@@ -39,7 +39,7 @@ keywords: MinGW, DCMTK
 - **dcmpstat:** 表示状态
 - **dcmsign:** 签名
 - **dcmtls:** 网络安全相关
-- **docs: ** 通用文档
+- **docs:** 通用文档
 - **doxygen:** 文档的doxygen接口
 
 ### 模块间的依赖关系
@@ -47,4 +47,10 @@ keywords: MinGW, DCMTK
 ![](/res/img/blog/medical_image/module_dependencies_2011.png)
 
 ## 编译
+DCMTK工程使用CMAKE进行管理，本次为了方便集成到项目中，直接使用MinGW进行编译，这个时候需要自己梳理清楚各个模块之间的依赖关系，重新编写pro文件进行编译配置。
 
+**每个模块均需要单独编译，所以每个模块对应一个pro文件**
+
+> 看到每个模块里面都包含了 `docs` 和 `data`、`test`等文件夹，这里为了节省空间，直接去掉了，编译的时候用不到。
+
+从上面的依赖关系可以看出，处于最底层的是 `config` 模块，因此首先配置好这个模块,这个模块暂时不需要编译，只是在编译其他模块的时候需要配置到其 `include` 路径下，暂时先不管了，等编译其他模块的时候在详细看。
