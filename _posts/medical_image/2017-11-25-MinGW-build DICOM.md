@@ -46,7 +46,7 @@ keywords: MinGW, DCMTK
 
 ![](/res/img/blog/medical_image/module_dependencies_2011.png)
 
-## 编译
+##  windows 平台编译
 ### 版本说明
 - DCMTK:  3.6.2
 - MinGW: 5.30.32
@@ -171,6 +171,13 @@ dcmjpeg 模块依赖一些库文件:
 ### 最终模块截图
 
 ![](/res/img/blog/medical_image/dcmtk_build_all.png)
+
+##  android 平台编译
+
+上述模块配置好以后，需要专门针对不同平台进行配置，也就是 `config`模块的配置了，因此需要专门针对不同平台编写配置文件，某些平台下的宏定义不一样，例如：
+
+![](/res/img/blog/medical_image/dcmtk_build_platporm.png)
+
 ---
 
 ## 测试
