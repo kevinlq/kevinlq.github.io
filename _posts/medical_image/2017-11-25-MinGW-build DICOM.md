@@ -223,5 +223,15 @@ LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -llibjasper$${FILE_POSTFIX}
 
 ```
 
+出现如下错误:
+```C++
+E: can't change to unencapsulated representation for pixel data
+E: can't determine 'PhotometricInterpretation' of decompressed image
+E: mandatory attribute 'PhotometricInterpretation' is missing or can't be determined
+```
+
+编解码问题!
+
+
 
 
