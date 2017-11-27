@@ -190,6 +190,11 @@ dcmjpeg 模块依赖一些库文件:
 #undef HAVE_GETLOGIN
 
 ```
+编译通过!
+
+## linux 平台编译
+
+## MAC 平台编译
 
 ---
 
@@ -223,13 +228,19 @@ LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -llibjasper$${FILE_POSTFIX}
 
 ```
 
-出现如下错误:
+### 出现的错误
+
+#### 错误1
+
+![](/res/img/blog/medical_image/dcmtk_test_error.png)
+
+链接出现了问题.
+
 ```C++
 E: can't change to unencapsulated representation for pixel data
 E: can't determine 'PhotometricInterpretation' of decompressed image
 E: mandatory attribute 'PhotometricInterpretation' is missing or can't be determined
 ```
-
 编解码问题!
 
 
