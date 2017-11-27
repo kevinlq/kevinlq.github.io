@@ -234,8 +234,22 @@ LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -llibjasper$${FILE_POSTFIX}
 
 ![](/res/img/blog/medical_image/dcmtk_test_error.png)
 
-链接出现了问题.
+链接出现了问题.谷歌说需要引入 `wsock32`
 
+```C++
+win32:{
+    CONFIG(MinGW, MinGW|MSVC):{
+            LIBS += -L -lwsock32 -lws2_32
+    }
+    else:CONFIG(MSVC, MinGW|MSVC):{
+            LIBS += -lwsock32 -lws2_32 -lAdvapi32
+    }
+}
+
+linux:{	LIBS += -L$${DIR_DEPEND_DEST} -liconv -lcharset	}
+```
+
+#### 错误2
 ```C++
 E: can't change to unencapsulated representation for pixel data
 E: can't determine 'PhotometricInterpretation' of decompressed image
