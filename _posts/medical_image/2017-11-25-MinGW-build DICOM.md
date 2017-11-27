@@ -189,7 +189,7 @@ dcmjpeg 模块依赖一些库文件:
 //#define HAVE_GETLOGIN 1
 #undef HAVE_GETLOGIN
 
-``
+```
 
 ---
 
