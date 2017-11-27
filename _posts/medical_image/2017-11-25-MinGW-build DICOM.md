@@ -197,7 +197,7 @@ dcmjpeg 模块依赖一些库文件:
 
 在测试工程中引入DCMTK相关库文件和头文件：
 
-```
+```C++
 DEPENDPATH += $${DIR_DEPEND_DCMTK_DEST}DCMTK
 DEPENDPATH += $${DIR_DEPEND_DCMTK_DEST}ofstd
 DEPENDPATH += $${DIR_DEPEND_DCMTK_DEST}oflog
@@ -220,6 +220,7 @@ LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -llibijg16$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -ldcmjp2k$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -ldcmjpls$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -llibjasper$${FILE_POSTFIX}
+
 ```
 
 
