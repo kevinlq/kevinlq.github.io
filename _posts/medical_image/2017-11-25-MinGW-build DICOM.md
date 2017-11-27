@@ -183,10 +183,12 @@ dcmjpeg 模块依赖一些库文件:
 ![](/res/img/blog/medical_image/dcmtk_build_android.png)
 
 只好修改这个地方:
+
 ```
 /* Define to 1 if you have the `getlogin' function. */
 //#define HAVE_GETLOGIN 1
 #undef HAVE_GETLOGIN
+
 ``
 
 ---
@@ -218,7 +220,6 @@ LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -llibijg16$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -ldcmjp2k$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -ldcmjpls$${FILE_POSTFIX}
 LIBS += -L$${DIR_DEPEND_DCMTK_DEST} -llibjasper$${FILE_POSTFIX}
-
 ```
 
 
