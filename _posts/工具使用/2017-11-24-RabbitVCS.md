@@ -40,6 +40,6 @@ rabbitvcs-nautilus rabbitvcs-thunar thunarx-python
 ## 使用
 `RabbitVCS`的使用了在Windows下使用`Tortoisesv`类似，操作步骤基本一致，都可以通过单击鼠标右键进行操作.
 
-![](/res/img/blog/tools/rabbitvcs.png)
+![RabbitVCS](/res/img/blog/tools/rabbitvcs.png)
 
 简单容易上手!
