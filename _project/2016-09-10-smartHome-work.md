@@ -21,12 +21,6 @@ keywords: 智能家居,zigbee，ARM
 - 硬件环境: CC2530，Exynos4412芯片方案
 - 软件环境: C/C++，MySQL,IAR,Embedded Linux
 
-## 实际效果展示
-
-<center>
-<img src="/res/img/project/smart_home_work_hose.jpg" width="50%" height="50%" />
-</center>
-
 ## 模块节点
 
 - 光温湿节点
@@ -46,3 +40,19 @@ keywords: 智能家居,zigbee，ARM
 - 可燃气体节点
 - 吊顶热释电节点
 - 智能灯光节点
+
+## 实际效果展示
+
+<center>
+<img src="/res/img/project/smart_home_work_hose.jpg" width="50%" height="50%" />
+</center>
+
+web检测页面:
+
+<center>
+<img src="/res/img/project/smart_home_work_server.png" width="50%" height="50%" />
+</center>
+
+<center>
+<img src="/res/img/project/smart_home_work_server2.png" width="50%" height="50%" />
+</center>
