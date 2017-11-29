@@ -81,6 +81,9 @@ collections:
     life:
         output: true
         permalink: /life:/:path/
+    project:
+        output: true
+        permalink: /project:/:path/
 
 repository: kevinlq/kevinlq.github.com
 
