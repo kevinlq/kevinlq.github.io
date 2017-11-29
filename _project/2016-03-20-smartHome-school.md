@@ -1,6 +1,6 @@
 ---
 layout: project
-title: 智能家居
+title: 智能家居(毕设版本)
 categories: [项目]
 description: 智能家居demo演示版本
 keywords: 智能家居, STM32，zigbee，ARM
