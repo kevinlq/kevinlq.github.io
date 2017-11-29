@@ -33,6 +33,9 @@ navs:
     href: /categories/
     label: 分类
   -
+    href: /project/
+    label: 项目
+  -
     href: /resourse/
     label: 资源
   -
