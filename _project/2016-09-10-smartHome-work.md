@@ -44,15 +44,16 @@ keywords: 智能家居,zigbee，ARM
 ## 实际效果展示
 
 <center>
-<img src="/res/img/project/smart_home_work_hose.jpg" width="50%" height="50%" />
+<img src="/res/img/project/smart_home_work_hose.jpg" width="80%" height="80%" />
 </center>
 
 web检测页面:
 
 <center>
-<img src="/res/img/project/smart_home_work_server.png" width="50%" height="50%" />
+<img src="/res/img/project/smart_home_work_server.png" width="80%" height="80%" />
 </center>
 
+主页面:
 <center>
-<img src="/res/img/project/smart_home_work_server2.png" width="50%" height="50%" />
+<img src="/res/img/project/smart_home_work_server2.png" width="80%" height="80%" />
 </center>
