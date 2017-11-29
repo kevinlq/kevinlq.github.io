@@ -47,7 +47,7 @@ keywords: 智能家居,zigbee，ARM
 <img src="/res/img/project/smart_home_work_hose.jpg" width="80%" height="80%" />
 </center>
 
-web检测页面:
+web监测页面:
 
 <center>
 <img src="/res/img/project/smart_home_work_server.png" width="80%" height="80%" />
