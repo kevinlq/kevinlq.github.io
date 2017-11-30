@@ -10,7 +10,7 @@ QxOrm 是一个基于QT开发的数据库方面的ORM库,功能很强大.是QT C
 
 官网 [http://www.qxorm.com/](http://www.qxorm.com/) ，目前进不去了。
 
-## 错误
+## 错误1
 
 ![](/res/img/blog/tools/QxOrm_build_error.png)
 
@@ -26,6 +26,7 @@ isEmpty(QX_BOOST_INCLUDE_PATH) { QX_BOOST_INCLUDE_PATH = $$PWD/../../boost}
  DEFINES += _QX_STATIC_BUILD
 ```
 
+## 错误2
 ```
 E:\****\QxOrm\QxOrm\include\QxSerialize\QDataStream\QxSerializeQDataStream_QFlags.h:58: error: redefinition of 'template<class T> QDataStream& operator>>(QDataStream&, QFlags<T>&)'
  QDataStream & operator>> (QDataStream & stream, QFlags<T> & t)
