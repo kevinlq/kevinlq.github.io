@@ -51,25 +51,31 @@ Zigbee部分其实没有太多功能，一句话概括就是一个串口透传�
 ### 4.1 上位机首页
 
 <center>
-<img src="/res/img/project/smart_home/home.png" width="60%" height="60%" />
+<img src="/res/img/project/smart_home/home.png" width="70%" height="70%" />
 </center>
 
 ### 4.2 控制界面
 
 <center>
-<img src="/res/img/project/smart_home/controlHome.png" width="60%" height="60%" />
+<img src="/res/img/project/smart_home/controlHome.png" width="70%" height="70%" />
 </center>
 
 ### 4.3 客厅控制
 
 <center>
-<img src="/res/img/project/smart_home/parlour.png" width="60%" height="60%" />
+<img src="/res/img/project/smart_home/parlour.png" width="70%" height="70%" />
 </center>
 
 ### 4.4 历史温度曲线
 
 <center>
-<img src="/res/img/project/smart_home/temp.png" width="60%" height="60%" />
+<img src="/res/img/project/smart_home/temp.png" width="70%" height="70%" />
+</center>
+
+## 5实物展示
+
+<center>
+<img src="/res/img/project/smart_home/hardware.jpg" width="70%" height="70%" />
 </center>
 
 ---
