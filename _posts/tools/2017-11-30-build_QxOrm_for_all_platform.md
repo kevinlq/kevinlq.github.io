@@ -6,6 +6,9 @@ description: 编译QxOrm
 keywords: Qt，QxOrm
 ---
 
+QxOrm 是一个基于QT开发的数据库方面的ORM库,功能很强大.是QT C++数据开发方面的好工具。
+
+官网 [http://www.qxorm.com/](http://www.qxorm.com/) ，目前进不去了。
 
 
 ## 错误
