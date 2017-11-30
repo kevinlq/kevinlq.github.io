@@ -12,6 +12,20 @@ QxOrm 是一个基于QT开发的数据库方面的ORM库,功能很强大.是QT C
 
 ## 错误
 
+![](/res/img/blog/tools/QxOrm_build_error.png)
+
+找不到boost库了，因为编译这个必须先编译boost,这里直接修改成编译好的库的路径
+
+解决方案(QxOrm.pri):
+```
+isEmpty(QX_BOOST_INCLUDE_PATH) { QX_BOOST_INCLUDE_PATH = $$quote($$(BOOST_INCLUDE)) }
+修改成:
+isEmpty(QX_BOOST_INCLUDE_PATH) { QX_BOOST_INCLUDE_PATH = $$PWD/../../boost}
+后面出现的依赖库路径都需要修改。
+最后的静态编译宏定义也要添加
+ DEFINES += _QX_STATIC_BUILD
+```
+
 ```
 E:\****\QxOrm\QxOrm\include\QxSerialize\QDataStream\QxSerializeQDataStream_QFlags.h:58: error: redefinition of 'template<class T> QDataStream& operator>>(QDataStream&, QFlags<T>&)'
  QDataStream & operator>> (QDataStream & stream, QFlags<T> & t)
