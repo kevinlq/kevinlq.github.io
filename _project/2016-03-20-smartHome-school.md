@@ -60,7 +60,7 @@ Zigbee部分其实没有太多功能，一句话概括就是一个串口透传�
 <img src="/res/img/project/smart_home/controlHome.png" width="60%" height="60%" />
 </center>
 
-## 4.3 客厅控制
+### 4.3 客厅控制
 
 <center>
 <img src="/res/img/project/smart_home/parlour.png" width="60%" height="60%" />
@@ -71,5 +71,7 @@ Zigbee部分其实没有太多功能，一句话概括就是一个串口透传�
 <center>
 <img src="/res/img/project/smart_home/temp.png" width="60%" height="60%" />
 </center>
+
+---
 
 更加详细的介绍内容在我的 `CSDN` 博客中，当时答辩完成后，针对这demo分为五部分进行了讲解，感兴趣的可以到这里进行阅读 [请点击这里](http://blog.csdn.net/u013704336/article/details/50832978)
