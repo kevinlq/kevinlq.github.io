@@ -8,6 +8,10 @@ menu: 阅读
 permalink: /reading/
 ---
 
+```
+2017年11月创建了这个tab，计划以后一些读书笔记记录在这里，算是一种纪念吧.
+```
+
 > 阅读使人进步
 
 <ul class="listing">
