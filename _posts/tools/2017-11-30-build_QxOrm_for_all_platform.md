@@ -6,9 +6,27 @@ description: 编译QxOrm
 keywords: Qt，QxOrm
 ---
 
+
 QxOrm 是一个基于QT开发的数据库方面的ORM库,功能很强大.是QT C++数据开发方面的好工具。
 
 官网 [http://www.qxorm.com/](http://www.qxorm.com/) ，目前进不去了。
+
+## 环境
+
+- windows 7 64b + Qt5.7 + MinGW530
+- QxOrm:1.4.1
+
+## 编译
+
+QxOrm使用到了boost，第一步需要编译boost，本次使用QxOrm1.4.1，这个版本的不需要再次编译boost，直接引入即可
+
+- 修改QxOrm.pri中boost路径
+
+```C++
+QX_BOOST_INCLUDE_PATH = $$PWD/../../boost
+QX_BOOST_LIB_PATH = $$PWD/../../boost/platform/$${DIR_PLATFORM}/$${DIR_COMPILER}/$${DIR_COMPILEMODE}
+```
+
 
 ## 错误1
 
@@ -47,3 +65,5 @@ E:\****\QxOrm\QxOrm\include\QxSerialize\QDataStream\QxSerializeQDataStream_QFlag
  ......
  #endif
 ```
+
+## 使用
