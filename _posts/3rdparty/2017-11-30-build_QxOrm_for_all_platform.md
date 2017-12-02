@@ -1,7 +1,7 @@
 ---
 layout: post
-title: QxOrm build for all platform
-categories: [工具]
+title: QxOrm 编译以及使用
+categories: [开源库]
 description: 编译QxOrm
 keywords: Qt，QxOrm
 ---
