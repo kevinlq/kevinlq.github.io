@@ -6,7 +6,7 @@ description: 编译log4cpp
 keywords: Qt，log4cpp,日志
 ---
 
-`Log4cpp` 是C++开源日志库，为 C++ 应用程序开发中提供了日志的追踪和调试功能。`Log4cpp` 基于 `LGPL` 开源协议，移植自 java 的日志项目 log4j, 并在 api 上保持了一致性。
+`Log4cpp` 是C++开源日志库，为 C++ 应用程序开发中提供了日志的追踪和调试功能，基于 `LGPL` 开源协议，移植自 java 的日志项目 log4j, 并在 api 上保持了一致性。
 
 ## 环境
 
