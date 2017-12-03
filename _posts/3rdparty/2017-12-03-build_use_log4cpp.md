@@ -114,7 +114,7 @@ layout 类即布局，其实就是用来控制日志消息以怎么样的格式�
 
 以上日志格式不太满意，所以需要对其进行升级(自定义)，没有办法，世上很难遇上自己满意的东西，遇上喜欢的还要自定义。以下格式应该算是大部分人能接收到的格式：
 
-```
+```C
 [2017-12-03 15:10:50:393|ERROR : [fun: int main(int, char**)] [line:32] [time: "15:10:50.389" ] Msg: error test
 ```
 
@@ -143,11 +143,12 @@ additivity.rootCategory=false
 #定义rootAppender属性和对应的layout
 appender.rootAppender=org.apache.log4cpp.RollingFileAppender
 appender.rootAppender.fileName=Logs.log
-#文件大小100MB
+# 文件大小100MB
 appender.rootAppender.maxFileSize=100000000
 appender.rootAppender.maxBackupIndex=10
 appender.rootAppender.layout=org.apache.log4cpp.PatternLayout
 appender.rootAppender.layout.ConversionPattern=[%d{%Y-%m-%d %H:%M:%S:%l} | %p]	[%c]: %m%n
+
 ```
 
 ### 5.3 使用
@@ -204,7 +205,8 @@ bool Log4CppUtility::outputLog(xx,xxx,xxx,...)
         bOutputMsg = category.isAlertEnabled ();
     }
         break;
-     ......
+     
+     //其他类似......
 }
 ```
 
@@ -215,7 +217,7 @@ bool Log4CppUtility::outputLog(xx,xxx,xxx,...)
 ```C++
 #define LOGERROR(format, ...) Log4CppUtility::formateLog(__FILE__, __PRETTY_FUNCTION__, __LINE__, CATEGORYNAME, Log4CppUtility::LP_ERROR,  format, ##__VA_ARGS__);
 
-......
+//其他类似...
 
 ```
 
