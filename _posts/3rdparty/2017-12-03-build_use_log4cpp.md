@@ -288,4 +288,4 @@ int main(int argc, char *argv[])
 
 实际结果:
 
-![](/res/img/blog/3rdparty/log4cpp_resulg.png)
+![](/res/img/blog/3rdparty/log4cpp_result.png)
