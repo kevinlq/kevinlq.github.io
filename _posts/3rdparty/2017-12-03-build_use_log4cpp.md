@@ -137,7 +137,7 @@ layout 类即布局，其实就是用来控制日志消息以怎么样的格式�
 
 使用 log4cpp 有两种方式，一种是自己手动编写配置步骤，比较繁琐，另一种是直接通过配置文件即可完成.
 
-``
+```C++
 rootCategory=ERROR, rootAppender
 additivity.rootCategory=false
 #定义rootAppender属性和对应的layout
@@ -160,7 +160,7 @@ appender.rootAppender.layout.ConversionPattern=[%d{%Y-%m-%d %H:%M:%S:%l} | %p]	[
 
 #### 5.3.1 读取配置文件
 
-```
+```C++
 bool Log4CppUtility::loadConfigFile(QString strConfigFile, QString strParentPath)
 {
     try
