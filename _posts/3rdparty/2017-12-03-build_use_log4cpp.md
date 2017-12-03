@@ -133,3 +133,21 @@ layout 类即布局，其实就是用来控制日志消息以怎么样的格式�
 
 暂时不了解...
 
+### 5.2 配置文件
+
+使用 log4cpp 有两种方式，一种是自己手动编写配置步骤，比较繁琐，另一种是直接通过配置文件即可完成.
+
+```C++
+rootCategory=ERROR, rootAppender
+additivity.rootCategory=false
+#定义rootAppender属性和对应的layout
+appender.rootAppender=org.apache.log4cpp.RollingFileAppender
+appender.rootAppender.fileName=Logs.log
+# 文件大小100MB
+appender.rootAppender.maxFileSize=100000000
+appender.rootAppender.maxBackupIndex=10
+appender.rootAppender.layout=org.apache.log4cpp.PatternLayout
+appender.rootAppender.layout.ConversionPattern=[%d{%Y-%m-%d %H:%M:%S:%l} | %p]  [%c]: %m%n
+```
+
+### 5.3 使用
