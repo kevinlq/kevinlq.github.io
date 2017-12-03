@@ -142,7 +142,7 @@ rootCategory=ERROR, rootAppender
 additivity.rootCategory=false
 #定义rootAppender属性和对应的layout
 appender.rootAppender=org.apache.log4cpp.RollingFileAppender
-appender.rootAppender.fileName=logs.log
+appender.rootAppender.fileName=Logs.log
 #文件大小100MB
 appender.rootAppender.maxFileSize=100000000
 appender.rootAppender.maxBackupIndex=10
@@ -284,7 +284,8 @@ int main(int argc, char *argv[])
 
 ```
 
-新建一个线程不断的输出日志到文件.
+新建一个线程不断的输出日志到文件(这里只显示5条记录).
 
 实际结果:
 
+![](/res/img/blog/3rdparty/log4cpp_resulg.png)
