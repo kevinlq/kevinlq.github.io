@@ -276,6 +276,12 @@ int main(int argc, char *argv[])
 
 新建一个线程不断的输出日志到文件(这里只显示5条记录).
 
+使用是很方便的:
+
+```C++
+LOGERROR("this is error info");
+```
+
 实际结果:
 
 ![](/res/img/blog/3rdparty/log4cpp_result.png)
