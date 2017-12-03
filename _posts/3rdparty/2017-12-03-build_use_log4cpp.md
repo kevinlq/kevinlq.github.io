@@ -140,3 +140,142 @@ layout 类即布局，其实就是用来控制日志消息以怎么样的格式�
 
 
 ### 5.3 使用
+
+由于 log4cpp 类名较长，操作不便，所以进行二次分装比较方便
+
+- 读取配置文件
+- 实例化 category对象
+- 封装日志输出方法
+
+#### 5.3.1 读取配置文件
+
+```C++
+bool Log4CppUtility::loadConfigFile(QString strConfigFile, QString strParentPath)
+{
+    try
+    {
+        QByteArray dataConfigFile = strConfigFile.toLocal8Bit ();
+        QByteArray dataParentPath = strParentPath.toLocal8Bit ();
+
+        log4cpp::PropertyConfigurator::configureEx ( dataConfigFile.data (),
+                                                     dataParentPath.data ());
+    }
+    catch ( log4cpp::ConfigureFailure & e)
+    {
+        log4cpp::Category::getRoot ().warn (e.what ());
+//        qDebug()<<"configureEx problem:"<<e.what ();
+        return false;
+    }
+
+    return true;
+}
+```
+
+#### 5.3.2 实例化Category
+
+```C++
+bool Log4CppUtility::outputLog(xx,xxx,xxx,...)
+{
+    log4cpp::Category & category = strCategoryName.isEmpty ()?
+                log4cpp::Category::getRoot ():
+                log4cpp::Category::getInstance ( strCategoryName.toStdString () );
+    //日志等级区分
+    switch (Level) {
+    case LP_EMERG:
+    {
+        category.emerg ( strMsg.toStdString () );
+        bOutputMsg = category.isEmergEnabled ();
+    }
+        break;
+    case LP_ALERT:
+    {
+        category.alert ( strMsg.toStdString () );
+        bOutputMsg = category.isAlertEnabled ();
+    }
+        break;
+     
+     //其他类似......
+}
+```
+
+#### 5.3.1 日志输出方法
+
+编写一个宏定义
+
+```C++
+#define LOGERROR(format, ...) Log4CppUtility::formateLog(__FILE__, __PRETTY_FUNCTION__, __LINE__, CATEGORYNAME, Log4CppUtility::LP_ERROR,  format, ##__VA_ARGS__);
+
+//其他类似...
+
+```
+
+**调用:**
+
+```C++
+#include <QDebug>
+#include <QCoreApplication>
+#include "loginclib.h"
+
+#include <QThread>
+
+class MyThread:public QThread
+{
+public:
+    MyThread()
+    {
+        m_nCount = 10000;
+    }
+    ~MyThread(){}
+
+protected:
+    virtual void run()
+    {
+        while (m_nCount)
+        {
+            LOGERROR("error:"+QString::number (m_nCount));
+            m_nCount--;
+
+            msleep (4);
+        }
+    }
+
+private:
+    int m_nCount;
+};
+
+int main(int argc, char *argv[])
+{
+    QCoreApplication app(argc ,argv);
+    qDebug()<<"=====start test log=====";
+
+    QString strFilePath = QCoreApplication::applicationDirPath ()+"/";
+
+    QString logConfig = "LogProperty.conf";
+    logConfig = strFilePath + logConfig;
+
+    if ( !Log4CppUtility::loadConfigFile ( logConfig ))
+    {
+        qDebug()<<"set path error!";
+        return 0;
+    }
+
+    MyThread thread;
+    thread.start ();
+
+    qDebug()<<"=====end test log=====";
+
+
+    int ret = app.exec ();
+
+    Log4CppUtility::shutDown ();
+
+    return ret;
+}
+
+```
+
+新建一个线程不断的输出日志到文件(这里只显示5条记录).
+
+实际结果:
+
+![](/res/img/blog/3rdparty/log4cpp_result.png)
