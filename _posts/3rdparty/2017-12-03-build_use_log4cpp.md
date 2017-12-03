@@ -77,6 +77,8 @@ win32:{	LIBS += -L -lwsock32 -lws2_32	}
 
 `Category` 级别，优先级可以用来控制日志输出的数量，比如配置级别是 DEBUG ,则任意 log都可以被打印出来，如果配置级别是 ERROR，则只有高于这个级别的才能输出.
 
+`Category` 真正完成了日志记录功能.
+
 优先级: DEBUG < INFO < WARN < ERROR < FATAL
 
 #### 5.1.2 Appender
@@ -102,15 +104,12 @@ win32:{	LIBS += -L -lwsock32 -lws2_32	}
 layout 类即布局，其实就是用来控制日志消息以怎么样的格式显示(这些开源库中类名比较怪，就不能直接点么，不就是日志格式么，搞一个 layout )。主要有一下几种格式:
 
 - `log4cpp::BasicLayout`
-
 时间戳 + 优先级 + 类别 + NDC 标签 + 日志消息
 
 - `log4cpp::PatternLayout`
-
 类似C语言中的 printf 格式化输出,可以指定格式输出
 
 - `log4cpp::SimpleLayout`
-
 优先级 + 日志信息
 
 以上日志格式不太满意，所以需要对其进行升级(自定义)，没有办法，世上很难遇上自己满意的东西，遇上喜欢的还要自定义。以下格式应该算是大部分人能接收到的格式：
@@ -121,15 +120,37 @@ layout 类即布局，其实就是用来控制日志消息以怎么样的格式�
 
 一般的日志消息需要包含时间戳，消息类型，以及打印该消息的具体文件中函数名称、行数，消息内容。这样的结构基本可以满足日常开发需求。
 
+继承关系:  
+
 ![](/res/img/blog/3rdparty/log4cpp_layout.png)
 
 #### 5.1.4 Priority
 
+优先级在 Category中描述过.
+
+
 #### 5.1.5 DNC
 
-### 配置文件
+暂时不了解...
 
-### 使用
+### 5.2 配置文件
+
+使用 log4cpp 有两种方式，一种是自己手动编写配置步骤，比较繁琐，另一种是直接通过配置文件即可完成.
+
+``
+rootCategory=ERROR, rootAppender
+additivity.rootCategory=false
+#定义rootAppender属性和对应的layout
+appender.rootAppender=org.apache.log4cpp.RollingFileAppender
+appender.rootAppender.fileName=logs.log
+#文件大小100MB
+appender.rootAppender.maxFileSize=100000000
+appender.rootAppender.maxBackupIndex=10
+appender.rootAppender.layout=org.apache.log4cpp.PatternLayout
+appender.rootAppender.layout.ConversionPattern=[%d{%Y-%m-%d %H:%M:%S:%l} | %p]	[%c]: %m%n
+```
+
+### 5.3 使用
 
 由于 log4cpp 类名较长，操作不便，所以进行二次分装比较方便
 
