@@ -260,6 +260,6 @@ E: mandatory attribute 'PhotometricInterpretation' is missing or can't be determ
 
 ## 使用
 
-如何使用见这篇文章[使用]()
+如何使用见这篇文章[使用](http://kevinlq.com/2017/12/05/DCMTK-learn/)
 
 

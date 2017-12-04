@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DCMTK使用
+title: DCMTK学习使用
 categories: 医学影像
 description: DCMTK实现了DICOM协议
 keywords: DICOM，DCMTK
