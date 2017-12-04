@@ -26,7 +26,6 @@ keywords: DICOM，通信协议
 红色标注的就是字节码，前面8行是文件导言部分，没有用，从第9行开始，`44 49 43 4D`这四个数字很重要，转化成ASCII码就是`DICM`,表示了一个DICOM文件，如果这四个16进制数据丢失或者损坏，就无法打开该图像了。
 
 
-
 ## 参考文章
 [参考博文](http://blog.csdn.net/zssureqh/article/details/41016091)
 [cnblog解读](http://www.cnblogs.com/assassinx/archive/2013/01/09/dicomViewer.html)
