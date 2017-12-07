@@ -106,6 +106,7 @@ Qt 中的 `pro` 工程文件可以说是很强大的，好多参数可以直接�
 新建一个 `xxx.pri` 文件，针对不同平台编写变量，然后再 `xxx.pro` 文件中进行添加即可.
 
 - 区分不同的编译模式，以及生成库的后缀(区分动态库和静态库)
+
 ```C++	
 CONFIG(debug, debug|release):{
     FILE_POSTFIX = D
@@ -115,7 +116,6 @@ else:CONFIG(release, debug|release):{
     FILE_POSTFIX =
     DIR_COMPILEMODE = Release
 }
-
 ```
 
 - 区分平台和编译器
