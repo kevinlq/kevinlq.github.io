@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows下MinGW编译和使用QxOrm 
+title: Windows下MinGW跨平台编译和使用QxOrm 
 categories: [开源库]
 description: 编译QxOrm
 keywords: Qt，QxOrm

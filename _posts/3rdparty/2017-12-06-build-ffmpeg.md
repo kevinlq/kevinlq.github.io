@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows下MinGW编译FFmpeg
+title: Windows下MinGW跨平台编译FFmpeg
 categories: [开源库]
 description: 编译ffmpeg
 keywords: Qt,MinGW,FFmpeg,编解码

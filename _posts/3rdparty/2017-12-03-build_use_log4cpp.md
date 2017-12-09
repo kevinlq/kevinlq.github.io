@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows下MinGW编译和使用log4cpp
+title: Windows下MinGW跨平台编译和使用log4cpp
 categories: [开源库]
 description: 编译log4cpp
 keywords: Qt,log4cpp,日志
