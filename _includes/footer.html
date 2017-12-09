@@ -42,7 +42,15 @@
     </script>
     {% if site.baidu.analytics_id %}
     <div style="display:none">
-        { % include baidu-analytics.html %}
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?{{site.baidu.analytics_id}}";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
     </div>
     {% endif %}
 </body>
