@@ -217,7 +217,61 @@ higugui模块依赖于`imgcodecs`模块，所以要先编译该模块.
 ……未完(有时间再研究)
 ---
 
+### android 平台编译
 
+android 平台编译前需要配置好环境变量，以下是我的环境变量:
+
+![android平台环境参数](/res/img/blog/3rdparty/opencv/android_env.png)
+
+设置好编译环境后，添加宏定义，以便区分编译后的文件:
+
+![android平台编译宏定义](/res/img/blog/3rdparty/opencv/android_config.png)
+
+然后直接编译，大约5分钟左右，编译完成，没有出现错误，很幸运.
+
+最终生成的库文件:
+
+![android平台编译生成库文件](/res/img/blog/3rdparty/opencv/android_lib.png)
+
+---
+### Linux 平台编译
+
+这里就不贴图了，经过测试linux顺利编译通过，太棒了!
+
+Qt Creator 是在是太棒了，按照不同平台配置好后即可编译，不用担心其他问题了!
+
+---
+
+### ios平台编译
+
+配置好Qt for ios环境。以下是我编译时配置的环境.
+
+![ios平台环境参数](/res/img/blog/3rdparty/opencv/ios_env.png)
+
+基本编译也是没有问题的，最终生成了两个模块对应的库文件:
+
+**core模块**
+
+![ios平台生成的库文件](/res/img/blog/3rdparty/opencv/ios_core_size.png)
+
+**imgproc模块**
+
+![ios平台生成的库文件](/res/img/blog/3rdparty/opencv/ios_imgproc_size.png)
+
+>比较发现，同样的模块，在不同平台下编译出来大小不一样，差距还是很大的.
+
+## 问题与展望
+
+目前关于opencv这块相关模块参数配置项都在cvconfig.h中，可以考虑将其容纳到工程pro文件中，这样修改时直接修改工程文件即可，带来更大的方便.
+
+
+## 版本修改
+- V0.0.1 添加了可以编译成功的core、imgproc两个模块，成功编译成静态库;
+- V0.0.2 成功静态编译core模块;
+- V0.0.3 成功静态编译imgProc模块;
+- V0.0.5 编写测试demo，检测静态编译两大模块OK;
+- V0.0.6 在android平台成功编译成功两大模块;
+- V0.0.7 在ios平台成功编译两大模块；
 
 
 ---
