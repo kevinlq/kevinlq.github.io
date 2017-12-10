@@ -17,7 +17,7 @@ permalink: /reading/
 <ul class="listing">
 {% for read in site.reading %}
 {% if read.title != "read Template" %}
-<li class="listing-item"><a href="{{ read.url }}">{{ read.title }}</a>
+<li class="listing-item"><a href="{{ read.url }}">{{ read.date | date:"%Y-%m-%d" }}-{{ read.title }}</a>
 </li>
 {% endif %}
 {% endfor %}
