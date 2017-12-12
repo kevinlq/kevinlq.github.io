@@ -12,7 +12,7 @@ keywords: DSA
 
 ## 检测部位
 
-DSA不但能清楚地显示颈内动脉、椎基底动脉、颅内大血管及大脑半球的血管图像，还可测定动脉的血流量，所以，目前已被应用于脑血管病检查，特别是对于动脉瘤、动静脉畸形等定性定位诊断，更是最佳的诊断手段。不但能提供病变的确切部位，而且对病变的范围及严重程度，也能清楚地了解，为手术治疗提供可靠的客观依据。另外，对于缺血性脑血管病，也有较高的诊断价值。DSA可清楚地显示动脉管腔狭窄、闭塞、侧支循环建立情况等，对于脑出血、蛛网膜下腔出血，可进一步查明导致出血的病因，如动脉瘤、血管畸形、硬脑膜动静脉瘘等.
+DSA不但能清楚地显示颈内动脉、椎基底动脉、颅内大血管及大脑半球的血管图像，还可测定动脉的血流量，所以，目前已被应用于脑血管病检查，特别是对于动脉瘤、动静脉畸形等定性定位诊断，更是最佳的诊断手段。不但能提供病变的确切部位，而且对病变的范围及严重程度，也能清楚地了解，为手术治疗提供可靠的客观依据。另外，对于缺血性脑血管病，也有较高的诊断价值。DSA可清楚地显示动脉管腔狭窄、闭塞、侧支循环建立情况等，对于脑出血、蛛网膜下腔出血，可进一步查明导致出血的病因，如动脉瘤、血管畸形、硬脑膜动静脉瘘等。
 
 ![](/res/img/blog/medical_image/DSA.jpg)
 
@@ -24,7 +24,7 @@ DSA不但能清楚地显示颈内动脉、椎基底动脉、颅内大血管及�
 
 ---
 
-在注入造影剂前，首先摄取一些列连续`掩膜图像`，然后选择差值图像直方图的能量作为相似测度，将造影图像与`掩膜`序列图像进行全局配准，找到其中匹配的掩模图，再用块匹配的方法对该造影图像和普配的掩膜图像进行局部配准减影
+在注入造影剂前，首先摄取一些列连续`掩膜图像`，然后选择差值图像直方图的能量作为相似测度，将造影图像与`掩膜`序列图像进行全局配准，找到其中匹配的掩模图，再用块匹配的方法对该造影图像和普配的掩膜图像进行局部配准减影。
 
 - 图 a 为造影图
 - 图 b 为与图 a 匹配的掩模图
@@ -37,3 +37,50 @@ DSA不但能清楚地显示颈内动脉、椎基底动脉、颅内大血管及�
 
 ## 相关算法
 
+```C++
+template <class T>
+bool Substraction(T *pMask, T *pContrast, T *pResult, int nLength, int nWidth, 
+		T nMinLimit, T nMaxLimit, int nSamplesPerPixel)
+{
+	if( pMask == NULL || pContrast == NULL || pResult == NULL || nLength <= 0 || nWidth <= 0 )
+    {
+        return false;
+    }
+
+    long lRange = nMaxLimit - nMinLimit;
+    long lSize = nLength * nWidth * nSamplesPerPixel;
+
+    T *pMaskTemp		= pMask;
+    T *pContrastTemp	= pContrast;
+    T *pResultTemp		= pResult;
+
+    float fTemp = 0.0f;
+
+    for( long i = 0; i < lSize; i++ )
+    {
+
+        if( *pContrastTemp < ( lRange / 40 ) && *pContrastTemp < 6 )
+        {
+            *pResultTemp = 0;
+        }
+        else
+        {
+            fTemp = exp( -m_fRescaleSlope*( float(*pContrastTemp - *pMaskTemp) - m_fRescaleCenter ) );
+
+            *pResultTemp = nMinLimit + T(float( lRange ) /( 1.0f + fTemp ));
+        }
+
+        pMaskTemp++;
+        pContrastTemp++;
+        pResultTemp++;
+    }
+
+    return true;
+}
+
+```
+
+
+## 参考文章
+
+[周正东:心脏冠动脉数字造影图像增强研究](http://www.docin.com/p-503963245.html)
