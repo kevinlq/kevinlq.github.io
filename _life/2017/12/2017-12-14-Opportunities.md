@@ -13,13 +13,15 @@ keywords: 机会、准备
 脚踏实地，不要一直幻想，踏踏实实做事，该来的会来的！
 
 <center>
-<img src="/res/img/life/2017res/12/change.jpg" width="60%" height="60%" />
+<img src="/res/img/life/2017res/12/change.jpg" width="80%" height="40%" />
 </center>
 
 ```
-如果你有梦想的话，就要去捍卫它，那些一事无成的人，想告诉你你也成不了大器。如果你有理想的话，就要去努力实现！——《当幸福来敲门》
+如果你有梦想的话，就要去捍卫它，那些一事无成的人，想告诉你你也成不了大器。
+如果你有理想的话，就要去努力实现！
+——《当幸福来敲门》
 ```
 
 <center>
-<img src="/res/img/life/2017res/12/happy.jpg" width="60%" height="60%" />
+<img src="/res/img/life/2017res/12/happy.jpg" width="60%" height="80%" />
 </center>
