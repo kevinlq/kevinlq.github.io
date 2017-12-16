@@ -16,7 +16,8 @@ keywords: QImage,save
 
 ![](/res/img/blog/Qt-learn/QImage/format_lib.png)
 
-**需要检测这些和QImage相关的库是否齐全!**
+>需要检测这些和QImage相关的库是否齐全!
+
 ---
 
 ## 简单分析
