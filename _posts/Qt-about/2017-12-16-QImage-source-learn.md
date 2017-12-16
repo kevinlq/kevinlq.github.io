@@ -89,6 +89,7 @@ bool QImage::save(QIODevice* device, const char* format, int quality) const
 save 有两个方法，关键是第一个参数类型不同，但是都是属于`QIODevice`，也就说是IO类型的。
 
 均是通过构造`QImageWriter`来实现.
+### save流程
 
 以下是大概的一个流程
 
