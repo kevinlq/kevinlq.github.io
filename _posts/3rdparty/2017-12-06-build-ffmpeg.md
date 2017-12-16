@@ -27,3 +27,5 @@ keywords: Qt,MinGW,FFmpeg,编解码
 ## 编译
 
 根据依赖关系，首先肯定得先编译 `libavutil` 模块
+
+未完……
