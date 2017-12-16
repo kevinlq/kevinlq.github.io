@@ -12,7 +12,7 @@ keywords: QImage,save
 
 比如 png格式的图片最终由 `QPngHandler`类进行处理，在处理过程中使用到了第三方库`libpng库`，这就很好解释我遇到的问题了，需要第三方图片库啊!
 
-![](/res/img/blog/Qt-learn/QImage/fomat_lib.png)
+![](/res/img/blog/Qt-learn/QImage/format_lib.png)
 
 **需要检测这些和QImage相关的库是否齐全!**
 
