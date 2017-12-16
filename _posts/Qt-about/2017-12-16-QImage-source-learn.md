@@ -95,4 +95,4 @@ save 有两个方法，关键是第一个参数类型不同，但是都是属于
 
 ![](/res/img/blog/Qt-learn/QImage/QImage-save.png)
 
-越来越发现，阅读 Qt 的源码是一种享受.
+越来越发现，阅读 Qt 的源码是一种享受.可能要沉迷于Qt源码了……
