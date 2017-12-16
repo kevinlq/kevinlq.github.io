@@ -10,7 +10,7 @@ keywords: QImage,save
 
 通过大概粗略的看了下源码，发现save方法依赖具体你传递的format，然后再进行具体处理.
 
-比如 png格式的图片最终由 `QPngHandler`类进行处理，在处理过程中使用到了第三方库`libpng库`，这就很好解释我遇到的问题了，需要第三方图片库啊!
+比如 png格式的图片最终由 `QPngHandler`类进行处理，在处理过程中使用到了第三方库`libpng库`，这就很好解释我遇到的问题了，需要第图片库支持，最好自己开发是所使用的匹配!
 
 ![](/res/img/blog/Qt-learn/QImage/format_lib.png)
 
