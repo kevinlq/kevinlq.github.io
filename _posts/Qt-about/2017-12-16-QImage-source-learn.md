@@ -6,6 +6,13 @@ description: QImage保存图像分析
 keywords: QImage,save
 ---
 
+最近使用到了QImage操作图像数据,对image的像素数据处理完后，进行save的时候出现了错误，自己电脑没有错误，程序跑的云主机上就会出现一些错误，最终通过 log 定位到是在save的时候出现了错误，一直失败。虽然最后问题最终解决了，今天有时间抽空看看源码是如何实现的.
+
+通过大概粗略的看了下源码，发现save方法依赖具体你传递的format，然后再进行具体处理.
+
+比如 png格式的图片最终由 `QPngHandler`类进行处理，在处理过程中使用到了第三方库`libpng库`
+
+
 QImage类声明
 
 ```C++
@@ -74,5 +81,8 @@ save 有两个方法，关键是第一个参数类型不同，但是都是属于
 
 均是通过构造`QImageWriter`来实现.
 
+以下是大概的一个流程
 
 ![](/res/img/blog/Qt-learn/QImage/QImage-save.png)
+
+越来越发现，阅读 Qt 的源码是一种享受.
