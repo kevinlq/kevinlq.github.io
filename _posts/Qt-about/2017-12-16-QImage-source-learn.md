@@ -6,18 +6,22 @@ description: QImage保存图像分析
 keywords: QImage,save
 ---
 
+## 起因
+
 最近使用到了QImage操作图像数据,对image的像素数据处理完后，进行save的时候出现了错误，自己电脑没有错误，程序跑的云主机上就会出现一些错误，最终通过 log 定位到是在save的时候出现了错误，一直失败。幸运的是最后问题最终解决了，今天刚好有时间抽空看看源码是如何实现的.
 
 通过大概粗略的看了下源码，发现save方法依赖具体你传递的format，然后再进行具体处理.
 
-比如 png格式的图片最终由 `QPngHandler`类进行处理，在处理过程中使用到了第三方库`libpng库`，这就很好解释我遇到的问题了，需要第图片库支持，最好自己开发是所使用的匹配!
+比如 png格式的图片最终由 `QPngHandler`类进行处理，在处理过程中使用到了第三方库`libpng库`，这就很好解释我遇到的问题了，需要图片库支持，最好自己开发是所使用的匹配!
 
 ![](/res/img/blog/Qt-learn/QImage/format_lib.png)
 
 **需要检测这些和QImage相关的库是否齐全!**
+---
 
+## 简单分析
 
-QImage类声明
+### QImage类声明
 
 ```C++
 class Q_GUI_EXPORT QImage : public QPaintDevice
@@ -39,7 +43,7 @@ private:
 ```
 >可以看出Qt一贯的 `d` 指针又出现了.
 
-QImage实现
+### QImage实现
 
 ```C++
 //构造一个空的image,d指针为0
