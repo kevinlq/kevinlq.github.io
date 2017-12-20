@@ -24,15 +24,17 @@ qrc中包含了很多的资源文件，比如:图片、QML文件、JS文件…�
 很多时候，当程序中使用的图片太多，慢慢可能会遇到一些错误，比如:
 ```
 fatal error c1076:compiler limit ....
-```
+``
 
 虽然可以修改限制大小，但是随着项目越来越大，显然这种办法不可行.
+
+有时候我们写的`QML`代码不想让别人看到，该如何，QML代码又不能编译进exe中……
 
 ## 编译qrc
 
 Qt为我们提供了一个工具`rcc`，可以使用该工具对我们的资源文件进行二进制编译，也就是加密，编译后会生成新的文件，然后我们在程序中直接对新的文件进行注册，就可以正常使用了.
 
-## qrc文件
+### qrc文件
 ```
 <RCC> 
 <qresource prefix="/"> 
@@ -46,13 +48,15 @@ Qt为我们提供了一个工具`rcc`，可以使用该工具对我们的资源�
 ```
 如上所示就是一个简单的qrc文件内容
 
-## 编译
+### 编译
 
 `rcc` 工具可以从自己Qt安装路径查找.
 
 ![rcc工具](/res/img/blog/QML-learn/rcc.png)
 
-## 命令
+### 编译命令
+
+核心命令只有一个:
 
 ```
 %~dp0\Tool\MinGW\rcc.exe -binary %~dp0\qml.qrc -o %~dp0\Bin\QmlResSkin.rcc
@@ -64,7 +68,7 @@ Qt为我们提供了一个工具`rcc`，可以使用该工具对我们的资源�
 
 ## 使用
 
-使用时，字节在程序启动前进行注册加密后的资源文件.
+使用时，自己在程序启动前进行注册加密后的资源文件.
 
 ![rcc工具](/res/img/blog/QML-learn/rcc_use.png)
 
@@ -74,6 +78,10 @@ Qt为我们提供了一个工具`rcc`，可以使用该工具对我们的资源�
 ```
 QResource::registerResource ("QmlResSkin.rcc");
 ```
+
+### 效果
+
+![rcc工具](/res/img/blog/QML-learn/rcc_register.png)
 
 ## 参考脚本
 
