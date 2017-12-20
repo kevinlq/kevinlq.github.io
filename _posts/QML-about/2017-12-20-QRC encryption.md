@@ -24,7 +24,7 @@ qrc中包含了很多的资源文件，比如:图片、QML文件、JS文件…�
 很多时候，当程序中使用的图片太多，慢慢可能会遇到一些错误，比如:
 ```
 fatal error c1076:compiler limit ....
-``
+```
 
 虽然可以修改限制大小，但是随着项目越来越大，显然这种办法不可行.
 
@@ -75,7 +75,7 @@ Qt为我们提供了一个工具`rcc`，可以使用该工具对我们的资源�
 
 关键代码
 
-```
+```C++
 QResource::registerResource ("QmlResSkin.rcc");
 ```
 
@@ -85,7 +85,7 @@ QResource::registerResource ("QmlResSkin.rcc");
 
 ## 参考脚本
 
-```
+```C
 cd QmlRes
 
 echo 当前路径: %~df0
