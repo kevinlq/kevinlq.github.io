@@ -192,3 +192,9 @@ permalink: /resourse/
 
 ### Android
 * [Awesome Android](https://github.com/jobbole/awesome-android-cn)
+* [Android 环境配置详解](http://www.cnblogs.com/kangjianwei101/p/6290200.html)
+
+
+### 开源镜像网站
+* [东软信息学院](http://mirrors.neusoft.edu.cn/)
+* [郑州大学开源镜像站](http://mirrors.zzu.edu.cn/)
