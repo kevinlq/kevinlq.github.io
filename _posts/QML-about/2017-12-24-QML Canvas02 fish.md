@@ -6,7 +6,7 @@ description: QML Canvas绘制一条小鱼
 keywords: QML,Canvas
 ---
 
-以前对 QML绘图不了解，抽时间学习了下使用`Canvas`绘图，发现还是很方便的.参考简书上某位`android`牛人实现的小金鱼，跟着思路模仿了一个大概.
+以前对 QML绘图不了解，抽时间学习了下使用`Canvas`绘图，发现还是挺便捷的.参考简书上某位`android`牛人实现的小金鱼，跟着思路模仿了一个大概.
 
 [小鱼绘制原理](https://www.jianshu.com/p/3dd3d1524851)
 
@@ -32,6 +32,11 @@ Canvas{
         ctx.fillStyle = 'rgba(244, 92, 71, 0.61)';
     }
 ```
+
+>通过绘制小鱼，发现好多数学基本公式确实还给老师了，今天慢慢找回了一些，是在惭愧......
+
+源码等完善后再放出，可执行程序在这里[密码：rga6](https://pan.baidu.com/s/1nvpCptR)
+
 
 
 ## 参考文章
