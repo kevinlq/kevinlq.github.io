@@ -15,7 +15,9 @@ keywords: QML,Canvas
 
 ## 效果
 
-![](/res/img/blog/QML-learn/Canvas/canvas_fish.gif)
+<center>
+<img src="/res/img/blog/QML-learn/Canvas/canvas_fish.gif" width="50%" height="50%" />
+</center>
 
 ## 核心
 ```
@@ -46,6 +48,7 @@ Canvas{
 <img src="/res/img/blog/QML-learn/Canvas/fish_draf.jpg" width="40%" height="40%" />
 </center>
 
+画的实在是太丑，没有一点艺术细胞...........
 
 ## 参考文章
 

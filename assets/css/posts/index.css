@@ -30,10 +30,9 @@
 
 .post-directory a:hover,
 .post-directory a:active,
-.post-directory a.on{
-    color: #11D64A;
+.post-directory a.on {
+    color: #4183c4;
 }
-
 
 .posts-list {
     line-height: 2;
