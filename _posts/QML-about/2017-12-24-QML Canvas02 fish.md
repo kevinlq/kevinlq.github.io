@@ -43,7 +43,7 @@ Canvas{
 小鱼是在是复杂，画个图好理解些.........
 
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/fish_draf.jpg" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/fish_draf.jpg" width="40%" height="40%" />
 </center>
 
 
