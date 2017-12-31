@@ -116,5 +116,6 @@ lazy_load_disqus : true
 # ---------------- #
 #    Analytics     #
 # ---------------- #
+# 下面的百度分析ID请换成你自己的 !!!!
 baidu:
     analytics_id: f9a2a52ccc103ed91088462c5836c854

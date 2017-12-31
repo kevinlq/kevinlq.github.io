@@ -12,12 +12,6 @@ keywords: QML,Canvas
 
 >上面的连接中原理讲解的比较详细，各种公式+示意图，真的很棒，希望自己以后也能写的更认真些.
 
-## 草稿
-
-小鱼是在是复杂，画个图好理解些.........
-
-![草稿](/res/img/blog/QML-learn/Canvas/fish_draf.jpg)
-
 
 ## 效果
 
@@ -44,6 +38,13 @@ Canvas{
 
 源码等完善后再放出，可执行程序在这里[密码：rga6](https://pan.baidu.com/s/1nvpCptR)
 
+## 草稿
+
+小鱼是在是复杂，画个图好理解些.........
+
+<center>
+<img src="/res/img/blog/QML-learn/Canvas/fish_draf.jpg" width="80%" height="80%" />
+</center>
 
 
 ## 参考文章
