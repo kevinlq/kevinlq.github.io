@@ -33,3 +33,4 @@ keywords: 窗宽，窗位，CT、DR
 ## 参考文章
 [参考博文1](http://blog.163.com/qimo601@126/blog/static/15822093201361211411428/)
 [如何确定正确窗宽窗位(需要F墙)](http://www.yxppt.com/html/20151009114516.html)
+[设备类型介绍](https://baijiahao.baidu.com/s?id=1568783528168795&wfr=spider&for=pc)
