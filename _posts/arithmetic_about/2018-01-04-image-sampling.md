@@ -24,6 +24,21 @@ keywords: 算法,采样
 
 ## 具体实现
 
+```C++
+
+pDS				DcmDataset数据集
+fScale			缩放比例
+nMinSize		最小长宽尺寸
+nMaxSize		最大长宽尺寸
+nInterpolate	插值 0, 1, 2, 3, 4
+nFrame			图像的帧数
+
+static DicomImage *CreateScaledDicomImageScale( void* pImage, bool bDataSet,
+												float fScale, int nMinSize = 0, 
+												int nMaxSize = 0,int nInterpolate = 0,
+												int nFrame = 0 );
+
+```
 
 ## 参考文章
 [关于图像重采样差值算法](https://www.cnblogs.com/wjgaas/p/3597095.html)
