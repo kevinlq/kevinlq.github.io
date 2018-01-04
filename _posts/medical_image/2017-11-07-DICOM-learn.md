@@ -15,7 +15,7 @@ keywords: DICOM，通信协议
 
 ![dicom文件结构](/res/img/blog/medical_image/dicom_data_con.png)
 
-开始时128字节的导言部分(通俗的说就是没有啥意义的破数据)，接着回事4字节的DICOM文件标识，存储这个`DICM`，然后就是`dicom`数据元素了.
+开始时128字节的导言部分(通俗的说就是没有啥意义的破数据)，接着会是4字节的DICOM文件标识，存储这个`DICM`，然后就是`dicom`数据元素了.
 
 ## DICOM文件解读
 
