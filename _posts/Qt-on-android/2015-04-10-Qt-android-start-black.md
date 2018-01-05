@@ -72,8 +72,7 @@ android:label="@string/kevinlq_single_app_name"
 
 - 启动加载页面
 ```xml
-meta-data android:name="android.app.splash_screen_drawable" android:resource="@drawable/loader"
-
+<meta-data android:name="android.app.splash_screen_drawable" android:resource="@drawable/loader"/>
 ```
 
 以上就是一个简单的配置过程，特此做下笔记！
@@ -88,7 +87,7 @@ meta-data android:name="android.app.splash_screen_drawable" android:resource="@d
 	版权:本博客若无特别声明，均属于作者原创文章，欢迎大家转载分享。但是，
 	希望您注明来源，并留下原文地址，这是对作者最大的尊重，也是最知识的尊重。
 
-<!-- more -->
+
 
 
 ---
