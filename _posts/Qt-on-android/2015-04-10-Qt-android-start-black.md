@@ -70,11 +70,9 @@ android:theme="@style/devstone"
 android:label="@string/kevinlq_single_app_name"
 ```
 
-- 启动加载页面
-
+- 添加启动loader图片
 ```xml
 <meta-data android:name="android.app.splash_screen_drawable" android:resource="@drawable/loader"/>
-
 ```
 
 以上就是一个简单的配置过程，特此做下笔记！
