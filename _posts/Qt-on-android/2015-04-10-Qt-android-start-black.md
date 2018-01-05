@@ -71,9 +71,8 @@ android:label="@string/kevinlq_single_app_name"
 ```
 
 - 启动加载页面
-
 ```xml
-<meta-data android:name="android.app.splash_screen_drawable" android:resource="@drawable/loader"/>
+meta-data android:name="android.app.splash_screen_drawable" android:resource="@drawable/loader"
 
 ```
 
