@@ -56,26 +56,27 @@ android:theme="@style/MyApp"
 ## 解释
 
 - 设置app图标
-```
+```xml
 android:icon="@drawable/kevinlq"
 ```
 
 - 设置主题
-```
+```xml
 android:theme="@style/devstone"
 ```
 
 - 设置app名字
-```
+```xml
 android:label="@string/kevinlq_single_app_name">
 ```
 
 - 启动加载页面
-```
+```xml
 <!-- Splash screen -->
 <meta-data android:name="android.app.splash_screen_drawable" android:resource="@drawable/loader"/>
 <!-- meta-data android:name="android.app.splash_screen_sticky" android:value="true"/ -->
 <!-- Splash screen -->
+
 ```
 
 以上就是一个简单的配置过程，特此坐下笔记！
