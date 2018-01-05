@@ -67,7 +67,7 @@ android:theme="@style/devstone"
 
 - 设置app名字
 ```xml
-android:label="@string/kevinlq_single_app_name">
+android:label="@string/kevinlq_single_app_name"
 ```
 
 - 启动加载页面
