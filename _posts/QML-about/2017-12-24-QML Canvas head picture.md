@@ -19,6 +19,41 @@ keywords: QML,Canvas,clip
 <img src="/res/img/blog/QML-learn/Canvas/canvas_head_show.gif" width="50%" height="50%" />
 </center>
 
+## 原理
+
+使用Canvas 绘制一个圆形区域，然后对画布进行裁剪，使用`clip`，之后直接使用drawImage进行绘制即可，需要注意的是计算好各自的坐标位置即可.
+
+## 核心代码
+
+```qml
+    ctx.arc(cx, cy, r, 0, 2 * Math.PI,true);
+    ctx.clip();
+    ctx.drawImage(m_picturePath, x, y, d, d);
+
+    drawWhiteBorder(ctx,x,y,r);
+```
+
+绘制最外边白圈
+```
+    function drawWhiteBorder(ctx,x,y,r)
+    {
+        ctx.strokeStyle = "#FFFFFF"
+        ctx.lineWidth = 4;
+        ctx.arc( x,y,r,0,Math.PI*2);
+        ctx.stroke();
+    }
+```
+
+
+调用
+```
+    onPaint:
+    {
+        var ctx = canvas.getContext("2d");
+        ctx.reset();
+        toRoundBitmap(ctx);
+    }
+```
 
 ## 参考文章
 
