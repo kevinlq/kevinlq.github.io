@@ -11,7 +11,12 @@ keywords: QML,Canvas,clip
 ## 效果
 
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/canvas_headPicture.png" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/canvas_headPicture.png" width="50%" height="50%" />
+</center>
+
+动态缩放效果，实际使用时应该设定大小!
+<center>
+<img src="/res/img/blog/QML-learn/Canvas/canvas_head_show.gif" width="50%" height="50%" />
 </center>
 
 
