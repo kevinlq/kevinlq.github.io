@@ -57,3 +57,15 @@ web监测页面:
 <center>
 <img src="/res/img/project/smart_home_work_server2.png" width="80%" height="80%" />
 </center>
+
+## 相关技术
+
+### zigbee自组网
+采用802.15无线通讯协议，使用自己的操作系统，针对2530特有的8051结构定制的一款性能优越，数据传输稳定，开发快捷的操作系统。
+
+<center>
+<img src="/res/img/project/smart-homeWork/zigbee.png" width="80%" height="80%" />
+</center>
+
+......
+
