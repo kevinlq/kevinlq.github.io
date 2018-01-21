@@ -13,7 +13,7 @@ keywords: QML,Canvas,speed,panel
 
 先来看看绘制后的一个简单效果:
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/speed/speed.gif" width="40%" height="40%" />
+<img src="/res/img/blog/QML-learn/Canvas/speed/speed.gif" width="50%" height="50%" />
 </center>
 
 ## 绘制步骤
