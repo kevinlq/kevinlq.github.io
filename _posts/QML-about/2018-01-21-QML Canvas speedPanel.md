@@ -13,7 +13,7 @@ keywords: QML,Canvas,speed,panel
 
 先来看看绘制后的一个简单效果:
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/speed/1.png" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/speed/speed.gif" width="80%" height="80%" />
 </center>
 
 ## 绘制步骤
@@ -289,6 +289,12 @@ function getCircleCoordinate(radius,x,y,angle)
     }
 ```
 最外圈大圆其实就是绘制了2个同心圆，然后进行渐变填充。效果不是很好，还可以继续美化处理。
+
+最终的效果就是这个样子了:
+
+<center>
+<img src="/res/img/blog/QML-learn/Canvas/speed/1.png" width="80%" height="80%" />
+</center>
 
 ## 参考文章
 
