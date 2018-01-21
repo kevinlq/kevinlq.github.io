@@ -296,6 +296,14 @@ function getCircleCoordinate(radius,x,y,angle)
 <img src="/res/img/blog/QML-learn/Canvas/speed/1.png" width="50%" height="50%" />
 </center>
 
+## 测试
+使用android套件编译下，手机上的效果如下:
+<center>
+<img src="/res/img/blog/QML-learn/Canvas/speed/5.jpg" width="50%" height="50%" />
+</center>
+
+目前没有做分辨率适配，很明显，刻度数字太大了，完了得添加适配进去.
+
 ## 参考文章
 
 [Canvas基础教程](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API)
