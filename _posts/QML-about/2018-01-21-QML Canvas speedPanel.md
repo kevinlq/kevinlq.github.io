@@ -13,7 +13,7 @@ keywords: QML,Canvas,speed,panel
 
 先来看看绘制后的一个简单效果:
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/speed/speed.gif" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/speed/speed.gif" width="40%" height="40%" />
 </center>
 
 ## 绘制步骤
@@ -293,7 +293,7 @@ function getCircleCoordinate(radius,x,y,angle)
 最终的效果就是这个样子了:
 
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/speed/1.png" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/speed/1.png" width="50%" height="50%" />
 </center>
 
 ## 参考文章
