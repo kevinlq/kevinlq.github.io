@@ -39,7 +39,7 @@ keywords: QML,Canvas,speed,panel
 
 ### 三角函数
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/speed/sanjiao.png" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/speed/sanjiao.png" width="50%" height="50%" />
 </center>
 
 仪表盘上的刻度起始位置就是圆上的某个点，因此确定点的坐标很重要。
@@ -50,7 +50,7 @@ cosθ = OC / AO
 AO即为圆的半径，θ的值需要根据刻度间隔来确定。
 
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/speed/2.png" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/speed/2.png" width="50%" height="50%" />
 </center>
 
 ### 圆心方程
@@ -58,7 +58,7 @@ AO即为圆的半径，θ的值需要根据刻度间隔来确定。
  (x-a)²+(y-b)²=r²，圆心O(a，b)，半径r。
 ```
 <center>
-<img src="/res/img/blog/QML-learn/Canvas/speed/3.jpg" width="80%" height="80%" />
+<img src="/res/img/blog/QML-learn/Canvas/speed/3.jpg" width="50%" height="50%" />
 </center>
 
 继而可以求出圆上任意一点的坐标了:
