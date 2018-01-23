@@ -66,6 +66,20 @@ svn diff -r m:n path(对版本m和n进行比较)
 例如：svn diff -r 200:201 abc.cpp
 ```
 
+### 筛选出修改过的文件进行提交
+
+命令:
+```
+svn st | grep "M" | cut -c 8->modified.txt
+```
+以上命令会将修改过的文件路径以及名存入文件中，打开文件确认那些需要提交，那些不需要，删除掉不需要的保存。
+
+提交:
+
+```
+svn ci -m "add update..." --targets modified.txt
+```
+
 ### 帮助 help
 ```
 svn help
