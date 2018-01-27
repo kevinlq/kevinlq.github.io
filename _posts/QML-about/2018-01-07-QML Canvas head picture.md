@@ -23,6 +23,7 @@ keywords: QML,Canvas,clip
 ## 参考文章
 
 [Canvas基础教程](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API)
+[drawImage参数](http://blog.csdn.net/liuzijiang1123/article/details/77075439)
 
 ---
 
