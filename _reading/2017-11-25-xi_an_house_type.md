@@ -98,3 +98,6 @@ keywords: house，book,
 ### 入伍后驻陕西部队
 军官证和团级以上驻地证明
 
+### 个人征信报告查询
+
+![一图顶千言](/res/img/reading/house/zhengxin.jpg)
