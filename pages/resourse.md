@@ -198,3 +198,8 @@ permalink: /resourse/
 ### 开源镜像网站
 * [东软信息学院](http://mirrors.neusoft.edu.cn/)
 * [郑州大学开源镜像站](http://mirrors.zzu.edu.cn/)
+
+
+### Qt
+
+* [QWidget详细解释](http://blog.csdn.net/t46414704152abc/article/details/51057946)
