@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu安装的一些软件工具
-categories: [工具]
+categories: [工具使用]
 description: Ubuntu安装的一些软件工具
 keywords: ubuntu,tools
 ---
