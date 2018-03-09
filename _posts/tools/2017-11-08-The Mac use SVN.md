@@ -36,7 +36,7 @@ svn commit -m "add file"
 ### 更新到某个版本
 
 ```
-scn update -r m path
+svn update -r m path
 例如：svn update（后面没有目录，默认将当前目录以及子目录所有文件进行更新）
 svn update -r 200 abc.cpp(将版本库中abc.cpp还原到200)
 SVN update abc.cpp(更新abc.cpp文件)
