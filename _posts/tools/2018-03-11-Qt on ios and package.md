@@ -6,7 +6,7 @@ description: Qt在IOS平台编译配置以及打包发布
 keywords: Qt,tools，IOS
 ---
 
-在此期间，有幸接触到IOS，所以对Qt 在IOS上的开发部署有了一些了解，今天拿出比较记录下简单的过程。
+在此期间，有幸接触到IOS，所以对Qt 在 IOS上的开发部署有了一些了解，今天拿出笔记记录下简单的过程。
 
 ## Xcode安装
 
