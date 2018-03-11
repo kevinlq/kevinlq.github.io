@@ -143,7 +143,7 @@ AppIcon57x57@2x.png代表图标尺寸为：114*114
 
 启动图标和APP图标类似,分为横屏和竖屏.
 
-![app launch](/res/img/blog/tools/ios_app_launch2.png)
+![app launch](/res/img/blog/tools/ios_app_launch.png)
 
 - Portrait 代表竖屏
 - Landscape代表竖屏
