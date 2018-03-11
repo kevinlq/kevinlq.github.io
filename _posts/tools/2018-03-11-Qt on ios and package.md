@@ -115,7 +115,7 @@ CFBundleDisplayName =”应用程序”;
 
 ## APP名称修改
 
-![app language](/res/img/blog/tools/ios_app_name.png)
+![app name](/res/img/blog/tools/ios_app_name.png)
 
 
 ## APP图标设置
@@ -124,9 +124,9 @@ CFBundleDisplayName =”应用程序”;
 
 在工程属性“General”选项中找到“App Icons and Launch Images”项
 
-![app language](/res/img/blog/tools/ios_app_icon.png)
+![app icon](/res/img/blog/tools/ios_app_icon.png)
 
-![app language](/res/img/blog/tools/ios_app_icon2.png)
+![app icon](/res/img/blog/tools/ios_app_icon2.png)
 
 击该文件，可以看到有2项，第一个是App图标设置，第二个是启动图标
 
@@ -143,7 +143,7 @@ AppIcon57x57@2x.png代表图标尺寸为：114*114
 
 启动图标和APP图标类似,分为横屏和竖屏.
 
-![app language](/res/img/blog/tools/ios_app_launch.png)
+![app launch](/res/img/blog/tools/ios_app_launch2.png)
 
 - Portrait 代表竖屏
 - Landscape代表竖屏
