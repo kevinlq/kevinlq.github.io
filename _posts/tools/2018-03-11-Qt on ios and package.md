@@ -113,6 +113,129 @@ CFBundleDisplayName =”应用程序”;
 ![app language](/res/img/blog/tools/ios_app_language5.png)
 
 
+## APP名称修改
+
+![app language](/res/img/blog/tools/ios_app_name.png)
+
+
+## APP图标设置
+
+通过项目images.xcassets文件实现
+
+在工程属性“General”选项中找到“App Icons and Launch Images”项
+
+![app language](/res/img/blog/tools/ios_app_icon.png)
+
+![app language](/res/img/blog/tools/ios_app_icon2.png)
+
+击该文件，可以看到有2项，第一个是App图标设置，第二个是启动图标
+
+点击后会出现好几种尺寸的icon选择，这里需要提前准备好对应尺寸的icon图标，然后按照尺寸拖到对应位置上即可。
+图标的命名：
+注意区分倍图@2x 和@3x 的后缀，如AppIcon57x57.png 和AppIcon57x57@2x.png
+AppIcon57x57.png代表图标尺寸为：57*57
+AppIcon57x57@2x.png代表图标尺寸为：114*114
+
+**上述图标大小需要提前准备好，然后手动拖到匹配位置即可.**
+
+
+## 启动图标的设置
+
+启动图标和APP图标类似,分为横屏和竖屏.
+
+![app language](/res/img/blog/tools/ios_app_launch.png)
+
+- Portrait 代表竖屏
+- Landscape代表竖屏
+
+
+## 关于iphone上下边黑屏问题
+
+参考文章[https://www.jianshu.com/p/5090fc45c271](https://www.jianshu.com/p/5090fc45c271)
+
+
+## 添加http访问权限
+
+在iOS 9之后，苹果默认要求App访问的url必须为https的安全链接，http链接确实是不安全的，如果在开发过程中请求失败，控制台显示http不安全要用https之类的信息的话，那就是由于这个原因了。但是由于并非所有开发者都会去申请HTTPS证书来支持HTTPS访问，所以还是可以进行设置来正常访问HTTP的，方法如下：
+
+- 在Xcode工程中找到Info.plist文件，做iOS开发的应该都了解这是一个做一些应用配置的文件；
+- 在Info.plist文件中添加Dictionary类型的NSAppTransportSecurity字段；
+- 在NSAppTransportSecurity字段下添加Boolean类型的NSAllowsArbitraryLoads字段，并将其值设为YES
+
+![app language](/res/img/blog/tools/ios_app_http.png)
+
+
+## Archive打包
+
+![app language](/res/img/blog/tools/ios_app_package.png)
+
+接着会进行编译，如果没有错误，则会弹出一个对话框—Archive Information:
+
+![app language](/res/img/blog/tools/ios_app_package2.png)
+
+选择Export进行导出，这个时候会弹出对话框，让你选择方式：
+
+![app language](/res/img/blog/tools/ios_app_package3.png)
+
+- 保存到本地 准备上传App Store 或者在越狱的iOS设备上使用，利用的是Distribution描述文件，关联production证书
+- 保存到本地 准备在账号添加的可使用设备上使用（具体为在开发者账户下添加可用设备的UDID）,利用的是Distribution描述文件，关联production证书；
+- (企业级APP打包ipa)这种主要针对企业级账户下准备本地服务器分发的app。利用的是Distribution描述文件，关联production证书；开发者测试包;
+- 发者模式打包ipa,通过development描述文件关联development证书，打包ipa，给注册的UDID机子安装；
+
+>注明：真机连接Xcode进行调试，需要使用development描述文件及code sign用Developer证书，如果使用production描述文件及code sign用Distribution证书，不能改运行调试，报：process launch failed: failed to get the task for process 10487(数字)错误提示！
+
+企业发布的话一般选择第三个:**Save for Enterprise Deployment**.
+
+接着会让你选择自己的Team:
+
+![app language](/res/img/blog/tools/ios_app_package4.png)
+
+接着一路next
+
+![app language](/res/img/blog/tools/ios_app_package5.png)
+
+最后会让你选择一个存放路径，最后会生成一个对应的**xxx.ipa**文件了.
+
+![app language](/res/img/blog/tools/ios_app_package6.png)
+
+**xxx.ipa**文件其实就是一个压缩文件，我们可以将其重新命名为**xxx.zip**，解压后可以看到里面的一些基本内容.
+
+
+## IPA文件组成
+
+iOS程序最终都会以.ipa文件导出，先来了解一下ipa文件的结构:
+
+![app language](/res/img/blog/tools/ios_app_ipa.png)
+
+- 资源文件，例如图片、html、等等。
+- _CodeSignature/CodeResources。这是一个plist文件，可用文本查看，其中的内容就是是程序包中（不包括Frameworks）所有文件的签名。注意这里是所有文件。意味着你的程序一旦签名，就不能更改其中任何的东西，包括资源文件和可执行文件本身。iOS系统会检查这些签名。
+- 可执行文件。此文件跟资源文件一样需要签名。
+- 一个mobileprovision文件.打包的时候使用的，从MC上生成的。
+- Frameworks。程序引用的非系统自带的Frameworks，每个Frameworks其实就是一个app，其中的结构应该和app差不多，也包含签名信息CodeResources文件
+
+
+## 支持文件共享(读取app的log日志)
+
+info.plist里设置UIFileSharingEnabled = YES;
+
+然后打开iTunes ，找到app,即可看到日志文件
+
+
+## IOS App在后台运行不退出
+
+
+因为IOS系统机制吧，锁屏后app的网络会断开连接，所以如果你的app需要一直保持数据通信，则很麻烦，不过短暂的方法可以这样设置:
+
+程序打包时在Info.plist添加如下两个字段即可：
+
+![app language](/res/img/blog/tools/ios_app_runBackground.png)
+
+参考文章地址[https://www.jianshu.com/p/174fd2673897](https://www.jianshu.com/p/174fd2673897)
+
+
+
+
+
 ******
 
     作者:鹅卵石
