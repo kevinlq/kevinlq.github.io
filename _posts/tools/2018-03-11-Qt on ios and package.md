@@ -17,7 +17,7 @@ MAC上面安装软件很方便也很烦，需要打开App Store进行搜索安�
 
 安装好之后会看到如下欢迎界面:
 
-![xcode home](/res/img/blog/tools/xcode_home.jpg)
+![xcode home](/res/img/blog/tools/xcode_home.png)
 
 表示安装成功，接下来可以安装Qt了(**这里貌似要先安装xcode在安装Qt！**)
 
