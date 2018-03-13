@@ -18,6 +18,15 @@ svn checkout path(path是服务器上面的目录)
 
 例如：svn checkout http://192.168.1.1:8080/svn/abc/version1 --username=zhangsan --passwrod=123
 ```
+如果要更新到某个版本n,则后面需要添加版本号,比如:
+
+```
+svn checkout -r 10 http://192.168.1.1:8080/svn/abc/version1 
+
+```
+
+上面的 10代表版本号. **checkout** 还可以简写成 **co**
+
 
 ### 添加新的文件到版本中
 
