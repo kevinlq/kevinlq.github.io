@@ -6,7 +6,7 @@ description: 装修
 keywords: 装修
 ---
 
-提前了解了解房屋装修方面的知识，比较如果交房后马上也面临装修问题，如何装修以及一些基本的家居用品。
+提前了解下房屋装修方面的知识，如果交房后马上也面临装修问题，如何装修以及一些基本的家居用品。
 
 
 
@@ -21,7 +21,7 @@ keywords: 装修
 
 看到这个价格我决定放弃了，能力达不到哎!
 <center>
-<img src="/res/img/reading/house_decoration/house_decoration.png" width="80%" height="80%" />
+<img src="/res/img/reading/house_decoration/miele.png" width="80%" height="80%" />
 </center>
 
 - 博世
@@ -45,16 +45,17 @@ tb上查了下博世的价格比`Miele`便宜一半!
 <img src="/res/img/reading/house_decoration/water_purifier.png" width="80%" height="80%" />
 </center>
 
+主要的品牌:
 
 * 恩美特(PF-EASY-德国)
 
 ![](/res/img/reading/house_decoration/pf_easy.png)
 
-
 * 3M净水龙头(美国)
 
 ![](/res/img/reading/house_decoration/3m.png)
 
+感觉**恩美特**还是太贵了，肯定买不起!目前貌似只能选择3M了!,在查查资料看看其他品牌!
 
 
 
