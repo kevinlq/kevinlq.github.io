@@ -1,9 +1,9 @@
 ---
 layout: post
-title: QImage源码分析之Save方法实现
+title: Qt keyEvent事件问题
 categories: Qt学习
-description: QImage保存图像分析
-keywords: QImage,save
+description: Qt keyEvent事件问题
+keywords: QKeyEvent
 ---
 今天一个朋友问了一个关于Qt 按键事件的问题，当时觉得没有问题，自己动手试了下果然有问题，看来以前没有怎么好好看这块!
 特意查看了下原因，做个记录!
@@ -60,6 +60,10 @@ void MWidget::keyReleaseEvent(QKeyEvent *event)
 
 ## 捐赠
 
-![](/res/img/myCode.png)
+<center>
+<img src="/res/img/myCode.png" width="80%" height="80%" />
+</center>
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡!
+
+---
