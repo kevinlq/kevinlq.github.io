@@ -75,6 +75,27 @@ void QWidget::keyPressEvent(QKeyEvent *event)
 }
 ```
 
+最终解决方案
+
+```
+void MWidget::keyPressEvent(QKeyEvent *event)
+{
+    if ( Qt::Key_W ==  event->key () && !event->isAutoRepeat ())
+    {
+        qDebug()<<"w keyPressEvent..";
+    }
+}
+
+void MWidget::keyReleaseEvent(QKeyEvent *event)
+{
+    if ( Qt::Key_W ==  event->key () && !event->isAutoRepeat ())
+    {
+        qDebug()<<"w keyReleaseEvent...";
+    }
+}
+```
+
+上面的`isAutoRepeat()`方法很重要，
 
 
 ******
