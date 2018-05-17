@@ -20,7 +20,7 @@ keywords: 设计模式
 
 # 目录
 
-- [单例模式](/_posts/Design_Pattern/2018-05-17-Design_Pattern_Singleton.md)
+- [单例模式](http://kevinlq.com/2018/05/17/Design_Pattern_Singleton/)
 
 
 ******
