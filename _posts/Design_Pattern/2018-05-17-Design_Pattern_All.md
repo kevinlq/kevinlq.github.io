@@ -13,10 +13,13 @@ keywords: 设计模式
 设计模式相关的书籍看的是这两本书.
 
 **深入浅出设计模式**
+
 ![](/res/img/blog/Design_Pattern/head_first_design.png)
 
 **大话设计模式**
+
 ![](/res/img/blog/Design_Pattern/dahua_design.png)
+
 
 # 目录
 
