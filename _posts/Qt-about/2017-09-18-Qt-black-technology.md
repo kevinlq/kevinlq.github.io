@@ -181,3 +181,77 @@ PRE_TARGETDEPS += $${DIR_DEPEND_XX_DEST}/$${FILE_LIB_PREFIX}xxx$${FILE_POSTFIX}$
 ![](/res/img/blog/Qt学习/Qt-black/Qt-black.png)
 
 这样就不会为了一些配置错误而耽误好多调试时间了.
+
+## 3. 自动生成项目文档
+Qt 给我们提供了很大的方便，其中可以帮助我们自动生成文档，可以说是开发维护效率更高吧。
+
+可以想象到，当我们每次修改代码接口后都需要找到对应的文档修改说明，是很麻烦的，恰好可以使用QDoc解决。
+
+我们借助于Qdoc可以生成软件文档，它从我们工程源文件中读取 qdoc 注释，并以 html 或者 xml 形式输出到指定文件夹中.
+
+qdoc只在 .cpp 和 .qdoc 文件中查找注释，不会去 .h 文件中查找.一条 qdoc 注释必须以 ! 符号开始！
+
+### 3.1 使用方式
+
+在需要注释的类或者方法上边进行如下注释:
+
+```C++
+/*!
+ * \a parent this \a valuse is parent param to
+ * the QWidget constructor.
+ * \c This c param
+ * \class MainWindow
+ * \brief MainWindow::MainWindow
+ * this blod 加粗文字    \b {blod text}
+ * this file
+ */
+```
+
+### 3.2 比较
+
+**有点**
+
+- 通过qdoc自动提取注释并生成开发文档；
+- 可以直接生成接口文档，没有必要单独编写；
+- 将代码逻辑写到注释中，便于修改以及同步文档；
+- 支持多种格式输出:qch, html;
+
+**缺点**
+
+- 必须按照qdoc指定格式编写注释，并且注释和代码一致；
+- qdoc 不能生成私有函数注释输出；
+
+### 3.3 使用
+
+新建文件
+
+xxxdoc.qdocconf
+
+```
+project = qtdocs
+description = First QDoc Exmaple
+outputdir = html
+headerdirs = .
+sourcedirs = .
+outputformats = HTML
+sources.fileextensions = "*.cpp *.qdoc *.mm *.qml"
+headers.fileextensions = "*.h *.ch *.h++ *.hh *.hpp *.hxx"
+outputencoding = UTF-8
+sourceencoding = UTF-8
+```
+
+在你的工程文件 xx.pro中，添加如下格式文件:
+
+```C++
+```
+
+执行命令:
+
+```
+qdoc.exe xxx\xx\doc.qdocconf
+```
+
+### 参考
+
+- [配置](https://blog.csdn.net/liulihuo_gyh/article/details/80060838)
+- [添加到Qt Assistant中](http://www.cnblogs.com/ll965452300/p/6721493.html)
