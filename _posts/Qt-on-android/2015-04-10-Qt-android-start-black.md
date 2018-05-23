@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Qt on android 启动时出现黑屏问题
-categories: [Qt学习]
+categories: [Qt on Android]
 description: Qt on android 启动时出现黑屏问题
 keywords: Qt,android
 ---
