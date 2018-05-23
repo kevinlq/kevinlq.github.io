@@ -130,6 +130,27 @@ keywords: IPA,appStore
 
 ## 4. XCode工程配置
 
+打开工程项目，先编译下，有错误在接着修改:
+
+### 4.1 配置 版本和名称
+
+![](/res/img/blog/tools/IOS/xcode_setting.png)
+
+### 4.2 配置证书
+
+![](/res/img/blog/tools/IOS/xcode_setting2.png)
+
+### 4.3 全部修改为 `Release` 模式
+
+把Run、Test、Profile、Analyze、Archive中的Build Configuration全部改为Release.之后Close.
+
+![](/res/img/blog/tools/IOS/xcode_setting3.png)
+
+#### 4.4 Archive 打包
+
+编译成功,选择Product -> Archive.进行打包.
+
+![](/res/img/blog/tools/IOS/xcode_setting4.png)
 
 
 ## 5. 上架配置
@@ -137,11 +158,16 @@ keywords: IPA,appStore
 
 
 
-## 参考
+## 6. 参考
 
 - [简书-惜乐](https://www.jianshu.com/p/440ea5a2bb54)
 - [segmentfault-zhuqian](https://segmentfault.com/a/1190000009577706)
 
+## 7. 其他
+
+- 关于SKU
+
+`SKU` 是公司用来统计数据之类的id,根据需要进行填写，能区分不同的app就行，如果出错会给你提醒；
 
 
 ******
