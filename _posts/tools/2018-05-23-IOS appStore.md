@@ -155,6 +155,13 @@ keywords: IPA,appStore
 
 ## 5. 上架配置
 
+![](/res/img/blog/tools/IOS/appStore.png)
+
+
+点击左下角 `+`,选择 `IOS App Store`，新增上架iOS App需要的证书(iOS Distribution Certificate)
+
+![](/res/img/blog/tools/IOS/appStore2.png)
+
 
 
 
@@ -162,6 +169,7 @@ keywords: IPA,appStore
 
 - [简书-惜乐](https://www.jianshu.com/p/440ea5a2bb54)
 - [segmentfault-zhuqian](https://segmentfault.com/a/1190000009577706)
+- [Appcoda-台湾](https://www.appcoda.com.tw/ios-app-submission/)
 
 ## 7. 其他
 
