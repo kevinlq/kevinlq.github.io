@@ -151,13 +151,13 @@ keywords: IPA,appStore
 
 ![](/res/img/blog/tools/IOS/xcode_setting3.png)
 
-#### 4.4 Archive 打包
+### 4.4 Archive 打包
 
 编译成功,选择Product -> Archive.进行打包.
 
 ![](/res/img/blog/tools/IOS/xcode_setting4.png)
 
-#### 4.5 工程签名和证书详细配置
+### 4.5 工程签名和证书详细配置
 
 >发布时只关心和配置 `Release`的就行了
 
