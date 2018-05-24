@@ -8,6 +8,8 @@ keywords: IPA,appStore
 
 了解了下一款IPA如何上架IOS appStore的过程，记录下基本的流程。
 
+>部分内容来自于网络，如有不妥，请联系我删除.谢谢!
+
 ## 上架步骤
 
 - 开发者账号(注意区分几种账号的区别);
@@ -18,6 +20,7 @@ keywords: IPA,appStore
 - XCode工程配置发布证书,准备打包;
 - 打包上传app Store;
 
+![](/res/img/blog/tools/IOS/info.png)
 
 ## 1. 登录开发者账号
 
@@ -171,7 +174,6 @@ keywords: IPA,appStore
 点击左下角 `+`,选择 `IOS App Store`，新增上架iOS App需要的证书(iOS Distribution Certificate)
 
 ![](/res/img/blog/tools/IOS/appStore2.png)
-
 
 
 
