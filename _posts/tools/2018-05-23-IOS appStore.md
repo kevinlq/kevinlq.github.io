@@ -20,7 +20,9 @@ keywords: IPA,appStore
 - XCode工程配置发布证书,准备打包;
 - 打包上传app Store;
 
-![](/res/img/blog/tools/IOS/info.png)
+![账号和证书分类--来自于网络](/res/img/blog/tools/IOS/info.png)
+
+>上述图片来自于网络，感谢.
 
 ## 1. 登录开发者账号
 
@@ -155,7 +157,7 @@ keywords: IPA,appStore
 
 ![](/res/img/blog/tools/IOS/xcode_setting4.png)
 
-工程签名和证书详细配置
+#### 4.5 工程签名和证书详细配置
 
 >发布时只关心和配置 `Release`的就行了
 
