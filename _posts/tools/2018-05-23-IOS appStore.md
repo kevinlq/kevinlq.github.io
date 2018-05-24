@@ -152,6 +152,16 @@ keywords: IPA,appStore
 
 ![](/res/img/blog/tools/IOS/xcode_setting4.png)
 
+工程签名和证书详细配置
+
+>发布时只关心和配置 `Release`的就行了
+
+![](/res/img/blog/tools/IOS/xcode_setting5.png)
+
+![](/res/img/blog/tools/IOS/xcode_setting6.png)
+
+![](/res/img/blog/tools/IOS/xcode_setting7.png)
+
 
 ## 5. 上架配置
 
