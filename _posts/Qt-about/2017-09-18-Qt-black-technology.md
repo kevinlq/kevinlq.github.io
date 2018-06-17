@@ -251,6 +251,52 @@ sourceencoding = UTF-8
 qdoc.exe xxx\xx\doc.qdocconf
 ```
 
+4. 编译过程拷贝文件
+
+很多时候项目中用到了其他库文件或者一些资源配置文件，需要编译前拷贝到对应路径(一般是可执行文件路径)，有的需要编译后程序运行时拷贝，手动拷贝太麻烦，加上如果让顾客自己编译，可能会搞不清，突然发现 `QMake` 早就为我们考虑到了，可以通过在 `pro` 文件中进行配置即可.废话不多，show code.
+
+定义原始文件路径(即需要拷贝的文件)、目标路径(一般是可执行程序路径)
+```C++
+SRC_FILE =$$PWD/../../../RHDRes/LogProperty.conf
+DST_FILE =$${DIR_DEPEND_DEST}
+
+```
+
+编译前拷贝
+```C++
+win32 {
+
+    SRC_FILE~=s,/,\\,g
+    DST_FILE~=s,/,\\,g  
+
+    system(copy /y $$SRC_FILE $$DST_FILE)
+
+}
+
+unix {
+
+    system(cp -r -f $$SRC_FILE $$DST_FILE)
+
+}
+```
+
+
+编译后拷贝
+```C++
+win32:{
+    SRC_FILE~=s,/,\\,g
+    DST_FILE~=s,/,\\,g
+    QMAKE_PRE_LINK +=copy $$SRC_FILE $$DST_FILE
+}
+unix:{
+    QMAKE_PRE_LINK +=cp -r -f $$SRC_FILE $$DST_FILE
+}
+
+```
+
+以上命令唯一区别就在拷贝命令`QMAKE_PRE_LINK` 和 `system`.
+
+
 ### 参考
 
 - [配置](https://blog.csdn.net/liulihuo_gyh/article/details/80060838)
