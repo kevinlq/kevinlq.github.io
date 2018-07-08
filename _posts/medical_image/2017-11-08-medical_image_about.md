@@ -30,7 +30,7 @@ keywords: 医学影像
 
 
 ## 参考文章
-<h2 id = '1'>人体常用术语-轴冠失</h2>
+<h4 id = '1'>人体常用术语-轴冠失</h4>
 
 - [人体常用术语-轴冠失](http://blog.sina.com.cn/s/blog_94d0f4dc0100yxef.html)
 
