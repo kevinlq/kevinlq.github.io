@@ -13,24 +13,28 @@ keywords: 医学影像
 总体而言有以下:
 
 <center>
-<img src="/res/img/blog/medical_image/images/ACS1.png" width="80%" height="80%" />
+<img src="/res/img/blog/medical_image/images/ACS1.png" width="50%" height="50%" />
 </center>
 
 <center>
-<img src="/res/img/blog/medical_image/images/ACS2.png" width="80%" height="80%" />
+<img src="/res/img/blog/medical_image/images/ACS2.png" width="50%" height="50%" />
 </center>
 
 放一个墙角就很好理解了.
 
 <center>
-<img src="/res/img/blog/medical_image/images/ACS3.png" width="80%" height="80%" />
+<img src="/res/img/blog/medical_image/images/ACS3.png" width="50%" height="50%" />
 </center>
 
 [下面这篇文章解释的比较通俗易懂](#1)
 
 
 ## 参考文章
-<h2 id = '1'>[人体常用术语-轴冠失](http://blog.sina.com.cn/s/blog_94d0f4dc0100yxef.html)</h2>
+<h2 id = '1'>人体常用术语-轴冠失</h2>
+
+- [人体常用术语-轴冠失](http://blog.sina.com.cn/s/blog_94d0f4dc0100yxef.html)
+
+
 
 
 ******
