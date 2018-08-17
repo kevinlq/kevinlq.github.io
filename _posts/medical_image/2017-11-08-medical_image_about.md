@@ -29,10 +29,19 @@ keywords: 医学影像
 [下面这篇文章解释的比较通俗易懂](#1)
 
 
+## CT 介绍
+
+http://www.dxy.cn/bbs/topic/37116707?keywords=%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86
+
+http://www.xctmr.com/test/fz/zn/e9d92c54550de71c689a44bee49b77be.html
+
+
+
 ## 参考文章
 <h4 id = '1'>人体常用术语-轴冠失</h4>
 
 - [人体常用术语-轴冠失](http://blog.sina.com.cn/s/blog_94d0f4dc0100yxef.html)
+- [丁香园](http://www.dxy.cn/bbs/index.html)
 
 
 
