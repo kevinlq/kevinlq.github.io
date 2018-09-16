@@ -317,6 +317,144 @@ int main(int argc, char *argv[])
 >上述实现方式也是比较推荐的方式，当然在实际项目中还要根据需求进行取舍.
 
 
+### 单例模板
+
+实现一个单例类很快的，如果项目中使用的单例类多，那么也是挺繁琐的，可以通过写一个单例模板来解决。
+
+```C++
+template<typename T>
+class Singleton
+{
+public:
+    static T* instance(){
+        static T instance;
+        return &instance;
+    }
+
+private:
+    Singleton();
+    ~Singleton();
+    Singleton(const Singleton &);
+    Singleton & operator = (const Singleton &);
+};
+```
+
+#### use
+
+```C++
+class A{
+    public:
+    void foo(){//DO FOO}
+}
+
+int main()
+{
+    A *a = Singleton<A>::instance();
+    a->foo();
+    return 0;
+}
+```
+
+上面这个也存在线程安全问题，可以这样进行修改下:
+
+### 单例模板2
+
+```C++
+#ifndef SINGLETON_H
+#define SINGLETON_H
+
+#include <QMutex>
+#include <QScopedPointer>
+
+/**
+ * 使用方法:
+ * 1. 定义类为单例:
+ *     class A {
+ *         SINGLETON(A) // Here
+ *     public:
+ *
+ * 2. 获取单例类的对象:
+ *     Singleton<A>::getInstance();
+ *     A &pool = Singleton<A>::getInstance();
+ */
+
+namespace Pattern
+{
+
+template <typename T>
+class Singleton
+{
+public:
+    static T& getInstance();
+
+    Singleton(const Singleton &other);
+    Singleton<T>& operator=(const Singleton &other);
+
+private:
+    static QMutex mutex;
+    static QScopedPointer<T> instance;
+};
+
+/*-----------------------------------------------------------------------------|
+ |                          Singleton implementation                           |
+ |----------------------------------------------------------------------------*/
+template <typename T> QMutex Singleton<T>::mutex;
+template <typename T> QScopedPointer<T> Singleton<T>::instance;
+
+template <typename T>
+T& Singleton<T>::getInstance()
+{
+    if (instance.isNull())
+    {
+        mutex.lock();
+        if (instance.isNull())
+        {
+            instance.reset(new T());
+        }
+        mutex.unlock();
+    }
+
+    return *instance.data();
+}
+
+/*-----------------------------------------------------------------------------|
+ |                               Singleton Macro                               |
+ |----------------------------------------------------------------------------*/
+#define SINGLETON(Class)                        \
+    private:                                    \
+    Class();                                    \
+    ~Class();                                   \
+    Class(const Class &other);                  \
+    Class& operator=(const Class &other);       \
+    friend class Singleton<Class>;              \
+    friend struct QScopedPointerDeleter<Class>;
+
+}
+#endif // SINGLETON_H
+
+```
+
+#### 使用：
+
+```C++
+class MyClass
+{
+    SINGLETON(MyClass)
+    public:
+};
+MyClass::MyClass(){}
+MyClass::~MyClass (){}
+
+typedef Singleton<MyClass> SSClass;
+
+int main(int argc, char *argv[])
+{
+    SSClass::getInstance ();
+}
+```
+
+
+
 ## 参考文章
 
 - [伯乐在线](http://blog.jobbole.com/108579/)
