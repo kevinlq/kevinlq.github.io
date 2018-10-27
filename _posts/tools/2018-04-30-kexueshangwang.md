@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 记一次VPN搭建步骤
+title: 记一次科学上网
 categories: [工具使用]
-description: 记一次VPN搭建步骤
+description: 记一次科学上网
 keywords: VPN,tools,vultr
 ---
 
-以前一直买的别人的VPN，一般是能满足要求的，有时候还是不爽，查了下自己动手搭建也是很简单的，特记录下以备查看。
+以前一直买的别人的V-P-N，一般是能满足要求的，有时候还是不爽，查了下自己动手搭建也是很简单的，特记录下以备查看。
 
 ## 1. 什么是VPN
 VPN(Virtual Private Network)--虚拟专用网！
