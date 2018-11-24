@@ -6,11 +6,19 @@ description: 设计模式学习总结
 keywords: 设计模式
 ---
 
-软件越写越感觉自己懂的真少，尤其是软件架构以及设计模式相关知识，最近一段时间该好好补补这方面的知识了.
 
-本篇算是一个整体的目录吧，方便后期查看复习.
 
-设计模式相关的书籍看的是这两本书.
+以下记录复学习和梳理**设计模式** 相关知识，以备后期查看.
+
+
+# 目录
+
+- [单例模式](http://kevinlq.com/2018/05/17/Design_Pattern_Singleton)
+- [简单工厂模式](http://kevinlq.com/2018/05/17/2018-05-17-Design_Pattern_SimpleFactor)
+
+
+
+## 参考书籍
 
 **深入浅出设计模式**
 
@@ -19,12 +27,6 @@ keywords: 设计模式
 **大话设计模式**
 
 ![](/res/img/blog/Design_Pattern/dahua_design.png)
-
-
-# 目录
-
-- [单例模式](http://kevinlq.com/2018/05/17/Design_Pattern_Singleton)
-
 
 ******
 
