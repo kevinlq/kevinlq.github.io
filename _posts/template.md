@@ -29,7 +29,7 @@ Content here
 ## 捐赠
 
 <center>
-<img src="/res/img/myCode.png" width="80%" height="80%" />
+<img src="/res/img/myCode.png" width="50%" height="50%" />
 </center>
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡.

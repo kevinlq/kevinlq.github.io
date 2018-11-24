@@ -48,6 +48,7 @@ private:
 ```
 
 - 加法类实现
+
 ```C++
 class OperatorAdd : public OperatorBase
 {
@@ -242,7 +243,7 @@ Totals: 6 passed, 0 failed, 0 skipped, 0 blacklisted, 12ms
 ## 捐赠
 
 <center>
-<img src="/res/img/myCode.png" width="80%" height="80%" />
+<img src="/res/img/myCode.png" width="50%" height="50%" />
 </center>
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡.
