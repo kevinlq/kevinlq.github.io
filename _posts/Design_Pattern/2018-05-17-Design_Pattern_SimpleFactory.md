@@ -3,7 +3,7 @@ layout: post
 title: 设计模式之简单工厂模式
 categories: 设计模式
 description: 简单工厂模式
-keywords: 简单工厂模式
+keywords: 设计模式
 ---
 
 简单工厂模式

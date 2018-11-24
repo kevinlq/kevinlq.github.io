@@ -14,7 +14,7 @@ keywords: 设计模式
 # 目录
 
 - [单例模式](http://kevinlq.com/2018/05/17/Design_Pattern_Singleton)
-- [简单工厂模式](http://kevinlq.com/2018/05/17/2018-05-17-Design_Pattern_SimpleFactor)
+- [简单工厂模式](http://kevinlq.com/2018/05/17/2018-05-17-Design_Pattern_SimpleFactory)
 
 
 
