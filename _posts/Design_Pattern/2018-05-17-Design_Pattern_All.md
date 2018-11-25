@@ -20,7 +20,6 @@ keywords: 设计模式
 - [工厂方法模式](http://kevinlq.com/2018/05/17/Design_Pattern_FactoryMethor)
 
 
-
 ## 参考书籍
 
 **深入浅出设计模式**
