@@ -197,6 +197,9 @@ Totals: 6 passed, 0 failed, 0 skipped, 0 blacklisted, 12ms
 ********* Finished testing of TestSimpleFactory *********
 ```
 
+## 代码下载
+
+- [GitHub](https://github.com/kevinlq/design_Pattern)
 
 ## 优缺点
 
@@ -224,6 +227,8 @@ Totals: 6 passed, 0 failed, 0 skipped, 0 blacklisted, 12ms
 
 - [Bobby0322](http://www.cnblogs.com/Bobby0322/p/4178412.html/)
 - [请叫我头头哥](https://www.cnblogs.com/toutou/p/4899388.html)
+
+
 
 
 ******
