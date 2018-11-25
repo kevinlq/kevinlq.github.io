@@ -29,7 +29,7 @@ keywords: 设计模式
 还是以之前的计算器例子进行扩展.
 
 <center>
-<img src="/res/img/blog/Design_Pattern/factory_methor.png" width="50%" height="50%" />
+<img src="/res/img/blog/Design_Pattern/factory_methor.png" width="80%" height="80%" />
 </center>
 
 
