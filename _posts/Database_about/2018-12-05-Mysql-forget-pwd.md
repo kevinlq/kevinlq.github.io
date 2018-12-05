@@ -32,17 +32,15 @@ mysqld -nt --skip-grant-tables
 
 可以会出现这样的警告提示, 无须理会:
 
+![](/res/img/blog/DataBase_About/mysql_modifypwd02.png)
+
 ```
 181205 22:50:00 [Warning] option 'new': boolean value 't' wasn't recognized. Set to OFF.
 ```
 
-
-
 - 进入 `MySql`
 
 使用管理员权限再次打开另一个命令窗口，执行下面的命令:
-
-![](/res/img/blog/DataBase_About/mysql_modifypwd02.png)
 
 ```
 select host,user,password from mysql.user;
