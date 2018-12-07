@@ -43,6 +43,7 @@ mysqld -nt --skip-grant-tables
 使用管理员权限再次打开另一个命令窗口，执行下面的命令:
 
 ```
+mysql -uroot -p  (回车进入)
 select host,user,password from mysql.user;
 ```
 
