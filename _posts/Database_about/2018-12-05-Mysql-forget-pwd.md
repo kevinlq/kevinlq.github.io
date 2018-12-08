@@ -73,6 +73,18 @@ flush privileges;	//刷新
 可以看到密码被修改了!
 
 
+## 相关问题处理
+
+### The MySQL server is running with the --skip-grant-tables option so it cannot execute this statement
+
+该错误发生，由于跳过权限验证进行登录后，执行某个 `SQL` 语句.
+
+解决方案，先更新权限表再执行 SQL 语句
+
+```
+flush privileges;
+```
+
 
 
 ******
