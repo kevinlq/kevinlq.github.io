@@ -6,9 +6,16 @@ description: 在 MAC 下编译Qt 项目遇到的常见问题
 keywords: Qt,MAC, Xcode
 ---
 
+这里记录下Qt 在 IOS上遇到的一些问题.
+
+```
+虽然岁月磨平了我们的棱角，但内心主着的那个小孩还是不想长大!
+```
 
 
-- 'Xcode' 升级后，Qt构建失败
+
+
+- 1. 'Xcode' 升级后，Qt构建失败
 
 ```
 fatal error: ‘TargetConditionals.h’ file not found
