@@ -43,7 +43,7 @@ svn revert --recursive a
 例如: 
 svn revert --recursive main.cpp
 
-* 代表撤销所以新添加的文件
+* 代表撤销所有新添加的文件
 svn revert --recursive *
 ```
 
