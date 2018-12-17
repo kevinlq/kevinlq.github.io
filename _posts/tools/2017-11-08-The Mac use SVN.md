@@ -36,6 +36,17 @@ svn add file
 svn add *.cpp(添加当前目录下的所有.cpp文件)
 ```
 
+### 撤销新添加的文件
+```
+svn revert --recursive a
+
+例如: 
+svn revert --recursive main.cpp
+
+* 代表撤销所以新添加的文件
+svn revert --recursive *
+```
+
 ### 提交修改的文件
 ```
 svn commit -m "add file"
