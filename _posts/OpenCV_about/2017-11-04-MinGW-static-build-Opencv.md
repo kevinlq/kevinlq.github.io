@@ -20,7 +20,7 @@ CMake:3.10.0-rc3-w64
 
 **之前编译过程的文章**
 
-[整体编译方法 &arr](http://kevinlq.com/2016/12/17/OpenCV%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF%E4%B9%8B%E4%B8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA(W7+Qt4+opencv2+mingw)/)
+[整体编译方法 ](http://kevinlq.com/2016/12/17/OpenCV-environment-setting/)
 
 现在是要静态编译，而且要把源码集成到项目中来，所以需要自己编写pro工程来配置，想起来很简单，实际编译起来，遇到了很多问题,因为opencv模块中依赖了其他第三方库，所以编译过程还是挺艰难的.
 
