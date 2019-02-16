@@ -13,7 +13,7 @@ keywords: Qt,blog
 
 第一位置肯定要留给 `Qt` 官网了.
 
-(Qt Blog)[https://blog.qt.io/]
+[Qt Blog](https://blog.qt.io/)
 
 大概张这个样子:
 
@@ -22,7 +22,7 @@ keywords: Qt,blog
 
 ## QTCN
 
-(QTCN)[http://www.qtcn.org/]
+[QTCN](http://www.qtcn.org/)
 
 
 大概张这个样子:
@@ -33,7 +33,7 @@ keywords: Qt,blog
 
 ## Qter
 
-(Qter)[http://www.qter.org/]
+[Qter](http://www.qter.org/)
 
 大概张这个样子:
 
@@ -50,7 +50,7 @@ keywords: Qt,blog
 
 ## qdream
 
-()[https://qtdream.com/]
+[qdream](https://qtdream.com/)
 
 作者`蒋彩阳` 负责维护的一个网站，风格比较……
 
@@ -60,13 +60,13 @@ keywords: Qt,blog
 
 ## evileg
 
-()[https://evileg.com/en/knowledge/QML/]
+[evileg](https://evileg.com/en/knowledge/QML/)
 
 主要是老外分享的,看看可以绕开好多坑.
 
 ##  linux-apps
 
-()[https://www.linux-apps.com/]
+[linux-apps](https://www.linux-apps.com/)
 
 其实这个上面主要是一些软件作品，大部分都有源码.
 
@@ -74,11 +74,11 @@ keywords: Qt,blog
 
 这个困怕用过`Qt`的人都知道了吧，就多说了.
 
-(CSDN)[https://blog.csdn.net/liang19890820]
+[CSDN](https://blog.csdn.net/liang19890820)
 
 ## devbean
 
-()[https://www.devbean.net/]
+[devbean](https://www.devbean.net/)
 
 `devbean` 是 `豆子`老师维护的，相信很多人都听说过，`Qt 5 编程入门` 就是他编写的.
 
