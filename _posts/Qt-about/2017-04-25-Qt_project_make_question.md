@@ -61,11 +61,11 @@ Error while parsing file D:\Project\untitled2\untitled2.pro. Giving up.
 
 错误信息如下图所示：
 
-![](/res/img/blog/Qt-learn/Qt-question/console-out.jpg)
+![](/res/img/blog/Qt-learn/Qt-question/console-out.png)
 
 套件配置信息如下，均配置正确
 
-![](/res/img/blog/Qt-learn/Qt-question/kit.jpg)
+![](/res/img/blog/Qt-learn/Qt-question/kit.png)
 
 ---
 
