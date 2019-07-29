@@ -123,7 +123,7 @@ qWarning()<<bResult;
 ```
 
 <center>
-<img src="/res/img/blog/Qt-lean/qimage_base64.png" width="100%" height="100%" />
+<img src="/res/img/blog/Qt-learn/qimage_base64.png" width="100%" height="100%" />
 </center>
 
 
