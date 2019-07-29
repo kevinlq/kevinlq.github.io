@@ -4,7 +4,7 @@ git status && git branch -a
 
 echo "project file upload......."
 echo "git add. && git commit -m && git push "
-git add . && git commit -m "更新" && git push
+git add . && git commit -m "update" && git push
 echo "upload finished!"
 
 read -n 1
