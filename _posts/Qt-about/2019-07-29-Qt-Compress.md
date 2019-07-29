@@ -45,7 +45,7 @@ QByteArray qUncompress(const QByteArray &data)
 
 ```
 QByteArray array  = "KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eN...";
-QByteArray baseArray = "data:image/jpeg;base64," + array.toBase64();
+QByteArray baseArray = "data:," + array.toBase64();
 
 ```
 
