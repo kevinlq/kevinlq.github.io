@@ -20,7 +20,8 @@ QByteArray qCompress(const uchar *data, int nbytes, int compressionLevel = -1)
 
 QByteArray qCompress(const QByteArray &data, int compressionLevel = -1)
 
-其中 `compressionLevel` 代表压缩等级[0,9]之间，默认值为-1，使用zlib默认压缩，数值越大，压缩后的数据越小，但是压缩速度较慢.
+其中 `compressionLevel` 代表压缩等级[0,9]之间，默认值为-1，使用zlib默认压缩，
+数值越大，压缩后的数据越小，但是压缩速度较慢.
 
 ```
 
@@ -32,7 +33,8 @@ QByteArray qUncompress(const QByteArray &data)
 
 ```
 
-使用 Qt 自带的方法进行压缩和解压时，必须确保要解压的数据是使用 `qCompress` 压缩后的，否则解压会失败，原因是因为 Qt压缩时会在数据前面写入 4 个字节的数据字节数,如果使用的是外部压缩工具，解压时需要进行自动填充对应的字节数。
+使用 Qt 自带的方法进行压缩和解压时，必须确保要解压的数据是使用 `qCompress` 压缩后的，否则解压会失败，
+原因是因为 Qt压缩时会在数据前面写入 4 个字节的数据字节数,如果使用的是外部压缩工具，解压时需要进行自动填充对应的字节数。
 
 
 ## Base64编解码
