@@ -104,8 +104,6 @@ int main()
 
 ![cmake 配置](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/tiff/tiff_install_ok.png)
 
-## 帮助
-
 - 找不到PDF某个功能
 
 具体原因不详，这里也暂时不用到，将相关文件屏蔽掉
@@ -117,6 +115,10 @@ int main()
 ```
 undefined reference to `_imp__getstockobject@4'
 ```
+
+## 帮助
+
+[vtk-org](https://vtk.org/doc/nightly/html/pages.html)
 
 ******
 
