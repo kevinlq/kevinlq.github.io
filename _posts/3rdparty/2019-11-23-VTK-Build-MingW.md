@@ -28,7 +28,7 @@ keywords: Qt,VTK
 - VTK_USE_GUISUPPORT 是否支持GUI，如果在Windows下开发使用MFC，则需要打开该选项
 
 
-![cmake 配置](https://gitee.com/devstone/raw/master/blog/3rdparty/VTK/build_cmake_setting.png)
+![cmake 配置](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/VTK/build_cmake_setting.png)
 
 ## 编译
 
@@ -44,7 +44,7 @@ keywords: Qt,VTK
 mingw32-make -j4
 ```
 
-![start build ](https://gitee.com/devstone/raw/master/blog/3rdparty/VTK/build_ok.png)
+![start build ](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/VTK/build_ok.png)
 
 等待大概1个小时左右，喝杯咖啡看会电影差不多就结束了
 
@@ -54,7 +54,7 @@ mingw32-make -j4
 mingw32-make install
 ```
 
-![build](https://gitee.com/devstone/raw/master/blog/3rdparty/VTK/install_ok.png)
+![build](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/VTK/install_ok.png)
 
 
 ## 测试
@@ -87,32 +87,30 @@ int main()
 
 - tiff 库问题
 
-![cmake 配置](https://gitee.com/devstone/raw/master/blog/3rdparty/VTK/build_error_tiff.png.png)
+![cmake 配置](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/VTK/build_error_tiff.png.png)
 
 
 编译时提示 `tiff`库中某个文件，最终出现问题提示是mingw问题了，先没有用`vtk`自带的`tiff`库，从网上下载完自己编译
 
 开始编译
 
-![cmake 配置](https://gitee.com/devstone/raw/master/blog/3rdparty/tiff/tiff_build_start.png)
+![cmake 配置](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/tiff/tiff_build_start.png)
 
 编译成功
 
-![cmake 配置](https://gitee.com/devstone/raw/master/blog/3rdparty/tiff/tiff_build_ok.png)
+![cmake 配置](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/tiff/tiff_build_ok.png)
 
 安装成功:
 
-![cmake 配置](https://gitee.com/devstone/raw/master/blog/3rdparty/tiff/tiff_install_ok.png)
+![cmake 配置](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/tiff/tiff_install_ok.png)
 
 ## 帮助
-
-![](https://gitter.im/notepad-plus-plus/notepad-plus-plus)
 
 - 找不到PDF某个功能
 
 具体原因不详，这里也暂时不用到，将相关文件屏蔽掉
 
-![](https://gitee.com/devstone/raw/master/blog/3rdparty/VTK/build_error_pdf.png)
+![](https://gitee.com/devstone/imageBed/raw/master/blog/3rdparty/VTK/build_error_pdf.png)
 
 - 找不到库文件
 
