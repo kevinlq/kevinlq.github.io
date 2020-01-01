@@ -118,7 +118,9 @@ undefined reference to `_imp__getstockobject@4'
 
 ## 帮助
 
-[vtk-org](https://vtk.org/doc/nightly/html/pages.html)
+- [vtk-org](https://vtk.org/doc/nightly/html/pages.html)
+- [vtk-example](https://lorensen.github.io/VTKExamples/site/Cxx/)
+
 
 ******
 
