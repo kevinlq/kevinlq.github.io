@@ -1,8 +1,8 @@
 ---
 layout: post
-title: qmake奇淫技巧之字符串宏定义
+title: 如何给程序添加版本号
 categories: [Qt学习]
-description: qmake定义字符串宏在源码中使用
+description: q如何给程序添加版本号
 keywords: Qt,qmake
 ---
 > 阅读本文需要3分钟
