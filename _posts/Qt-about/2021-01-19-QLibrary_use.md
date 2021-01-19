@@ -11,7 +11,7 @@ keywords: Qt,QLibrary
 **更多内容敬请关注公众号：devstone**
 
 <center>
-<img src="/res/img/blog/qrcode_for_devstone.jpg" width="40%" height="40%" />
+<img src="/res/img/blog/qrcode_for_devstone.jpg" width="30%" height="30%" />
 </center>
 
 
