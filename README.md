@@ -24,7 +24,7 @@
 ## 修改记录
 
 
-![工程项目](/doc/project.png)
+![工程项目](/res/img/project.png)
 
 ### 1. 添加网易云跟帖功能
 
