@@ -256,6 +256,19 @@ firewall-cmd --zone=public --remove-port=6969/tcp --permanent
 再确保新的配置生效后在禁用22端口以及root用户！
 ```
 
+## 新手一键配置方式
+
+https://github.com/pitech007/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC
+
+```
+bash <(curl -s -L https://git.io/v2ray.sh)
+```
+
+工具下载
+
+https://github.com/Kejifaxian/welcome
+
+
 ## 参考文章
 
 * [http://www.hellojava.club/](http://www.hellojava.club/)
