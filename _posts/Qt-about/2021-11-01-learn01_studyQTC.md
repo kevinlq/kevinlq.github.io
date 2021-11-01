@@ -90,11 +90,13 @@ keywords: Qt, 源码,Qt Creator
 
 **如果您对本文有任何问题，可以在下方留言，或者Email我.**
 
-## 更多内容敬请关注公众号：devstone
+## 捐赠
 
 <center>
-<img src="/res/img/blog/qrcode_for_devstone.jpg" width="50%" height="50%" />
+<img src="/res/img/myCode.png" width="50%" height="50%" />
 </center>
----
 
+如果觉得分享的内容不错，可以请作者喝杯咖啡.
+
+---
 
