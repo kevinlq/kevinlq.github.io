@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Qt Creator 源码学习笔记02，认识框架结构结构
+title: Qt Creator 源码学习笔记02，认识框架结构
 categories: [Qt]
 description: Qt Creator 源码学习笔记 02
 keywords: Qt, 源码,Qt Creator
