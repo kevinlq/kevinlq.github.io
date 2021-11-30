@@ -357,7 +357,7 @@ PS：建议大家使用最新版本的`Qt Creator`，书签会一直缓存，直
 ## 相关阅读
 
 - Qt Creator 学习笔记01，初识 QTC[^1]
-- Qt Creator 源码学习笔记02，认识框架结构^2]
+- Qt Creator 源码学习笔记02，认识框架结构[^2]
 
 
 [^1]: http://kevinlq.com/2021/11/01/learn01_studyQTC/
