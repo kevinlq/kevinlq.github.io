@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 layout: post
 title: Qt Creator 源码学习笔记04，多插件实现原理分析
@@ -1611,6 +1610,3 @@ if (coreplugin->hasError()) {
 </center>
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡.
-
----
->>>>>>> 50ec1e7248425f8b2d126553e1c767c3e871e6d1
