@@ -1582,12 +1582,10 @@ if (coreplugin->hasError()) {
 - [Qt Creator 源码学习笔记04，多插件实现原理分析](https://mp.weixin.qq.com/s?__biz=MzIyNzY5NTQ1NQ==&mid=2247484767&idx=1&sn=971c14682095a8a84a8161311400100f&chksm=e85c0b6fdf2b82799db871eafb6d0b2465c75d8020b1f87a1f5825f82edcad2c051b7d6e1c2c&scene=21#wechat_redirect)
 - [Qt Creator 源码学习笔记 05，菜单栏是怎么实现插件化的？](https://mp.weixin.qq.com/s?__biz=MzIyNzY5NTQ1NQ==&mid=2247484822&idx=1&sn=eff40e19952a534fc0d97cab2417ce9e&chksm=e85c0ba6df2b82b017eb568adacd5b407f269cc2c2e7d2c36609fdda76b029bdcd70003fadba&token=193645825&lang=zh_CN#rd)
 
-
-
 ******
 
     作者:鹅卵石
-    时间: 2021年12月22日23:24:15
+    时间: 2021年12月22日23:24:16
     版本:V 0.0.1
     邮箱:kevinlq@163.com
 	版权:本博客若无特别声明，均属于作者原创文章，欢迎大家转载分享。但是，
