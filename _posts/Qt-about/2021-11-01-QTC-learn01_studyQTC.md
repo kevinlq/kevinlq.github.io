@@ -72,7 +72,11 @@ keywords: Qt, 源码,Qt Creator
 ![](https://gitee.com/devstone/imageBed/raw/master/images/202111011131568.png)
 
 
-[^1]: https://www.devbean.net/2016/07/qt-creator-source-study-02/
+- [Qt Creator 源码学习笔记01，初识QTC](https://mp.weixin.qq.com/s?__biz=MzIyNzY5NTQ1NQ==&mid=2247484658&idx=1&sn=55af25cd6e608fa9cb1452610928e71b&chksm=e85c0ac2df2b83d453d80f66fcdefca31e998a8ac0ba0226edbd80b437f99ed5184478805d8e&scene=21#wechat_redirect)
+- [Qt Creator 源码学习笔记02，认识框架结构结构](https://mp.weixin.qq.com/s?__biz=MzIyNzY5NTQ1NQ==&mid=2247484676&idx=1&sn=c1bd8cbd78d8e098c22353f567cc3620&chksm=e85c0b34df2b822288a7baa016f4a64df47e5e119039836ff686cb2ad3a7e28a5808efc0c13a&scene=21#wechat_redirect)
+- [Qt Creator 源码学习笔记03，大型项目如何管理工程](https://mp.weixin.qq.com/s?__biz=MzIyNzY5NTQ1NQ==&mid=2247484701&idx=1&sn=c69eb1edfb551c41690938423ca2ef7c&chksm=e85c0b2ddf2b823b1179f216e57ca91b9ce4068a0469e8ba062ab3596e9dc51ac05a1572da85&scene=21#wechat_redirect)
+- [Qt Creator 源码学习笔记04，多插件实现原理分析](https://mp.weixin.qq.com/s?__biz=MzIyNzY5NTQ1NQ==&mid=2247484767&idx=1&sn=971c14682095a8a84a8161311400100f&chksm=e85c0b6fdf2b82799db871eafb6d0b2465c75d8020b1f87a1f5825f82edcad2c051b7d6e1c2c&scene=21#wechat_redirect)
+- [Qt Creator 源码学习笔记 05，菜单栏是怎么实现插件化的？](https://mp.weixin.qq.com/s?__biz=MzIyNzY5NTQ1NQ==&mid=2247484822&idx=1&sn=eff40e19952a534fc0d97cab2417ce9e&chksm=e85c0ba6df2b82b017eb568adacd5b407f269cc2c2e7d2c36609fdda76b029bdcd70003fadba&token=193645825&lang=zh_CN#rd)
 
 
 
