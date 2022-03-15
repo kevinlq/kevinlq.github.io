@@ -8,6 +8,10 @@ keywords: Qt, 源码,Qt
 
 ## QFile 文件属性区区别
 
+## Q_PROPERTY 自动化生成
+
+
+
 
 
 ## QML 使用枚举
