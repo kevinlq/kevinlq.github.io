@@ -6,6 +6,9 @@ description: Qt 笔记
 keywords: Qt, 源码,Qt
 ---
 
+## QFile 文件属性区区别
+
+
 
 ## QML 使用枚举
 
