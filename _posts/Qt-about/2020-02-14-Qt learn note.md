@@ -8,11 +8,50 @@ keywords: Qt, 源码,Qt
 
 ## QFile 文件属性区区别
 
+```C++
+    QString strSourceFile = "D:/Qt/source-target.testFileName.tar.gz";
+    QFile file(strSourceFile);
+
+    QFileInfo fileInfo(strSourceFile);
+
+    qDebug() << "file:" << file.fileName();
+
+    qDebug() << "fileName:" << fileInfo.fileName();
+    qDebug() << "baseName:" << fileInfo.baseName();
+    qDebug() << "filePath:" << fileInfo.filePath();
+    qDebug() << "suffix:" << fileInfo.suffix();
+    qDebug() << "absolutePath:" << fileInfo.absolutePath();
+    qDebug() << "absoluteFilePath:" << fileInfo.absoluteFilePath();
+    qDebug() << "absoluteDir-path:" << fileInfo.absoluteDir().path();
+    qDebug() << "canonicalFilePath:" << fileInfo.canonicalFilePath();
+    qDebug() << "canonicalPath:" << fileInfo.canonicalPath();
+    qDebug() << "completeSuffix:" << fileInfo.completeSuffix();
+    qDebug() << "dir-path:" << fileInfo.dir().path();
+```
+
+输出信息如下：
+```C++
+file: "D:/Qt/source-target.testFileName.tar.gz"
+fileName: "source-target.testFileName.tar.gz"
+baseName: "source-target"
+filePath: "D:/Qt/source-target.testFileName.tar.gz"
+suffix: "gz"
+absolutePath: "D:/Qt"
+absoluteFilePath: "D:/Qt/source-target.testFileName.tar.gz"
+absoluteDir-path: "D:/Qt"
+canonicalFilePath: "D:/Qt/source-target.testFileName.tar.gz"
+canonicalPath: "D:/Qt"
+completeSuffix: "testFileName.tar.gz"
+dir-path: "D:/Qt"
+```
+
+---
 ## Q_PROPERTY 自动化生成
 
+只需要定义好 `Q_PROPERTY`，然后光标在该属性上面按下`Ctrl + 回车`，会自动给你创建好对应的成员变量以及 `set` 和 `get` 方法
 
 
-
+---
 
 ## QML 使用枚举
 
