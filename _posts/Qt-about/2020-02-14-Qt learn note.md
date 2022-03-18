@@ -107,6 +107,8 @@ Window {
 [官方介绍连接](https://doc.qt.io/qt-5/qtqml-syntax-objectattributes.html#enumeration-attributes)
 
 ```js
+MyComponent.qml
+
 Rectangle {
     id: root
 
