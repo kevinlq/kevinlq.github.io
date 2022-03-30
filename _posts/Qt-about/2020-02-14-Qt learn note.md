@@ -129,6 +129,123 @@ Rectangle {
 }
 ```
 
+## 注册 C++对象给 QML 使用
+
+日常在`C++`中使用的对象，如果需要可以注册给 `QML` 来使用，包括类对象、枚举、单例类等，提前是这些类必须继承 `QObject`
+
+**普通对象注册**
+
+```C++
+class HandleMessage: public QObject
+{
+    Q_OBJECT
+public:
+
+    enum MsgCode
+    {
+        MsgRun
+    };
+    Q_ENUMS(MsgCode)
+
+    HandleMessage(QObject *parent = nullptr) : QObject(parent)
+    {
+    }
+};
+
+// 注册
+
+const char *uri = "kevinlq.com.devstone";
+int versionMajor = 1;
+int versionMinor = 0;
+
+qmlRegisterType<HandleMessage>(uri,versionMajor,versionMinor,"HandleMessage");
+```
+
+使用
+
+```C++
+//Main.qml
+
+Rectangle
+{
+    HandleMessage
+    {
+        id: msgHandle
+    }
+
+    Component.onCompleted: 
+    {
+        // 使用C++枚举
+        console.log("###StatusType:",HandleMessage.MsgRun)
+    }
+}
+```
+
+**单例对象注册**
+
+单例对象比较特殊，不能使用上述方法进行注册
+```C++
+class HandleMessage: public QObject
+{
+    Q_OBJECT
+public:
+
+    enum MsgCode
+    {
+        MsgRun
+    };
+    Q_ENUMS(MsgCode)
+
+    static HandleMessage* getInstance()
+    {
+        static HandleMessage _instance;
+        return &_instance;
+    }
+
+private:
+    HandleMessage(QObject *parent = nullptr) : QObject(parent)
+    {
+    }
+};
+
+// 注册
+// 需要先提供一个静态方法用于返回该对象，注册的时候回调使用
+ static QObject *msgHandleProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+ {
+     Q_UNUSED(engine)
+     Q_UNUSED(scriptEngine)
+
+     return HandleMessage::getInstance();
+ }
+
+const char *uri = "kevinlq.com.devstone";
+int versionMajor = 1;
+int versionMinor = 0;
+
+// Second, register the singleton type provider with QML by calling this 
+qmlRegisterSingletonType<HandleMessage>(uri, versionMajor, versionMinor, "HandleMessage", msgHandleProvider);
+```
+
+单例对象使用时直接用该对象名即可调用对象成员属性和方法
+
+```C++
+
+Rectangle
+{
+    // 这种写法是错误的，单例类不需要在这里初始化了
+    // HandleMessage
+    // {
+    //     id: msgHandle
+    // }
+
+    Component.onCompleted: 
+    {
+        // 使用C++枚举
+        console.log("###StatusType:",HandleMessage.MsgRun)
+    }
+}
+```
+
 
 ******
 
