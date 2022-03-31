@@ -116,7 +116,8 @@ Q_ENUMS(Button_StateType);
 }
 
 // 注册
-qmlRegisterUncreatableMetaObject(Button_State::staticMetaObject,    "kevinlq.com.devstone",major,minor,"ButtonState",   "Access to enums & flags only");
+qmlRegisterUncreatableMetaObject(Button_State::staticMetaObject,"kevinlq.com.devstone",
+major,minor,"ButtonState", "Access to enums & flags only");
 
 // QML 使用
 
