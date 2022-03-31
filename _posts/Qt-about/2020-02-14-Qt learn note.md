@@ -101,6 +101,28 @@ Window {
 }
 ```
 
+还有一种方法，不需要定义类对象，直接将定义的枚举类型注册完给 `QML` 使用
+
+```C++
+namespace Button_State {
+Q_NAMESPACE
+enum Button_StateType {
+    Normal      = 0x0,
+    Hovering    = 0x1,
+    Pressed     = 0x2,
+    Checked     = 0x3,
+};
+Q_ENUMS(Button_StateType);
+}
+
+// 注册
+qmlRegisterUncreatableMetaObject(Button_State::staticMetaObject,    "kevinlq.com.devstone",major,minor,"ButtonState",   "Access to enums & flags only");
+
+// QML 使用
+
+ButtonState.Normal
+```
+
 ### QML 中直接定义
 
 到了 `Qt 5.10`已经支持在 `QML` 中定义枚举了
