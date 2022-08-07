@@ -1,9 +1,9 @@
 ---
 layout: post
-title: QML 播放/渲染视频方式汇总
+title: QML 播放/渲染视频方式复盘
 categories: [Qt]
 description: 总结下使用 QML 播放视频常见的几种技术方案
-keywords: FFmpeg,音视频, Qt,vlc,vlc-qt,qtav,mdk
+keywords: 音视频
 ---
 
 ## 背景描述
