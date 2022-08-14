@@ -6,6 +6,7 @@ description: FFmpeg 常用使用笔记总结
 keywords: FFmpeg，音视频
 ---
 
+
 ## 下载安装配置环境
 
 ### 下载
@@ -61,13 +62,36 @@ ffmpeg -codecs
 ffmpeg -encoders
 ```
 
+## 比特率
+
+比特率又叫码率，用来表示每秒初始的字节数，单位是 `kbps` (注意是小写的 k )
+
+- K 字节数
+- b 比特(bit)
+- p 每(per)
+- s 秒(secend)
+
+比特率又一个粗略的计算公式: 文件大小/时长
+
+比如一个文件大为 12MB，时长为 88秒，那么按照粗略计算公式，比特率大概为:
+
+```
+(12 * 1024 * 8) / 88 =  1117.09 kbps
+```
+
+实际上比特率又分为三种：`VBR`, `ABR`, `CBR`
+
+- `VBR`(Variable Bitrate) 动态比特率，数据压缩时根据音频数据实际特点实时确定采用那种采样率，这种方式压缩质量非常高
+- `ABR`(Average Bitrate) 平均比特率，这种方式是 `VBR`的一种平均值(或者叫插值参数)
+- `CBR`(Constant Bitrate) 常数比特率，文件从头到尾比特率不变化
+
 
 
 ## 参考文章
 
 - [官方](https://ffmpeg.org/ffmpeg.html)
 - [ruanyifeng](https://www.ruanyifeng.com/blog/2020/01/ffmpeg.html)
-
+- [自动计算码率](https://toolstud.io/video/bitrate.php?imagewidth=1920&imageheight=1080&colordepth=24&framerate=60)
 
 ******
 
