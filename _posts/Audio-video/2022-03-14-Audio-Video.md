@@ -46,7 +46,6 @@ ffmpeg {1} {2} -i {3} {4} {5}
 ### 基本命令示例
 
 - 查看支持的容器(类型)
-
 ```
 ffmpeg -formats
 ```
@@ -57,7 +56,6 @@ ffmpeg -codecs
 ```
 
 - 查看视频编码器
-
 ```
 ffmpeg -encoders
 ```
