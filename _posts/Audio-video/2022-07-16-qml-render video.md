@@ -90,7 +90,7 @@ QOpenGLContext *pContent = QOpenGLContext::currentContext();
 正是下面这个东东，害我怀疑人生……
 
 
-![image](https://gitee.com/devstone/imageBed/raw/3d9353e9ea590d68be2a1ed5d11c44c2d7ea0061/images/Snipaste_2022-08-07_18-00-54.png)
+[![image](https://s1.ax1x.com/2022/08/15/vwpO4H.png)](https://imgtu.com/i/vwpO4H)
 
 所以，我们遇到那些很诡异、觉得不应该发生的问题时，可能正是因为某种巧合引起的小问题导致的，那些我们平时不注意或者容易疏忽的小问题，未来的某一天可能引发大问题
 
@@ -133,7 +133,7 @@ QOpenGLContext *pContent = QOpenGLContext::currentContext();
 ## 捐赠
 
 <center>
-<img src="https://gitee.com/devstone/imageBed/raw/master/code/myCode.png" width="50%" height="50%" />
+<img src="https://s1.ax1x.com/2022/08/15/vw9gMt.png" width="50%" height="50%" />
 </center>
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡.

@@ -18,7 +18,7 @@ keywords: FFmpeg，音视频
 - Windows builds from gyan.dev
 - Windows builds by BtbN
 
-![](https://gitee.com/devstone/imageBed/raw/master/images/202203172253203.png)
+[![vwCVoD.md.png](https://s1.ax1x.com/2022/08/15/vwCVoD.md.png)](https://imgtu.com/i/vwCVoD)
 
 ### 安装
 
@@ -111,7 +111,7 @@ ffmpeg -encoders
 ## 捐赠
 
 <center>
-<img src="https://gitee.com/devstone/imageBed/raw/master/code/myCode.png" width="50%" height="50%" />
+<img src="https://s1.ax1x.com/2022/08/15/vw9gMt.png" width="50%" height="50%" />
 </center>
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡.
