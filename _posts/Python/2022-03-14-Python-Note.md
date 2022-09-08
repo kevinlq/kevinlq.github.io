@@ -9,8 +9,7 @@ keywords: Python
 
 ## 简介
 
-参考地址
-https://www.liaoxuefeng.com/wiki/1016959663602400/1017063826246112
+[参考地址](https://www.liaoxuefeng.com/wiki/1016959663602400/1017063826246112)
 
 
 ## 软件安装
