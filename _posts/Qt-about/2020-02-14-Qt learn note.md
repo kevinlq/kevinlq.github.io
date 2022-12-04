@@ -269,6 +269,31 @@ Rectangle
 }
 ```
 
+## ListView 注意事项
+
+- 平滑滚动+取消拖动反弹效果
+```
+interactive: true
+boundsMovement: Flickable.StopAtBounds
+```
+> interactive 默认为 true ，如果设置为 false， 则整个View 不会随着鼠标滚动而进行翻页显示， 也就失去了翻页功能，一般不更改整个属性，通过设置其它属性来达到目的
+
+默认我们可以拖动 view 到最顶部、最底部，此时会有一个反弹效果，很多时候是不需要这个效果的，可以通过 `boundsMovement` 属性来控制
+
+```
+Flickable.StopAtBounds: 取消反弹效果
+Flickable.FollowBoundsBehavior：  默认效果
+```
+
+原文
+``` 
+Flickable.StopAtBounds - the contents can not be dragged beyond the boundary of the flickable, and flicks will not overshoot.
+Flickable.DragOverBounds - the contents can be dragged beyond the boundary of the Flickable, but flicks will not overshoot.
+Flickable.OvershootBounds - the contents can overshoot the boundary when flicked, but the content cannot be dragged beyond the boundary of the flickable. (since QtQuick 2.5)
+Flickable.DragAndOvershootBounds (default) - the contents can be dragged beyond the boundary of the Flickable, and can overshoot the boundary when flicked
+```
+
+
 
 ******
 
