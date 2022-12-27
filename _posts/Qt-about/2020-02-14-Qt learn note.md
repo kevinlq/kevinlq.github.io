@@ -293,6 +293,11 @@ Flickable.OvershootBounds - the contents can overshoot the boundary when flicked
 Flickable.DragAndOvershootBounds (default) - the contents can be dragged beyond the boundary of the Flickable, and can overshoot the boundary when flicked
 ```
 
+## QML 绘制的三种方式
+
+- 继承 QQuickPaintedItem 重写void paint(QPainter *painter)
+- 继承 QQuickItem 重写 QSGNode *updatePaintNode(QSGNode *oldNode, UpdatePaintNodeData *)
+- Canvas 绘制
 
 
 ******
@@ -310,11 +315,3 @@ Flickable.DragAndOvershootBounds (default) - the contents can be dragged beyond 
 ---
 
 **如果您对本文有任何问题，可以在下方留言，或者Email我.**
-
-## 捐赠
-
-<center>
-<img src="https://gitee.com/devstone/imageBed/raw/master/code/myCode.png" width="50%" height="50%" />
-</center>
-
-如果觉得分享的内容不错，可以请作者喝杯咖啡.
