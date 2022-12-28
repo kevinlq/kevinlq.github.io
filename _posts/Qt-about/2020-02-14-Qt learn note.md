@@ -300,6 +300,39 @@ Flickable.DragAndOvershootBounds (default) - the contents can be dragged beyond 
 - Canvas 绘制
 
 
+## QObject 派生类不在.h声明报错问题
+
+一般我们继承 `QObject` 总是写在 `.h` 头文件中，有时候也写在 `.cpp` 文件中，这个时候就会报错，原因是 `moc` 工具无法识别我们 `cpp` 中写的内容，因此需要我们手动引入来让其识别
+
+下面以 `main.cpp` 为例子
+```
+
+class DS_Student: public QObject
+{
+    Q_OBJECT
+    AUTO_PROPERTY(QString, StuName)
+    AUTO_PROPERTY(int, StuAge)
+public:
+    DS_Student() {;}
+};
+
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
+
+    DS_Student stu;
+    stu.setStuName("admin");
+    stu.setStuAge(12);
+
+    return a.exec();
+}
+
+#include "main.moc"
+```
+
+关键就是最后一句引入`xx.moc`，添加后清除项目、qmake、重新构建即可正常编译通过
+
+
 ******
 
     作者:鹅卵石
