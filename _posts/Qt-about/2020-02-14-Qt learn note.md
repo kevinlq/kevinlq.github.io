@@ -44,6 +44,34 @@ canonicalPath: "D:/Qt"
 completeSuffix: "testFileName.tar.gz"
 dir-path: "D:/Qt"
 ```
+## QDir 常见使用
+
+`QDir` 常用在文件夹操作，提供了文件夹的增、删、改，常见的操作主要有：
+
+- path: 返回当前 dir 的路径
+- currentPath: 返回当前程序 exe 的路径
+- cdUp: 会返回到上一级目录(只有文件路径存在时返回成功，文件路径不存在返回失败)
+
+```C++
+    QString path("D:/Qt/Qt5.9.0/5.9/msvc2013_64/bin");
+    QDir dir(path);
+
+    qDebug() << "path:" << dir.path();
+    qDebug() << "currentPath:" << dir.currentPath();
+
+    bool bResult = dir.cdUp();
+
+    qDebug() << bResult;
+    qDebug() << "path:" << dir.path();
+```
+
+输出信息如下：
+```
+path: "D:/Qt/Qt5.9.0/5.9/msvc2013_64/bin"
+currentPath: "D:/Project/untitled5/temple"
+true
+path: "D:/Qt/Qt5.9.0/5.9/msvc2013_64"
+```
 
 ---
 ## Q_PROPERTY 自动化生成
