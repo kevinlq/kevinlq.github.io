@@ -6,7 +6,9 @@ description: Qt 笔记
 keywords: Qt, 源码,Qt
 ---
 
-## QFile 文件属性区区别
+## 文件和文件夹相关操作
+
+### QFile 文件属性区区别
 
 ```C++
     QString strSourceFile = "D:/Qt/source-target.testFileName.tar.gz";
@@ -44,7 +46,7 @@ canonicalPath: "D:/Qt"
 completeSuffix: "testFileName.tar.gz"
 dir-path: "D:/Qt"
 ```
-## QDir 常见使用
+### QDir 常见使用
 
 `QDir` 常用在文件夹操作，提供了文件夹的增、删、改，常见的操作主要有：
 
@@ -58,6 +60,7 @@ dir-path: "D:/Qt"
 
     qDebug() << "path:" << dir.path();
     qDebug() << "currentPath:" << dir.currentPath();
+    qDebug() << "dirName:" << dir.dirName();
 
     bool bResult = dir.cdUp();
 
@@ -69,9 +72,39 @@ dir-path: "D:/Qt"
 ```
 path: "D:/Qt/Qt5.9.0/5.9/msvc2013_64/bin"
 currentPath: "D:/Project/untitled5/temple"
+dirName: "bin"
 true
 path: "D:/Qt/Qt5.9.0/5.9/msvc2013_64"
 ```
+
+### 打开资源管理器并定位到指定文件
+
+- 方法1 QDesktopServices::openUr
+
+有局限，仅仅能打开文件/文件夹，不能定位到
+
+- 方法2 QProcess 调用 explorer
+
+使用时注意空格等特殊路径问题，最好转换下
+
+核心命令:
+```
+explorer.exe /select,"D:/Qt/Qt5.9.0/5.9/msvc2013_64/bin/qmlscene.exe"
+```
+
+```
+    QString srcFile = "D:/Qt/Qt5.9.0/5.9/msvc2013_64/bin/qmlscene.exe";
+    QString program = "explorer";
+    QStringList arguments;
+    arguments << "/select,"
+              << QDir::toNativeSeparators(srcFile);
+
+    QProcess::startDetached(program, arguments);
+```
+
+这个其实是利用了 `explorer.exe` 来执行一些命令，还有其他可用的命令可以使用：
+
+Explorer [/n][/e][[,/root],[path]][[,/select],[path filename]]
 
 ---
 ## Q_PROPERTY 自动化生成
