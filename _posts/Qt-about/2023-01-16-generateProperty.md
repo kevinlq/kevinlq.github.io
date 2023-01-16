@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Qt/C++ 自动生成get和set方法
+title: Qt/C++ 自动生成get和set方法以及属性
 categories: [Qt]
 description: 使用宏定义来自动生成繁琐的代码
 keywords: Qt, C++
@@ -33,7 +33,6 @@ keywords: Qt, C++
 #define Function(arg1, arg2) m_##arg
 输入: Function(name)
 输出：m_name
-
 ```
 
 ### 小试牛刀
