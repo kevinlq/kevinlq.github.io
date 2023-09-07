@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Qt 对象序列化/反序列化
+title: C++自动序列化和反序列化在实际软件开发中的应用(二)
 categories: [Qt]
 description: 序列化对象
 keywords: Qt, C++
