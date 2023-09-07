@@ -394,6 +394,53 @@ int main(int argc, char *argv[])
 关键就是最后一句引入`xx.moc`，添加后清除项目、qmake、重新构建即可正常编译通过
 
 
+## Q_D,Q_Q 使用模板
+```C++
+
+KSerialize.h
+
+class KSerialize : public QObject
+{
+	Q_OBJECT
+public:
+    explicit KSerialize(QObject *parent = nullptr);
+	
+private:
+    Q_DECLARE_PRIVATE(KSerialize)
+};
+
+KSerialize.cpp
+
+KSerialize::KSerialize(QObject *parent)
+    : QObject{*new KSerializePrivate{}, parent}
+{
+    //Q_D(KSerialize);
+}
+
+调用 D指针前：
+Q_D(const KSerialize);
+
+KSerializePrivate.h
+
+class KSerializePrivate : public QObjectPrivate
+{
+    Q_DECLARE_PUBLIC(KSerialize)
+public:
+}
+```
+
+如果是多继承方式，还需要增加保护的构造函数
+
+```C++
+protected:
+	explicit KSerializerBase(QObject *parent = nullptr);
+	explicit KSerializerBase(KSerializerBasePrivate &dd, QObject *parent);
+	
+这样派生类就可以初始化自己的 D指针.
+```
+
+
+
 ******
 
     作者:鹅卵石
