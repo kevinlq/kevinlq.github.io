@@ -439,7 +439,27 @@ protected:
 这样派生类就可以初始化自己的 D指针.
 ```
 
+## Qt 内置日志使用
 
+- 声明&定义：
+```
+#include <QLoggingCategory>
+Q_LOGGING_CATEGORY(logSerialize, "kserial.serialize")
+Q_LOGGING_CATEGORY(logDeSerialze, "kserial.deserialize")
+```
+
+- 使用
+```
+qCDebug(logSerialize) << __FUNCTION__ << "line:" <<__LINE__
+                             << "object is null." << propertyType;
+```
+
+- 设置日志过滤
+```
+    QLoggingCategory::setFilterRules("kserial.serialize.debug=false");
+    QLoggingCategory::setFilterRules("kserial.deserialize.debug=true");
+    QLoggingCategory::setFilterRules("kserial.*.debug=true");
+```
 
 ******
 
