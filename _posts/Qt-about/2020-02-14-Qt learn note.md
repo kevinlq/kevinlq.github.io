@@ -461,6 +461,43 @@ qCDebug(logSerialize) << __FUNCTION__ << "line:" <<__LINE__
     QLoggingCategory::setFilterRules("kserial.*.debug=true");
 ```
 
+## qmake 一些变量值
+
+```
+message($$[QMAKE_VERSION])
+message($$[QT_VERSION])
+message($$[QMAKE_MKSPECS])
+message($$[QT_INSTALL_BINS])
+message($$[QT_INSTALL_DATA])
+message($$[QT_INSTALL_DEMOS])
+message($$[QT_INSTALL_DOCS])
+message($$[QT_INSTALL_EXAMPLES])
+message($$[QT_INSTALL_HEADERS])
+message($$[QT_INSTALL_LIBS])
+message($$[QT_INSTALL_PLUGINS])
+message($$[QT_INSTALL_PREFIX])
+message($$[QT_INSTALL_QML])
+message($$[QT_INSTALL_TRANSLATIONS])
+```
+
+输出内容如下：
+```
+Project MESSAGE: 3.1
+Project MESSAGE: 6.6.0
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/mkspecs
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/bin
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64
+Project MESSAGE: D:/Qt6.6.0/Examples/Qt-6.6.0
+Project MESSAGE: D:/Qt6.6.0/Docs/Qt-6.6.0
+Project MESSAGE: D:/Qt6.6.0/Examples/Qt-6.6.0
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/include
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/lib
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/plugins
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/qml
+Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/translations
+```
+
 ******
 
     作者:鹅卵石
