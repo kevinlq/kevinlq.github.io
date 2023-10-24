@@ -498,6 +498,36 @@ Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/qml
 Project MESSAGE: D:/Qt6.6.0/6.6.0/mingw_64/translations
 ```
 
+## Qt 正确读取图片并显示
+
+正常情况下，读取图片使用`QPixmap` 或者`QImage` 都可以，异常场景时会加载失败：
+
+例如：比如文件后缀名和文件实际格式不匹配时,(一个png图片，后缀名是.jpg时会失败)
+
+这个时候读取图片需要显示指定该图片的格式了，但是事先是不知道该图片格式的，或者说直接从图片后缀判断图片是什么格式是不靠谱的，
+这个时候就需要使用间接办法了,代码如下：
+
+```C++
+const QString img = "./test.jpg";
+QMimeDatabase qmimedatabase;
+
+const QMimeType mimeType = qmimedatabase.mimeTypeForFile(img, QMimeDatabase::MatchContent);
+const QStringList suffixes = mimeType.suffixes();
+
+QPixmap p;
+for(const auto &s : suffixes)
+{
+	if(p.load(img, s.toLocal8Bit().data()))
+	{
+		break;
+		qDebug() << "load image success.." << s;
+	}
+}
+```
+
+> 上述为啥要用循环？因为有的图片返回的 suffixes 有多种，如果用 `QString preferredSuffix() const` 去加载可能会失败.
+
+
 ******
 
     作者:鹅卵石
