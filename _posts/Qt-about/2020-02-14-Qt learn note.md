@@ -354,6 +354,12 @@ Flickable.OvershootBounds - the contents can overshoot the boundary when flicked
 Flickable.DragAndOvershootBounds (default) - the contents can be dragged beyond the boundary of the Flickable, and can overshoot the boundary when flicked
 ```
 
+- 设置列表滚动速度
+```C++
+maximumFlickVelocity : 700	// 每秒移动多少像素
+```
+
+
 ## QML 绘制的三种方式
 
 - 继承 QQuickPaintedItem 重写void paint(QPainter *painter)
